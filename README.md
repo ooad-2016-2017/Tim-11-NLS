@@ -8,7 +8,7 @@ Clanovi tima:
 
 Opis teme
 
-	Ovaj sistem je osmišljen prije svega da bi se olakšala organizacija i ubrzao rad, ali i sama funkcionalnost
+ Ovaj sistem je osmišljen prije svega da bi se olakšala organizacija i ubrzao rad, ali i sama funkcionalnost
  zatvora kao ustanove u kojoj mnogo zaposlenika mora da radi zajedno. Zaposleni trebaju znati kakva je situacija
  kako u blokovima i odjeljenjima u kojima rade, tako i u cijelom zatvoru i to naravno u svakom trenutku bez da
  napuštaju svoju poziciju. Zbog toga je važno da su im potrebne informacije uvijek na dohvat ruke.  S obzirom
