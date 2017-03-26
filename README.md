@@ -100,3 +100,29 @@ Funkcionalnosti
 •	Moguænost premještanja zatvorenika
 
 •	Moguænost zakazivanja termina kod doktora
+
+
+Akteri
+
+Upravnik – upravnik zatvora u svakom trenutku ima uvid u sam rad zatvora – gdje se nalaze zatvorenici, koji su stražari odgovorni za koji blok zatvora i raspored smjena stražara, uvid u finansije i troškove, on donosi krajnje odluke pri podnošenju odreðenih zahtjeva
+
+Upravitelj za ljudske resurse- Vrši zapošljavanje i otpuštanje radnika, te prijem zatvorenika u zatvor.
+
+Zatvorenici – imaju moguænost da se prijave u klubove koji im se nude, ukoliko imaju potrebu mogu podnijeti zahtjev za posjete doktoru ili zahtjev za prebacivanje u drugi zatvor. Zatvorenici se takoðer mogu prijaviti na aktivnosti koje ukljuèuju fizièki rad a koje nisu u sklopu obaveznog prisilnog rada. Oni imaju vrlo ogranièen pristup.
+
+Stražari – vode raèuna o disciplini i pravilom radu zatvora. 
+
+Upravnici klubova – imaju za zadatak da održavaju disciplinu tokom boravka zatovrenika u klubovima. Oni se brinu da broj zatvorenika u terminima za posjetu prostorija kluba ne prekoraèuje dozvoljeni broj, ali i odobravaju prijavu za odreðeni klub u skladu sa kapacitetima kluba. Upravnici kluba takoðer vode raèuna da zatvorenici ne prekoraèe dozvoljeno vrijeme koje imaju na raspolaganju dok borave u klubovima, te su dužni da po isteku vremena obavijeste stražare.
+
+Vozaèi – prevoze zatovrenike i obavještavaju upravnika o uspješnom prevozu zatvorenika. Imaju pristup rasporedu vožnji.
+
+Koordinator za posjete i transport –  On ažurira raspored vožnje za vozaèe u odnosu na listu dostupnih vozaèa. On takoðer vodi raèuna o posjetama za zatvorenike. Ukoliko neko želi da doðe u posjetu, koordinator popunjava formu sa njihovim liènim podacima te vodi evidenciju o svim posjetiocima zatvora. Njegova odgovornost je i da pazi na termine održavanja posjeta (da se ne poklapaju sa ostalim aktivnostima u zatvoru) i da ogranièi broj posjeta po terminu.
+
+Uposlenik
+
+	Doktor –  vodi raèuna o zalihama lijekova i ostalih medicinskih potrepština u zatvoru. Doktor ažurira listu zaliha nakon radnog dana te u skladu s njom vrši zahtjev za nabavku materijala.
+	
+	Kuhar - vodi raèuna o zalihama hrane u zatvoru. Kuhar ažurira listu zaliha nakon radnog dana te u skladu s njom vrši zahtjev za nabavku.
+
+Nadzornik – pravi i ažurira raspored èuvara za svaki od sektora zatvora
+
