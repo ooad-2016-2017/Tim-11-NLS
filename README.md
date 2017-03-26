@@ -58,24 +58,45 @@ Za proces pogubljenja potrebno je da upravnik korištenjem sistema pokrene zahtij
 
 
 Funkcionalnosti
+
 •	Moguænost automatskog ukljuèivanja alarma u sluèaju pokušaja bijega
+
 •	Moguænost da putem pina koji im je dodijeljen po zahtjevu za uèlanjenje u klub zatvorenici odluèuju o aktivnostima tokom slobodnog vremena
+
 •	Moguænost praæenja zaliha u skladištu i nabavke
+
 •	Moguænost ogranièenja pristupa 
+
 •	Moguænost podjele poslova
+
 •	Moguænost lakše organizacije grupnih aktivnosti (fizièki rad, grupne terapije)
+
 •	Moguænost praæenja kretanja zatvorenika
+
 •	Omoguæava da se zloupotrebe i odbacivanje odgovornosti svedu na minimum 
+
 •	Omoguæava pregled rasporeda kako zatovrenika tako i uposlenika u zatvoru
+
 •	Moguænost regulisanja broja zatvorenika u klubovima 
+
 •	Moguænost pisanja izvještja i prijavu prekršaja
+
 •	Moguænost zaposlenih da podnose zahtjeve u vezi sa njihovim radnih ugovorom (npr. podnošenje zahtjeva za godišnji odmor, bolovanje...)
+
 •	Moguænost praæenja troškova i finansija 
+
 •	Moguænost zapošljavanja novih radnika i njihov unos u sistem 
+
 •	Moguænost otpuštanja radnika i njihovo brisanje iz sistema
+
 •	Moguænost prijema novih zatvorenika
+
 •	Moguænost brze izmjene i modifikacije rasporeda ukoliko je to potrebno
+
 •	Omoguæava zatvorenicima da kvalitetno iskoriste svoje slobodno vrijeme ukoliko žele(uèlanjivanjem u klubove)
+
 •	Omoguæava lakše upravljanje i praæenje aktivnosti zatvorenika
+
 •	Moguænost premještanja zatvorenika
+
 •	Moguænost zakazivanja termina kod doktora
