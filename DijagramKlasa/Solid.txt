@@ -1,0 +1,10 @@
+
+S – Prvi solid princip nije zadovoljen. Prema ovom principu klase trebaju imati samo jedan razlog za promjenu i trebaju imati informacije samo o jednoj stvari. Kod nas ovaj princip nije ispoštovan zato što u nekim klasama imamo situaciju da se brinu o previše stvari. Tako na primjer kada god promijenimo raspored moramo mijenjati metode vezane za raspored  u pojedinim klasama, ili ukoliko na primjer promijenimo format izveštaja za Stražare, moramo modificirati metode koje se odnose na izvještaj, što se kosi sa ovim principom.  
+
+O – Drugi solid princip je ispoštovan. On nalaže da su klase otvorene za nadogradnju a zatvorene za modifikaciju. U našim klasama je ovaj princip ispoštovan zato što je moguæa nadogradnja na klase, ali modifikacije nisu potrebne zbog same strukture klasa i metoda koje su u njima implementirane. 
+
+L- Treæi solid princip nije ispoštovan. Ovaj princip, odnosno LISKOV princip nalaže da se bazni  tip može koristiti kada god se koriste i izvedeni tipovi. Kod nas to nije ispoštovano s obzirom da u izvedenim klasama imamo implementirane metode koje se odnose na taj odreðeni tip, te se ne mogu korisiti za bazni tip. Tako na primjer nije moguæe koristiti klasu Radnik umjesto klase KoordinatorZaPosjeteITransport jer u klasi Radnik nemamo implementiranu metodu pregledVožnji ili dodajUPosjete itd. 
+
+I- Èetvrti solid princip je zadovoljen. Ovaj princip se odnosi na upotrebu apstrakcije. Kod nas je podržan ovaj princip jer nam aplikacija ne ovisi od konkretnih klasa tj. glavna klasa iz koje vršimo nasljeðivanje, klasa Radnik je implementirana kao apstraktna klasa, te ukoliko je potrebno dodavati nove tipove Radnika možemo ih jednostavno izvesti iz ove klase bez modifikacija same klase Radnik.
+
+D- Peti solid princip je ispoštovan. Ovaj princip govori da klase ne trebaju biti optereæene metodama koje ih se ne tièu tj. koje se neæe koristiti od strane te klase. Klase implementirane u ovom projektu su struktuirane tako da imaju implementirane samo one metode koje su zaista potrebne i koje se koriste, bez bespotrebnih komplikacija. Korisnik ne ovisi o metodama koje ne koristi.
