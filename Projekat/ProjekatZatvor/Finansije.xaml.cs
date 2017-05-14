@@ -27,11 +27,11 @@ namespace ProjekatZatvor
         {
             this.InitializeComponent();
         }
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+       /* protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             Params result = (Params)e.Parameter;
             base.OnNavigatedTo(e);
-        }
+        }*/
 
         private void textBlock_SelectionChanged(object sender, RoutedEventArgs e)
         {

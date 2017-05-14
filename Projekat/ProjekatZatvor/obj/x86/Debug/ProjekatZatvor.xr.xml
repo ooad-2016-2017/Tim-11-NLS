@@ -10,6 +10,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
       <RootProperty Name="Children" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="Height" />
       <RootProperty Name="VerticalAlignment" />
@@ -20,6 +21,8 @@
       <RootMethod Name="SetRowSpan" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetColumnSpan" />
+      <RootMethod Name="SetColumnSpan" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
@@ -65,10 +68,12 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="TextWrapping" />
-      <RootProperty Name="Text" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootEvent Name="TextChanged" />
     </RootType>
     <RootType FullName="ProjekatZatvor.detaljiONarudzbi" />
     <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
@@ -97,6 +102,13 @@
       <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="ProjekatZatvor.Finansije" />
+    <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="ProjekatZatvor.LoginPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>
@@ -126,7 +138,20 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Frame" />
     <RootType FullName="ProjekatZatvor.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="ProjekatZatvor.NarudzbaForma" />
     <RootType FullName="ProjekatZatvor.NarudzbeUpravnik" />
+    <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="ProjekatZatvor.OtpustiRadnika" />
     <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
       <RootProperty Name="Content" />
       <RootProperty Name="HorizontalAlignment" />
@@ -147,24 +172,35 @@
       <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="ProjekatZatvor.PodnesiZahtjev" />
-    <RootType FullName="ProjekatZatvor.Strazar" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+    <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
+      <RootProperty Name="Content" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
     </RootType>
-    <RootType FullName="ProjekatZatvor.strazarIzvjestaj" />
+    <RootType FullName="ProjekatZatvor.PodnosenjeZahtjeva" />
+    <RootType FullName="ProjekatZatvor.PrijemZatvorenika" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="Items" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListBoxItem">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="ProjekatZatvor.PrikazZaliha" />
+    <RootType FullName="ProjekatZatvor.Strazar" />
+    <RootType FullName="ProjekatZatvor.strazarIzvjestaj" />
     <RootType FullName="ProjekatZatvor.strazarRaspored" />
+    <RootType FullName="ProjekatZatvor.UposlenikForme" />
+    <RootType FullName="ProjekatZatvor.UpraviteljForme" />
     <RootType FullName="ProjekatZatvor.Upravnik" />
     <RootType FullName="ProjekatZatvor.UpravnikRaspored" />
     <RootType FullName="ProjekatZatvor.ZahtjeviUposlenika" />
+    <RootType FullName="ProjekatZatvor.ZaposliRadnika" />
   </Roots.RootTypes>
 </Roots>

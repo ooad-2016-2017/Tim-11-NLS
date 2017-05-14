@@ -104,14 +104,32 @@
     <Compile Include="Finansije.xaml.cs">
       <DependentUpon>Finansije.xaml</DependentUpon>
     </Compile>
+    <Compile Include="LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NarudzbaForma.xaml.cs">
+      <DependentUpon>NarudzbaForma.xaml</DependentUpon>
     </Compile>
     <Compile Include="NarudzbeUpravnik.xaml.cs">
       <DependentUpon>NarudzbeUpravnik.xaml</DependentUpon>
     </Compile>
+    <Compile Include="OtpustiRadnika.xaml.cs">
+      <DependentUpon>OtpustiRadnika.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PodnesiZahtjev.xaml.cs">
       <DependentUpon>PodnesiZahtjev.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PodnosenjeZahtjeva.xaml.cs">
+      <DependentUpon>PodnosenjeZahtjeva.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrijemZatvorenika.xaml.cs">
+      <DependentUpon>PrijemZatvorenika.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrikazZaliha.xaml.cs">
+      <DependentUpon>PrikazZaliha.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Strazar.xaml.cs">
@@ -123,6 +141,12 @@
     <Compile Include="strazarRaspored.xaml.cs">
       <DependentUpon>strazarRaspored.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UposlenikForme.xaml.cs">
+      <DependentUpon>UposlenikForme.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UpraviteljForme.xaml.cs">
+      <DependentUpon>UpraviteljForme.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Upravnik.xaml.cs">
       <DependentUpon>Upravnik.xaml</DependentUpon>
     </Compile>
@@ -132,6 +156,9 @@
     <Compile Include="ZahtjeviUposlenika.xaml.cs">
       <DependentUpon>ZahtjeviUposlenika.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ZaposliRadnika.xaml.cs">
+      <DependentUpon>ZaposliRadnika.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -140,10 +167,17 @@
     <None Include="ProjekatZatvor_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\AdmissionIcon.PNG" />
     <Content Include="Assets\finansije.jpg" />
+    <Content Include="Assets\FireIcon.PNG" />
+    <Content Include="Assets\HireIcon.JPG" />
+    <Content Include="Assets\HireIcon.PNG" />
     <Content Include="Assets\Izvjestaj.png" />
     <Content Include="Assets\narudzbe.jpg" />
+    <Content Include="Assets\OrderIcon.PNG" />
     <Content Include="Assets\raspored.jpg" />
+    <Content Include="Assets\RequestIcon.PNG" />
+    <Content Include="Assets\StockIcon.PNG" />
     <Content Include="Assets\Zahtjev.jpg" />
     <Content Include="Assets\Zatvorenik2.JPG" />
     <Content Include="Properties\Default.rd.xml" />
@@ -172,7 +206,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="LoginPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="NarudzbaForma.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -180,9 +222,25 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="OtpustiRadnika.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="PodnesiZahtjev.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PodnosenjeZahtjeva.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PrijemZatvorenika.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PrikazZaliha.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Strazar.xaml">
       <SubType>Designer</SubType>
@@ -196,6 +254,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UposlenikForme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UpraviteljForme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Upravnik.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -207,6 +273,10 @@
     <Page Include="ZahtjeviUposlenika.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ZaposliRadnika.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
