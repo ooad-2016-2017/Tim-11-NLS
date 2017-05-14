@@ -132,55 +132,77 @@ namespace ProjekatZatvor.ProjekatZatvor_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[23];
+            _typeNameTable = new string[34];
             _typeNameTable[0] = "ProjekatZatvor.BlankPage1";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "ProjekatZatvor.detaljiONarudzbi";
             _typeNameTable[4] = "ProjekatZatvor.Finansije";
-            _typeNameTable[5] = "ProjekatZatvor.LoginPage";
-            _typeNameTable[6] = "ProjekatZatvor.MainPage";
-            _typeNameTable[7] = "ProjekatZatvor.NarudzbaForma";
-            _typeNameTable[8] = "ProjekatZatvor.NarudzbeUpravnik";
-            _typeNameTable[9] = "ProjekatZatvor.OtpustiRadnika";
-            _typeNameTable[10] = "ProjekatZatvor.PodnesiZahtjev";
-            _typeNameTable[11] = "ProjekatZatvor.PodnosenjeZahtjeva";
-            _typeNameTable[12] = "ProjekatZatvor.PrijemZatvorenika";
-            _typeNameTable[13] = "ProjekatZatvor.PrikazZaliha";
-            _typeNameTable[14] = "ProjekatZatvor.Strazar";
-            _typeNameTable[15] = "ProjekatZatvor.strazarIzvjestaj";
-            _typeNameTable[16] = "ProjekatZatvor.strazarRaspored";
-            _typeNameTable[17] = "ProjekatZatvor.UposlenikForme";
-            _typeNameTable[18] = "ProjekatZatvor.UpraviteljForme";
-            _typeNameTable[19] = "ProjekatZatvor.Upravnik";
-            _typeNameTable[20] = "ProjekatZatvor.UpravnikRaspored";
-            _typeNameTable[21] = "ProjekatZatvor.ZahtjeviUposlenika";
-            _typeNameTable[22] = "ProjekatZatvor.ZaposliRadnika";
+            _typeNameTable[5] = "ProjekatZatvor.KoordinatorPocetna";
+            _typeNameTable[6] = "ProjekatZatvor.KoordinatorZaLjudskeResurse";
+            _typeNameTable[7] = "ProjekatZatvor.LoginPage";
+            _typeNameTable[8] = "ProjekatZatvor.MainPage";
+            _typeNameTable[9] = "ProjekatZatvor.NarudzbaForma";
+            _typeNameTable[10] = "ProjekatZatvor.NarudzbeUpravnik";
+            _typeNameTable[11] = "ProjekatZatvor.OtpustiRadnika";
+            _typeNameTable[12] = "ProjekatZatvor.PocetnaZatvorenik";
+            _typeNameTable[13] = "ProjekatZatvor.PodnesiZahtjev";
+            _typeNameTable[14] = "ProjekatZatvor.PodnosenjeZahtjeva";
+            _typeNameTable[15] = "ProjekatZatvor.Posjetioci";
+            _typeNameTable[16] = "ProjekatZatvor.PrijavaUKlub";
+            _typeNameTable[17] = "ProjekatZatvor.PrijemZatvorenika";
+            _typeNameTable[18] = "ProjekatZatvor.PrikazZaliha";
+            _typeNameTable[19] = "ProjekatZatvor.RasporedPosjeta";
+            _typeNameTable[20] = "ProjekatZatvor.RasporedTransporta";
+            _typeNameTable[21] = "ProjekatZatvor.Strazar";
+            _typeNameTable[22] = "ProjekatZatvor.strazarIzvjestaj";
+            _typeNameTable[23] = "ProjekatZatvor.strazarRaspored";
+            _typeNameTable[24] = "ProjekatZatvor.UposlenikForme";
+            _typeNameTable[25] = "ProjekatZatvor.UpraviteljForme";
+            _typeNameTable[26] = "ProjekatZatvor.Upravnik";
+            _typeNameTable[27] = "ProjekatZatvor.UpravnikRaspored";
+            _typeNameTable[28] = "ProjekatZatvor.Vozac";
+            _typeNameTable[29] = "ProjekatZatvor.ZahtjeviUposlenika";
+            _typeNameTable[30] = "ProjekatZatvor.ZahtjevZaOdlazakDoktoru";
+            _typeNameTable[31] = "ProjekatZatvor.ZahtjevZaPremjestaj";
+            _typeNameTable[32] = "ProjekatZatvor.ZaposliRadnika";
+            _typeNameTable[33] = "ProjekatZatvor.Zatvorenik";
 
-            _typeTable = new global::System.Type[23];
+            _typeTable = new global::System.Type[34];
             _typeTable[0] = typeof(global::ProjekatZatvor.BlankPage1);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::ProjekatZatvor.detaljiONarudzbi);
             _typeTable[4] = typeof(global::ProjekatZatvor.Finansije);
-            _typeTable[5] = typeof(global::ProjekatZatvor.LoginPage);
-            _typeTable[6] = typeof(global::ProjekatZatvor.MainPage);
-            _typeTable[7] = typeof(global::ProjekatZatvor.NarudzbaForma);
-            _typeTable[8] = typeof(global::ProjekatZatvor.NarudzbeUpravnik);
-            _typeTable[9] = typeof(global::ProjekatZatvor.OtpustiRadnika);
-            _typeTable[10] = typeof(global::ProjekatZatvor.PodnesiZahtjev);
-            _typeTable[11] = typeof(global::ProjekatZatvor.PodnosenjeZahtjeva);
-            _typeTable[12] = typeof(global::ProjekatZatvor.PrijemZatvorenika);
-            _typeTable[13] = typeof(global::ProjekatZatvor.PrikazZaliha);
-            _typeTable[14] = typeof(global::ProjekatZatvor.Strazar);
-            _typeTable[15] = typeof(global::ProjekatZatvor.strazarIzvjestaj);
-            _typeTable[16] = typeof(global::ProjekatZatvor.strazarRaspored);
-            _typeTable[17] = typeof(global::ProjekatZatvor.UposlenikForme);
-            _typeTable[18] = typeof(global::ProjekatZatvor.UpraviteljForme);
-            _typeTable[19] = typeof(global::ProjekatZatvor.Upravnik);
-            _typeTable[20] = typeof(global::ProjekatZatvor.UpravnikRaspored);
-            _typeTable[21] = typeof(global::ProjekatZatvor.ZahtjeviUposlenika);
-            _typeTable[22] = typeof(global::ProjekatZatvor.ZaposliRadnika);
+            _typeTable[5] = typeof(global::ProjekatZatvor.KoordinatorPocetna);
+            _typeTable[6] = typeof(global::ProjekatZatvor.KoordinatorZaLjudskeResurse);
+            _typeTable[7] = typeof(global::ProjekatZatvor.LoginPage);
+            _typeTable[8] = typeof(global::ProjekatZatvor.MainPage);
+            _typeTable[9] = typeof(global::ProjekatZatvor.NarudzbaForma);
+            _typeTable[10] = typeof(global::ProjekatZatvor.NarudzbeUpravnik);
+            _typeTable[11] = typeof(global::ProjekatZatvor.OtpustiRadnika);
+            _typeTable[12] = typeof(global::ProjekatZatvor.PocetnaZatvorenik);
+            _typeTable[13] = typeof(global::ProjekatZatvor.PodnesiZahtjev);
+            _typeTable[14] = typeof(global::ProjekatZatvor.PodnosenjeZahtjeva);
+            _typeTable[15] = typeof(global::ProjekatZatvor.Posjetioci);
+            _typeTable[16] = typeof(global::ProjekatZatvor.PrijavaUKlub);
+            _typeTable[17] = typeof(global::ProjekatZatvor.PrijemZatvorenika);
+            _typeTable[18] = typeof(global::ProjekatZatvor.PrikazZaliha);
+            _typeTable[19] = typeof(global::ProjekatZatvor.RasporedPosjeta);
+            _typeTable[20] = typeof(global::ProjekatZatvor.RasporedTransporta);
+            _typeTable[21] = typeof(global::ProjekatZatvor.Strazar);
+            _typeTable[22] = typeof(global::ProjekatZatvor.strazarIzvjestaj);
+            _typeTable[23] = typeof(global::ProjekatZatvor.strazarRaspored);
+            _typeTable[24] = typeof(global::ProjekatZatvor.UposlenikForme);
+            _typeTable[25] = typeof(global::ProjekatZatvor.UpraviteljForme);
+            _typeTable[26] = typeof(global::ProjekatZatvor.Upravnik);
+            _typeTable[27] = typeof(global::ProjekatZatvor.UpravnikRaspored);
+            _typeTable[28] = typeof(global::ProjekatZatvor.Vozac);
+            _typeTable[29] = typeof(global::ProjekatZatvor.ZahtjeviUposlenika);
+            _typeTable[30] = typeof(global::ProjekatZatvor.ZahtjevZaOdlazakDoktoru);
+            _typeTable[31] = typeof(global::ProjekatZatvor.ZahtjevZaPremjestaj);
+            _typeTable[32] = typeof(global::ProjekatZatvor.ZaposliRadnika);
+            _typeTable[33] = typeof(global::ProjekatZatvor.Zatvorenik);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -218,24 +240,35 @@ namespace ProjekatZatvor.ProjekatZatvor_XamlTypeInfo
         private object Activate_0_BlankPage1() { return new global::ProjekatZatvor.BlankPage1(); }
         private object Activate_3_detaljiONarudzbi() { return new global::ProjekatZatvor.detaljiONarudzbi(); }
         private object Activate_4_Finansije() { return new global::ProjekatZatvor.Finansije(); }
-        private object Activate_5_LoginPage() { return new global::ProjekatZatvor.LoginPage(); }
-        private object Activate_6_MainPage() { return new global::ProjekatZatvor.MainPage(); }
-        private object Activate_7_NarudzbaForma() { return new global::ProjekatZatvor.NarudzbaForma(); }
-        private object Activate_8_NarudzbeUpravnik() { return new global::ProjekatZatvor.NarudzbeUpravnik(); }
-        private object Activate_9_OtpustiRadnika() { return new global::ProjekatZatvor.OtpustiRadnika(); }
-        private object Activate_10_PodnesiZahtjev() { return new global::ProjekatZatvor.PodnesiZahtjev(); }
-        private object Activate_11_PodnosenjeZahtjeva() { return new global::ProjekatZatvor.PodnosenjeZahtjeva(); }
-        private object Activate_12_PrijemZatvorenika() { return new global::ProjekatZatvor.PrijemZatvorenika(); }
-        private object Activate_13_PrikazZaliha() { return new global::ProjekatZatvor.PrikazZaliha(); }
-        private object Activate_14_Strazar() { return new global::ProjekatZatvor.Strazar(); }
-        private object Activate_15_strazarIzvjestaj() { return new global::ProjekatZatvor.strazarIzvjestaj(); }
-        private object Activate_16_strazarRaspored() { return new global::ProjekatZatvor.strazarRaspored(); }
-        private object Activate_17_UposlenikForme() { return new global::ProjekatZatvor.UposlenikForme(); }
-        private object Activate_18_UpraviteljForme() { return new global::ProjekatZatvor.UpraviteljForme(); }
-        private object Activate_19_Upravnik() { return new global::ProjekatZatvor.Upravnik(); }
-        private object Activate_20_UpravnikRaspored() { return new global::ProjekatZatvor.UpravnikRaspored(); }
-        private object Activate_21_ZahtjeviUposlenika() { return new global::ProjekatZatvor.ZahtjeviUposlenika(); }
-        private object Activate_22_ZaposliRadnika() { return new global::ProjekatZatvor.ZaposliRadnika(); }
+        private object Activate_5_KoordinatorPocetna() { return new global::ProjekatZatvor.KoordinatorPocetna(); }
+        private object Activate_6_KoordinatorZaLjudskeResurse() { return new global::ProjekatZatvor.KoordinatorZaLjudskeResurse(); }
+        private object Activate_7_LoginPage() { return new global::ProjekatZatvor.LoginPage(); }
+        private object Activate_8_MainPage() { return new global::ProjekatZatvor.MainPage(); }
+        private object Activate_9_NarudzbaForma() { return new global::ProjekatZatvor.NarudzbaForma(); }
+        private object Activate_10_NarudzbeUpravnik() { return new global::ProjekatZatvor.NarudzbeUpravnik(); }
+        private object Activate_11_OtpustiRadnika() { return new global::ProjekatZatvor.OtpustiRadnika(); }
+        private object Activate_12_PocetnaZatvorenik() { return new global::ProjekatZatvor.PocetnaZatvorenik(); }
+        private object Activate_13_PodnesiZahtjev() { return new global::ProjekatZatvor.PodnesiZahtjev(); }
+        private object Activate_14_PodnosenjeZahtjeva() { return new global::ProjekatZatvor.PodnosenjeZahtjeva(); }
+        private object Activate_15_Posjetioci() { return new global::ProjekatZatvor.Posjetioci(); }
+        private object Activate_16_PrijavaUKlub() { return new global::ProjekatZatvor.PrijavaUKlub(); }
+        private object Activate_17_PrijemZatvorenika() { return new global::ProjekatZatvor.PrijemZatvorenika(); }
+        private object Activate_18_PrikazZaliha() { return new global::ProjekatZatvor.PrikazZaliha(); }
+        private object Activate_19_RasporedPosjeta() { return new global::ProjekatZatvor.RasporedPosjeta(); }
+        private object Activate_20_RasporedTransporta() { return new global::ProjekatZatvor.RasporedTransporta(); }
+        private object Activate_21_Strazar() { return new global::ProjekatZatvor.Strazar(); }
+        private object Activate_22_strazarIzvjestaj() { return new global::ProjekatZatvor.strazarIzvjestaj(); }
+        private object Activate_23_strazarRaspored() { return new global::ProjekatZatvor.strazarRaspored(); }
+        private object Activate_24_UposlenikForme() { return new global::ProjekatZatvor.UposlenikForme(); }
+        private object Activate_25_UpraviteljForme() { return new global::ProjekatZatvor.UpraviteljForme(); }
+        private object Activate_26_Upravnik() { return new global::ProjekatZatvor.Upravnik(); }
+        private object Activate_27_UpravnikRaspored() { return new global::ProjekatZatvor.UpravnikRaspored(); }
+        private object Activate_28_Vozac() { return new global::ProjekatZatvor.Vozac(); }
+        private object Activate_29_ZahtjeviUposlenika() { return new global::ProjekatZatvor.ZahtjeviUposlenika(); }
+        private object Activate_30_ZahtjevZaOdlazakDoktoru() { return new global::ProjekatZatvor.ZahtjevZaOdlazakDoktoru(); }
+        private object Activate_31_ZahtjevZaPremjestaj() { return new global::ProjekatZatvor.ZahtjevZaPremjestaj(); }
+        private object Activate_32_ZaposliRadnika() { return new global::ProjekatZatvor.ZaposliRadnika(); }
+        private object Activate_33_Zatvorenik() { return new global::ProjekatZatvor.Zatvorenik(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -276,128 +309,205 @@ namespace ProjekatZatvor.ProjekatZatvor_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 5:   //  ProjekatZatvor.LoginPage
+            case 5:   //  ProjekatZatvor.KoordinatorPocetna
                 userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_LoginPage;
+                userType.Activator = Activate_5_KoordinatorPocetna;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 6:   //  ProjekatZatvor.MainPage
+            case 6:   //  ProjekatZatvor.KoordinatorZaLjudskeResurse
                 userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_MainPage;
+                userType.Activator = Activate_6_KoordinatorZaLjudskeResurse;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  ProjekatZatvor.NarudzbaForma
+            case 7:   //  ProjekatZatvor.LoginPage
                 userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_7_NarudzbaForma;
+                userType.Activator = Activate_7_LoginPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 8:   //  ProjekatZatvor.NarudzbeUpravnik
+            case 8:   //  ProjekatZatvor.MainPage
                 userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_NarudzbeUpravnik;
+                userType.Activator = Activate_8_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 9:   //  ProjekatZatvor.OtpustiRadnika
+            case 9:   //  ProjekatZatvor.NarudzbaForma
                 userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_OtpustiRadnika;
+                userType.Activator = Activate_9_NarudzbaForma;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 10:   //  ProjekatZatvor.PodnesiZahtjev
+            case 10:   //  ProjekatZatvor.NarudzbeUpravnik
                 userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_PodnesiZahtjev;
+                userType.Activator = Activate_10_NarudzbeUpravnik;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 11:   //  ProjekatZatvor.PodnosenjeZahtjeva
+            case 11:   //  ProjekatZatvor.OtpustiRadnika
                 userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_PodnosenjeZahtjeva;
+                userType.Activator = Activate_11_OtpustiRadnika;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 12:   //  ProjekatZatvor.PrijemZatvorenika
+            case 12:   //  ProjekatZatvor.PocetnaZatvorenik
                 userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_12_PrijemZatvorenika;
+                userType.Activator = Activate_12_PocetnaZatvorenik;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 13:   //  ProjekatZatvor.PrikazZaliha
+            case 13:   //  ProjekatZatvor.PodnesiZahtjev
                 userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_13_PrikazZaliha;
+                userType.Activator = Activate_13_PodnesiZahtjev;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 14:   //  ProjekatZatvor.Strazar
+            case 14:   //  ProjekatZatvor.PodnosenjeZahtjeva
                 userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_14_Strazar;
+                userType.Activator = Activate_14_PodnosenjeZahtjeva;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 15:   //  ProjekatZatvor.strazarIzvjestaj
+            case 15:   //  ProjekatZatvor.Posjetioci
                 userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_15_strazarIzvjestaj;
+                userType.Activator = Activate_15_Posjetioci;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 16:   //  ProjekatZatvor.strazarRaspored
+            case 16:   //  ProjekatZatvor.PrijavaUKlub
                 userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_16_strazarRaspored;
+                userType.Activator = Activate_16_PrijavaUKlub;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 17:   //  ProjekatZatvor.UposlenikForme
+            case 17:   //  ProjekatZatvor.PrijemZatvorenika
                 userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_17_UposlenikForme;
+                userType.Activator = Activate_17_PrijemZatvorenika;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 18:   //  ProjekatZatvor.UpraviteljForme
+            case 18:   //  ProjekatZatvor.PrikazZaliha
                 userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_18_UpraviteljForme;
+                userType.Activator = Activate_18_PrikazZaliha;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 19:   //  ProjekatZatvor.Upravnik
+            case 19:   //  ProjekatZatvor.RasporedPosjeta
                 userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_19_Upravnik;
+                userType.Activator = Activate_19_RasporedPosjeta;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 20:   //  ProjekatZatvor.UpravnikRaspored
+            case 20:   //  ProjekatZatvor.RasporedTransporta
                 userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_20_UpravnikRaspored;
+                userType.Activator = Activate_20_RasporedTransporta;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 21:   //  ProjekatZatvor.ZahtjeviUposlenika
+            case 21:   //  ProjekatZatvor.Strazar
                 userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_21_ZahtjeviUposlenika;
+                userType.Activator = Activate_21_Strazar;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 22:   //  ProjekatZatvor.ZaposliRadnika
+            case 22:   //  ProjekatZatvor.strazarIzvjestaj
                 userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_22_ZaposliRadnika;
+                userType.Activator = Activate_22_strazarIzvjestaj;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 23:   //  ProjekatZatvor.strazarRaspored
+                userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_23_strazarRaspored;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 24:   //  ProjekatZatvor.UposlenikForme
+                userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_24_UposlenikForme;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 25:   //  ProjekatZatvor.UpraviteljForme
+                userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_25_UpraviteljForme;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 26:   //  ProjekatZatvor.Upravnik
+                userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_26_Upravnik;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 27:   //  ProjekatZatvor.UpravnikRaspored
+                userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_27_UpravnikRaspored;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 28:   //  ProjekatZatvor.Vozac
+                userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_28_Vozac;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 29:   //  ProjekatZatvor.ZahtjeviUposlenika
+                userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_29_ZahtjeviUposlenika;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 30:   //  ProjekatZatvor.ZahtjevZaOdlazakDoktoru
+                userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_30_ZahtjevZaOdlazakDoktoru;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 31:   //  ProjekatZatvor.ZahtjevZaPremjestaj
+                userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_31_ZahtjevZaPremjestaj;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 32:   //  ProjekatZatvor.ZaposliRadnika
+                userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_32_ZaposliRadnika;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 33:   //  ProjekatZatvor.Zatvorenik
+                userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_33_Zatvorenik;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

@@ -104,6 +104,12 @@
     <Compile Include="Finansije.xaml.cs">
       <DependentUpon>Finansije.xaml</DependentUpon>
     </Compile>
+    <Compile Include="KoordinatorPocetna.xaml.cs">
+      <DependentUpon>KoordinatorPocetna.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KoordinatorZaLjudskeResurse.xaml.cs">
+      <DependentUpon>KoordinatorZaLjudskeResurse.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
@@ -119,11 +125,20 @@
     <Compile Include="OtpustiRadnika.xaml.cs">
       <DependentUpon>OtpustiRadnika.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PocetnaZatvorenik.xaml.cs">
+      <DependentUpon>PocetnaZatvorenik.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PodnesiZahtjev.xaml.cs">
       <DependentUpon>PodnesiZahtjev.xaml</DependentUpon>
     </Compile>
     <Compile Include="PodnosenjeZahtjeva.xaml.cs">
       <DependentUpon>PodnosenjeZahtjeva.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Posjetioci.xaml.cs">
+      <DependentUpon>Posjetioci.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrijavaUKlub.xaml.cs">
+      <DependentUpon>PrijavaUKlub.xaml</DependentUpon>
     </Compile>
     <Compile Include="PrijemZatvorenika.xaml.cs">
       <DependentUpon>PrijemZatvorenika.xaml</DependentUpon>
@@ -132,6 +147,12 @@
       <DependentUpon>PrikazZaliha.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RasporedPosjeta.xaml.cs">
+      <DependentUpon>RasporedPosjeta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RasporedTransporta.xaml.cs">
+      <DependentUpon>RasporedTransporta.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Strazar.xaml.cs">
       <DependentUpon>Strazar.xaml</DependentUpon>
     </Compile>
@@ -153,11 +174,23 @@
     <Compile Include="UpravnikRaspored.xaml.cs">
       <DependentUpon>UpravnikRaspored.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Vozac.xaml.cs">
+      <DependentUpon>Vozac.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ZahtjeviUposlenika.xaml.cs">
       <DependentUpon>ZahtjeviUposlenika.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ZahtjevZaOdlazakDoktoru.xaml.cs">
+      <DependentUpon>ZahtjevZaOdlazakDoktoru.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZahtjevZaPremjestaj.xaml.cs">
+      <DependentUpon>ZahtjevZaPremjestaj.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ZaposliRadnika.xaml.cs">
       <DependentUpon>ZaposliRadnika.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Zatvorenik.xaml.cs">
+      <DependentUpon>Zatvorenik.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -168,16 +201,30 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\AdmissionIcon.PNG" />
+    <Content Include="Assets\back.jpg" />
+    <Content Include="Assets\book.jpg" />
+    <Content Include="Assets\cell.png" />
+    <Content Include="Assets\doktor.jpg" />
     <Content Include="Assets\finansije.jpg" />
     <Content Include="Assets\FireIcon.PNG" />
     <Content Include="Assets\HireIcon.JPG" />
     <Content Include="Assets\HireIcon.PNG" />
     <Content Include="Assets\Izvjestaj.png" />
+    <Content Include="Assets\koordinator.png" />
+    <Content Include="Assets\koverta.jpg" />
+    <Content Include="Assets\logout.png" />
+    <Content Include="Assets\logout1.png" />
     <Content Include="Assets\narudzbe.jpg" />
     <Content Include="Assets\OrderIcon.PNG" />
+    <Content Include="Assets\posjetilac.jpg" />
+    <Content Include="Assets\prisoner.jpg" />
     <Content Include="Assets\raspored.jpg" />
+    <Content Include="Assets\rasporedposjeta.jpg" />
+    <Content Include="Assets\rasporedtransporta.jpg" />
+    <Content Include="Assets\redback.jpg" />
     <Content Include="Assets\RequestIcon.PNG" />
     <Content Include="Assets\StockIcon.PNG" />
+    <Content Include="Assets\transport.jpg" />
     <Content Include="Assets\Zahtjev.jpg" />
     <Content Include="Assets\Zatvorenik2.JPG" />
     <Content Include="Properties\Default.rd.xml" />
@@ -206,6 +253,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="KoordinatorPocetna.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="KoordinatorZaLjudskeResurse.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="LoginPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -226,6 +281,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="PocetnaZatvorenik.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="PodnesiZahtjev.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -234,11 +293,27 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Posjetioci.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PrijavaUKlub.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="PrijemZatvorenika.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="PrikazZaliha.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RasporedPosjeta.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RasporedTransporta.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -270,11 +345,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Vozac.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="ZahtjeviUposlenika.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ZahtjevZaOdlazakDoktoru.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ZahtjevZaPremjestaj.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="ZaposliRadnika.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Zatvorenik.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
