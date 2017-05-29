@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="IznosPovecanja" />
+    <RootPropertyPathName Name="TrenutnoStanjeBudzeta" />
+    <RootPropertyPathName Name="Rashod" />
+    <RootPropertyPathName Name="Prihod" />
+    <RootPropertyPathName Name="IzvrsiNarudzbuCommand" />
+    <RootPropertyPathName Name="NovaNarudzba" />
+    <RootPropertyPathName Name="Kolicina" />
+    <RootPropertyPathName Name="NazivArtikla" />
+    <RootPropertyPathName Name="OdbijNarudzbuCommand" />
+    <RootPropertyPathName Name="OdobriNarudzbuCommand" />
+    <RootPropertyPathName Name="ListaNarudzbi" />
+    <RootPropertyPathName Name="OznacenaNarudzba" />
+    <RootPropertyPathName Name="textblock" />
+    <RootPropertyPathName Name="OtpustiRadnikaCommand" />
+    <RootPropertyPathName Name="OtpremninaString" />
+    <RootPropertyPathName Name="PrezimeRadnika" />
+    <RootPropertyPathName Name="ImeRadnika" />
+    <RootPropertyPathName Name="PodnesiZahtjevStrazarCommand" />
+    <RootPropertyPathName Name="DatumPovratka" />
+    <RootPropertyPathName Name="DatumOdlaska" />
+    <RootPropertyPathName Name="ListaBrojevaLicneKartePosjetilaca" />
+    <RootPropertyPathName Name="ListaGodistaPosjetilaca" />
+    <RootPropertyPathName Name="ListaPrezimenaPosjetilaca" />
+    <RootPropertyPathName Name="ListaImenaPosjetilaca" />
+    <RootPropertyPathName Name="PosaljiZahtjevZaPrijavuUKlubCommand" />
+    <RootPropertyPathName Name="OznaceniKlub" />
+    <RootPropertyPathName Name="ListaVrstaKlubova" />
+    <RootPropertyPathName Name="PasswordZatvorenika" />
+    <RootPropertyPathName Name="PrezimeZatvorenika" />
+    <RootPropertyPathName Name="ImeZatvorenika" />
+    <RootPropertyPathName Name="PrijemZatvorenikaCommand" />
+    <RootPropertyPathName Name="NoviZatvorenik" />
+    <RootPropertyPathName Name="Otpusten" />
+    <RootPropertyPathName Name="Primljen" />
+    <RootPropertyPathName Name="DatumRodjenja" />
+    <RootPropertyPathName Name="ListaCelija" />
+    <RootPropertyPathName Name="OznacenaCelija" />
+    <RootPropertyPathName Name="OptuzenZa" />
+    <RootPropertyPathName Name="Prezime" />
+    <RootPropertyPathName Name="Ime" />
+    <RootPropertyPathName Name="Jmbg" />
+    <RootPropertyPathName Name="ListaOdobrenihNarudzbi" />
+    <RootPropertyPathName Name="DodajPosjetuCommand" />
+    <RootPropertyPathName Name="TerminPosjete" />
+    <RootPropertyPathName Name="DatumPosjete" />
+    <RootPropertyPathName Name="BrojLicneKartePosjetioca" />
+    <RootPropertyPathName Name="PrezimePosjetioca" />
+    <RootPropertyPathName Name="ImePosjetioca" />
+    <RootPropertyPathName Name="ListaPosjetaString" />
+    <RootPropertyPathName Name="DodajVoznjuCommand" />
+    <RootPropertyPathName Name="DatumVoznje" />
+    <RootPropertyPathName Name="Odrediste" />
+    <RootPropertyPathName Name="OznaceniZatvorenik" />
+    <RootPropertyPathName Name="ListaZatvorenika" />
+    <RootPropertyPathName Name="OznaceniVozac" />
+    <RootPropertyPathName Name="ListaVozaca" />
+    <RootPropertyPathName Name="ListaVozacaVoznja" />
+    <RootPropertyPathName Name="ListaOdredistaVoznja" />
+    <RootPropertyPathName Name="ListaDatumaVoznja" />
+    <RootPropertyPathName Name="ListaZatvorenikaVoznja" />
+    <RootPropertyPathName Name="UkupanBrojPohvala" />
+    <RootPropertyPathName Name="UkupanBrojPrekrsaja" />
+    <RootPropertyPathName Name="CelijaZatvorenikaIzvjestaj" />
+    <RootPropertyPathName Name="PrezimeZatvorenikaIzvjestaj" />
+    <RootPropertyPathName Name="ImeZatvorenikaIzvjestaj" />
+    <RootPropertyPathName Name="PrijaviPrekrsajCommand" />
+    <RootPropertyPathName Name="TekstPrekrsaja" />
+    <RootPropertyPathName Name="ListaMjestaStrazara" />
+    <RootPropertyPathName Name="ListaVremenaStrazara" />
+    <RootPropertyPathName Name="ListaDatumaStrazara" />
+    <RootPropertyPathName Name="ListaCelijaZatvorenika" />
+    <RootPropertyPathName Name="ListaImenaStrazara" />
+    <RootPropertyPathName Name="BrojCelija" />
+    <RootPropertyPathName Name="BrojZatvorenika" />
+    <RootPropertyPathName Name="BrojZaposlenih" />
+    <RootPropertyPathName Name="OznacenoOdredisteVoznja" />
+    <RootPropertyPathName Name="ListaOdredistaVozac" />
+    <RootPropertyPathName Name="OznacenDatumVoznja" />
+    <RootPropertyPathName Name="ListaDatumaVozac" />
+    <RootPropertyPathName Name="OznacenZatvorenikVoznja" />
+    <RootPropertyPathName Name="ListaZatvorenikaVozac" />
+    <RootPropertyPathName Name="OznaciVoznjuUspjesnomCommand" />
+    <RootPropertyPathName Name="OdbijZahtjevCommand" />
+    <RootPropertyPathName Name="OdobriZahtjevCommand" />
+    <RootPropertyPathName Name="TekstMolbe" />
+    <RootPropertyPathName Name="ListaPrezimenaRadnikaNaDopustu" />
+    <RootPropertyPathName Name="ListaImenaRadnikaNaDopustu" />
+    <RootPropertyPathName Name="ListaZahtjevaZatvorenika" />
+    <RootPropertyPathName Name="OznaceniZahtjevZatvorenik" />
+    <RootPropertyPathName Name="ListaZahtjevaUposlenika" />
+    <RootPropertyPathName Name="OznaceniZahtjevUposlenik" />
+    <RootPropertyPathName Name="PosaljiZahtjevZaDoktoraCommand" />
+    <RootPropertyPathName Name="Molba" />
+    <RootPropertyPathName Name="PosaljiZahtjevZaPremjestajCommand" />
+    <RootPropertyPathName Name="ListaPozicija" />
+    <RootPropertyPathName Name="OznacenaPozicija" />
+    <RootPropertyPathName Name="NoviRadnik" />
+    <RootPropertyPathName Name="Zanimanje" />
+    <RootPropertyPathName Name="PlataText" />
+    <RootPropertyPathName Name="DodajNovogRadnikaCommand" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.Application">
+      <RootProperty Name="RequestedTheme" />
+      <RootProperty Name="Resources" />
+    </RootType>
+    <RootType FullName="ProjekatZatvor.DateTimeToDateTimeOffsetConverter" />
+    <RootType FullName="ProjekatZatvor.ViewModel.RadioButtonConvert" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetColumnSpan" />
+      <RootMethod Name="SetColumnSpan" />
+      <RootMethod Name="GetRowSpan" />
+      <RootMethod Name="SetRowSpan" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Inlines" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="TextAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="FontFamily" />
+      <RootEvent Name="SelectionChanged" />
+      <RootEvent Name="Tapped" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.FlipView">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Items" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Command" />
+      <RootProperty Name="Foreground" />
+      <RootEvent Name="Click" />
+      <RootEvent Name="Tapped" />
+    </RootType>
+    <RootType FullName="ProjekatZatvor.BlankPage1" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="InputScope" />
+      <RootProperty Name="Tag" />
+      <RootProperty Name="AcceptsReturn" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootEvent Name="SelectionChanged" />
+      <RootEvent Name="TextChanged" />
+      <RootEvent Name="TextChanging" />
+    </RootType>
+    <RootType FullName="ProjekatZatvor.detaljiONarudzbi" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Child" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="UpdateSourceTrigger" />
+      <RootProperty Name="Mode" />
+      <RootProperty Name="ElementName" />
+      <RootProperty Name="Converter" />
+    </RootType>
+    <RootType FullName="ProjekatZatvor.Finansije" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Source" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootEvent Name="Tapped" />
+    </RootType>
+    <RootType FullName="ProjekatZatvor.KoordinatorPocetna" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Frame">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
+      <RootProperty Name="Stretch" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.SplitView">
+      <RootProperty Name="Name" />
+      <RootProperty Name="PaneBackground" />
+      <RootProperty Name="DisplayMode" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="OpenPaneLength" />
+      <RootProperty Name="CompactPaneLength" />
+      <RootProperty Name="Pane" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="ProjekatZatvor.KoordinatorZaPosjeteITransportForma" />
+    <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="ProjekatZatvor.LoginPage" />
+    <RootType FullName="ProjekatZatvor.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="ProjekatZatvor.View.MobilnaApp" />
+    <RootType FullName="Windows.UI.Xaml.VisualStateManager">
+      <RootMethod Name="GetVisualStateGroups" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
+      <RootProperty Name="States" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualState">
+      <RootProperty Name="StateTriggers" />
+      <RootProperty Name="Setters" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.AdaptiveTrigger">
+      <RootProperty Name="MinWindowWidth" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Target" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="ProjekatZatvor.NarudzbaForma" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectedItem" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="BorderBrush" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
+    <RootType FullName="ProjekatZatvor.NarudzbeUpravnik" />
+    <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="ProjekatZatvor.Model.ClsNumTextTagIn" />
+    <RootType FullName="ProjekatZatvor.View.NumericTextBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="ProjekatZatvor.View.NumericUpDown">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Date" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="ProjekatZatvor.OtpustiRadnika" />
+    <RootType FullName="ProjekatZatvor.PocetnaZatvorenik" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
+      <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootEvent Name="Checked" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.CalendarView">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="ProjekatZatvor.PodnesiZahtjev" />
+    <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
+      <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="ProjekatZatvor.PodnosenjeZahtjeva" />
+    <RootType FullName="ProjekatZatvor.Posjetioci" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="SelectedValue" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="SelectedItem" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="ProjekatZatvor.PrijavaUKlub" />
+    <RootType FullName="ProjekatZatvor.PrijemZatvorenika" />
+    <RootType FullName="ProjekatZatvor.WelcomeUser">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="ProjekatZatvor.View.PrikazUserControle" />
+    <RootType FullName="ProjekatZatvor.PrikazZaliha" />
+    <RootType FullName="Windows.UI.Xaml.Documents.Bold">
+      <RootProperty Name="Inlines" />
+    </RootType>
+    <RootType FullName="ProjekatZatvor.RasporedPosjeta" />
+    <RootType FullName="ProjekatZatvor.RasporedTransporta" />
+    <RootType FullName="ProjekatZatvor.StrazarForma" />
+    <RootType FullName="Windows.UI.Xaml.Controls.CalendarDatePicker">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="ProjekatZatvor.strazarIzvjestaj" />
+    <RootType FullName="ProjekatZatvor.strazarRaspored" />
+    <RootType FullName="ProjekatZatvor.UposlenikForme" />
+    <RootType FullName="ProjekatZatvor.UpraviteljForme" />
+    <RootType FullName="ProjekatZatvor.UpravnikForma" />
+    <RootType FullName="ProjekatZatvor.UpravnikRaspored" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Maps.MapControl">
+      <RootProperty Name="Name" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="MapServiceToken" />
+    </RootType>
+    <RootType FullName="ProjekatZatvor.VozacForma" />
+    <RootType FullName="ProjekatZatvor.ZahtjeviUposlenika" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootMethod Name="GetHorizontalScrollBarVisibility" />
+      <RootMethod Name="SetHorizontalScrollBarVisibility" />
+    </RootType>
+    <RootType FullName="ProjekatZatvor.ZahtjevZaOdlazakDoktoru" />
+    <RootType FullName="ProjekatZatvor.ZahtjevZaPremjestaj" />
+    <RootType FullName="ProjekatZatvor.ZaposliRadnika" />
+    <RootType FullName="ProjekatZatvor.ZatvorenikForma" />
+    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
+      <RootProperty Name="Fill" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+    </RootType>
+  </Roots.RootTypes>
+</Roots>

@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Database" Label="Ooadbaza.db" Category="Database" Group="Expanded" />
+    <Node Id="Celija" Label="Celija" Category="Table" Group="Collapsed" />
+    <Node Id="Celija_CelijaId" Label="CelijaId" Category="Field Primary" Description="bigint" />
+    <Node Id="Celija_BrojCelije" Label="BrojCelije" Category="Field" Description="bigint" />
+    <Node Id="Celija_Pin" Label="Pin" Category="Field Optional" Description="text" />
+    <Node Id="Celija_StatusCelije" Label="StatusCelije" Category="Field" Description="bigint" />
+    <Node Id="Celija_UpraviteljZaLjudskeResurseId" Label="UpraviteljZaLjudskeResurseId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Doktor" Label="Doktor" Category="Table" Group="Collapsed" />
+    <Node Id="Doktor_DoktorId" Label="DoktorId" Category="Field Primary" Description="bigint" />
+    <Node Id="Doktor_BrojIskoristenihDopusta" Label="BrojIskoristenihDopusta" Category="Field" Description="bigint" />
+    <Node Id="Doktor_DatumRodjenja" Label="DatumRodjenja" Category="Field" Description="text" />
+    <Node Id="Doktor_Ime" Label="Ime" Category="Field Optional" Description="text" />
+    <Node Id="Doktor_Jmbg" Label="Jmbg" Category="Field Optional" Description="text" />
+    <Node Id="Doktor_NaDopustu" Label="NaDopustu" Category="Field" Description="bigint" />
+    <Node Id="Doktor_Pin" Label="Pin" Category="Field Optional" Description="text" />
+    <Node Id="Doktor_Plata" Label="Plata" Category="Field" Description="text" />
+    <Node Id="Doktor_Prezime" Label="Prezime" Category="Field Optional" Description="text" />
+    <Node Id="Doktor_RadnikId" Label="RadnikId" Category="Field" Description="bigint" />
+    <Node Id="Doktor_UposlenikId" Label="UposlenikId" Category="Field" Description="bigint" />
+    <Node Id="Doktor_Username" Label="Username" Category="Field Optional" Description="text" />
+    <Node Id="Doktor_Zanimanje" Label="Zanimanje" Category="Field Optional" Description="text" />
+    <Node Id="ElementRasporeda&lt;Posjetilac&gt;" Label="ElementRasporeda&lt;Posjetilac&gt;" Category="Table" Group="Collapsed" />
+    <Node Id="ElementRasporeda&lt;Posjetilac&gt;_Id" Label="Id" Category="Field Primary" Description="bigint" />
+    <Node Id="ElementRasporeda&lt;Posjetilac&gt;_Datum" Label="Datum" Category="Field" Description="text" />
+    <Node Id="ElementRasporeda&lt;Posjetilac&gt;_KoordinatorZaPosjeteITransportId" Label="KoordinatorZaPosjeteITransportId" Category="Field Foreign" Description="bigint" />
+    <Node Id="ElementRasporeda&lt;Posjetilac&gt;_Mjesto" Label="Mjesto" Category="Field Optional" Description="text" />
+    <Node Id="ElementRasporeda&lt;Posjetilac&gt;_TipRasporedaPosjetilacId" Label="TipRasporedaPosjetilacId" Category="Field Foreign" Description="bigint" />
+    <Node Id="ElementRasporeda&lt;Posjetilac&gt;_Vrijeme" Label="Vrijeme" Category="Field Optional" Description="text" />
+    <Node Id="ElementRasporeda&lt;Strazar&gt;" Label="ElementRasporeda&lt;Strazar&gt;" Category="Table" Group="Collapsed" />
+    <Node Id="ElementRasporeda&lt;Strazar&gt;_Id" Label="Id" Category="Field Primary" Description="bigint" />
+    <Node Id="ElementRasporeda&lt;Strazar&gt;_Datum" Label="Datum" Category="Field" Description="text" />
+    <Node Id="ElementRasporeda&lt;Strazar&gt;_Mjesto" Label="Mjesto" Category="Field Optional" Description="text" />
+    <Node Id="ElementRasporeda&lt;Strazar&gt;_NadzornikNadzornikId" Label="NadzornikNadzornikId" Category="Field Foreign" Description="bigint" />
+    <Node Id="ElementRasporeda&lt;Strazar&gt;_TipRasporedaStrazarId" Label="TipRasporedaStrazarId" Category="Field Foreign" Description="bigint" />
+    <Node Id="ElementRasporeda&lt;Strazar&gt;_Vrijeme" Label="Vrijeme" Category="Field Optional" Description="text" />
+    <Node Id="ElementRasporeda&lt;Vozac&gt;" Label="ElementRasporeda&lt;Vozac&gt;" Category="Table" Group="Collapsed" />
+    <Node Id="ElementRasporeda&lt;Vozac&gt;_Id" Label="Id" Category="Field Primary" Description="bigint" />
+    <Node Id="ElementRasporeda&lt;Vozac&gt;_Datum" Label="Datum" Category="Field" Description="text" />
+    <Node Id="ElementRasporeda&lt;Vozac&gt;_Mjesto" Label="Mjesto" Category="Field Optional" Description="text" />
+    <Node Id="ElementRasporeda&lt;Vozac&gt;_TipRasporedaVozacId" Label="TipRasporedaVozacId" Category="Field Foreign" Description="bigint" />
+    <Node Id="ElementRasporeda&lt;Vozac&gt;_Vrijeme" Label="Vrijeme" Category="Field Optional" Description="text" />
+    <Node Id="ElementRasporeda&lt;Voznja&gt;" Label="ElementRasporeda&lt;Voznja&gt;" Category="Table" Group="Collapsed" />
+    <Node Id="ElementRasporeda&lt;Voznja&gt;_Id" Label="Id" Category="Field Primary" Description="bigint" />
+    <Node Id="ElementRasporeda&lt;Voznja&gt;_Datum" Label="Datum" Category="Field" Description="text" />
+    <Node Id="ElementRasporeda&lt;Voznja&gt;_Mjesto" Label="Mjesto" Category="Field Optional" Description="text" />
+    <Node Id="ElementRasporeda&lt;Voznja&gt;_TipRasporedaVoznjaId" Label="TipRasporedaVoznjaId" Category="Field Foreign" Description="bigint" />
+    <Node Id="ElementRasporeda&lt;Voznja&gt;_Vrijeme" Label="Vrijeme" Category="Field Optional" Description="text" />
+    <Node Id="Izvjestaj" Label="Izvjestaj" Category="Table" Group="Collapsed" />
+    <Node Id="Izvjestaj_IzvjestajId" Label="IzvjestajId" Category="Field Primary" Description="bigint" />
+    <Node Id="Izvjestaj_StrazarStrazarId" Label="StrazarStrazarId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Izvjestaj_Tekst" Label="Tekst" Category="Field Optional" Description="text" />
+    <Node Id="Izvjestaj_TipIzvjestaja" Label="TipIzvjestaja" Category="Field" Description="bigint" />
+    <Node Id="Izvjestaj_ZatvorenikZatvorenikId" Label="ZatvorenikZatvorenikId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Klub" Label="Klub" Category="Table" Group="Collapsed" />
+    <Node Id="Klub_KlubId" Label="KlubId" Category="Field Primary" Description="bigint" />
+    <Node Id="Klub_BrojClanova" Label="BrojClanova" Category="Field" Description="bigint" />
+    <Node Id="Klub_ImeKluba" Label="ImeKluba" Category="Field" Description="bigint" />
+    <Node Id="Klub_StrazarKlubaStrazarId" Label="StrazarKlubaStrazarId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Klub_UpravnikKlubaUpravnikKlubaId" Label="UpravnikKlubaUpravnikKlubaId" Category="Field Foreign" Description="bigint" />
+    <Node Id="KoordinatorZaPosjeteITransport" Label="KoordinatorZaPosjeteITransport" Category="Table" Group="Collapsed" />
+    <Node Id="KoordinatorZaPosjeteITransport_Id" Label="Id" Category="Field Primary" Description="bigint" />
+    <Node Id="KoordinatorZaPosjeteITransport_BrojIskoristenihDopusta" Label="BrojIskoristenihDopusta" Category="Field" Description="bigint" />
+    <Node Id="KoordinatorZaPosjeteITransport_DatumRodjenja" Label="DatumRodjenja" Category="Field" Description="text" />
+    <Node Id="KoordinatorZaPosjeteITransport_Ime" Label="Ime" Category="Field Optional" Description="text" />
+    <Node Id="KoordinatorZaPosjeteITransport_Jmbg" Label="Jmbg" Category="Field Optional" Description="text" />
+    <Node Id="KoordinatorZaPosjeteITransport_NaDopustu" Label="NaDopustu" Category="Field" Description="bigint" />
+    <Node Id="KoordinatorZaPosjeteITransport_Pin" Label="Pin" Category="Field Optional" Description="text" />
+    <Node Id="KoordinatorZaPosjeteITransport_Plata" Label="Plata" Category="Field" Description="text" />
+    <Node Id="KoordinatorZaPosjeteITransport_Prezime" Label="Prezime" Category="Field Optional" Description="text" />
+    <Node Id="KoordinatorZaPosjeteITransport_RadnikId" Label="RadnikId" Category="Field" Description="bigint" />
+    <Node Id="KoordinatorZaPosjeteITransport_Username" Label="Username" Category="Field Optional" Description="text" />
+    <Node Id="KoordinatorZaPosjeteITransport_Zanimanje" Label="Zanimanje" Category="Field Optional" Description="text" />
+    <Node Id="Kuhar" Label="Kuhar" Category="Table" Group="Collapsed" />
+    <Node Id="Kuhar_KuharId" Label="KuharId" Category="Field Primary" Description="bigint" />
+    <Node Id="Kuhar_BrojIskoristenihDopusta" Label="BrojIskoristenihDopusta" Category="Field" Description="bigint" />
+    <Node Id="Kuhar_DatumRodjenja" Label="DatumRodjenja" Category="Field" Description="text" />
+    <Node Id="Kuhar_Ime" Label="Ime" Category="Field Optional" Description="text" />
+    <Node Id="Kuhar_Jmbg" Label="Jmbg" Category="Field Optional" Description="text" />
+    <Node Id="Kuhar_NaDopustu" Label="NaDopustu" Category="Field" Description="bigint" />
+    <Node Id="Kuhar_Pin" Label="Pin" Category="Field Optional" Description="text" />
+    <Node Id="Kuhar_Plata" Label="Plata" Category="Field" Description="text" />
+    <Node Id="Kuhar_Prezime" Label="Prezime" Category="Field Optional" Description="text" />
+    <Node Id="Kuhar_RadnikId" Label="RadnikId" Category="Field" Description="bigint" />
+    <Node Id="Kuhar_UposlenikId" Label="UposlenikId" Category="Field" Description="bigint" />
+    <Node Id="Kuhar_Username" Label="Username" Category="Field Optional" Description="text" />
+    <Node Id="Kuhar_Zanimanje" Label="Zanimanje" Category="Field Optional" Description="text" />
+    <Node Id="LoginPodaci" Label="LoginPodaci" Category="Table" Group="Collapsed" />
+    <Node Id="LoginPodaci_LoginPodaciId" Label="LoginPodaciId" Category="Field Primary" Description="bigint" />
+    <Node Id="LoginPodaci_Password" Label="Password" Category="Field Optional" Description="text" />
+    <Node Id="LoginPodaci_Username" Label="Username" Category="Field Optional" Description="text" />
+    <Node Id="Nadzornik" Label="Nadzornik" Category="Table" Group="Collapsed" />
+    <Node Id="Nadzornik_NadzornikId" Label="NadzornikId" Category="Field Primary" Description="bigint" />
+    <Node Id="Nadzornik_DatumRodjenja" Label="DatumRodjenja" Category="Field" Description="text" />
+    <Node Id="Nadzornik_Ime" Label="Ime" Category="Field Optional" Description="text" />
+    <Node Id="Nadzornik_Jmbg" Label="Jmbg" Category="Field Optional" Description="text" />
+    <Node Id="Nadzornik_Pin" Label="Pin" Category="Field Optional" Description="text" />
+    <Node Id="Nadzornik_Plata" Label="Plata" Category="Field" Description="text" />
+    <Node Id="Nadzornik_Prezime" Label="Prezime" Category="Field Optional" Description="text" />
+    <Node Id="Nadzornik_Username" Label="Username" Category="Field Optional" Description="text" />
+    <Node Id="Narudzba" Label="Narudzba" Category="Table" Group="Collapsed" />
+    <Node Id="Narudzba_NarudzbaId" Label="NarudzbaId" Category="Field Primary" Description="bigint" />
+    <Node Id="Narudzba_Cijena" Label="Cijena" Category="Field" Description="text" />
+    <Node Id="Narudzba_Kolicina" Label="Kolicina" Category="Field" Description="bigint" />
+    <Node Id="Narudzba_NazivArtikla" Label="NazivArtikla" Category="Field Optional" Description="text" />
+    <Node Id="Narudzba_Odobreno" Label="Odobreno" Category="Field" Description="bigint" />
+    <Node Id="Narudzba_UpravnikUpravnikId" Label="UpravnikUpravnikId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Posjetilac" Label="Posjetilac" Category="Table" Group="Collapsed" />
+    <Node Id="Posjetilac_PosjetilacId" Label="PosjetilacId" Category="Field Primary" Description="bigint" />
+    <Node Id="Posjetilac_BrojLicneKarte" Label="BrojLicneKarte" Category="Field Optional" Description="text" />
+    <Node Id="Posjetilac_Ime" Label="Ime" Category="Field Optional" Description="text" />
+    <Node Id="Posjetilac_KoordinatorZaPosjeteITransportId" Label="KoordinatorZaPosjeteITransportId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Posjetilac_Prezime" Label="Prezime" Category="Field Optional" Description="text" />
+    <Node Id="Prekrsaj" Label="Prekrsaj" Category="Table" Group="Collapsed" />
+    <Node Id="Prekrsaj_PrekrsajId" Label="PrekrsajId" Category="Field Primary" Description="bigint" />
+    <Node Id="Prekrsaj_Opis" Label="Opis" Category="Field Optional" Description="text" />
+    <Node Id="Prekrsaj_PocinilacPrekrsajaZatvorenikId" Label="PocinilacPrekrsajaZatvorenikId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Prekrsaj_Tip" Label="Tip" Category="Field Optional" Description="text" />
+    <Node Id="Radnik" Label="Radnik" Category="Table" Group="Collapsed" />
+    <Node Id="Radnik_RadnikId" Label="RadnikId" Category="Field Primary" Description="bigint" />
+    <Node Id="Radnik_BrojIskoristenihDopusta" Label="BrojIskoristenihDopusta" Category="Field" Description="bigint" />
+    <Node Id="Radnik_DatumRodjenja" Label="DatumRodjenja" Category="Field" Description="text" />
+    <Node Id="Radnik_Ime" Label="Ime" Category="Field Optional" Description="text" />
+    <Node Id="Radnik_Jmbg" Label="Jmbg" Category="Field Optional" Description="text" />
+    <Node Id="Radnik_NaDopustu" Label="NaDopustu" Category="Field" Description="bigint" />
+    <Node Id="Radnik_Pin" Label="Pin" Category="Field Optional" Description="text" />
+    <Node Id="Radnik_Plata" Label="Plata" Category="Field" Description="text" />
+    <Node Id="Radnik_Prezime" Label="Prezime" Category="Field Optional" Description="text" />
+    <Node Id="Radnik_UpraviteljZaLjudskeResurseId" Label="UpraviteljZaLjudskeResurseId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Radnik_UpravnikUpravnikId" Label="UpravnikUpravnikId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Radnik_Username" Label="Username" Category="Field Optional" Description="text" />
+    <Node Id="Radnik_Zanimanje" Label="Zanimanje" Category="Field Optional" Description="text" />
+    <Node Id="SmrtnaKazna" Label="SmrtnaKazna" Category="Table" Group="Collapsed" />
+    <Node Id="SmrtnaKazna_SmrtnaKaznaId" Label="SmrtnaKaznaId" Category="Field Primary" Description="bigint" />
+    <Node Id="SmrtnaKazna_Mjesto" Label="Mjesto" Category="Field Optional" Description="text" />
+    <Node Id="SmrtnaKazna_PosljednjaZelja" Label="PosljednjaZelja" Category="Field Optional" Description="text" />
+    <Node Id="SmrtnaKazna_Vrijeme" Label="Vrijeme" Category="Field" Description="text" />
+    <Node Id="Strazar" Label="Strazar" Category="Table" Group="Collapsed" />
+    <Node Id="Strazar_StrazarId" Label="StrazarId" Category="Field Primary" Description="bigint" />
+    <Node Id="Strazar_BrojIskoristenihDopusta" Label="BrojIskoristenihDopusta" Category="Field" Description="bigint" />
+    <Node Id="Strazar_DatumRodjenja" Label="DatumRodjenja" Category="Field" Description="text" />
+    <Node Id="Strazar_Ime" Label="Ime" Category="Field Optional" Description="text" />
+    <Node Id="Strazar_Jmbg" Label="Jmbg" Category="Field Optional" Description="text" />
+    <Node Id="Strazar_NaDopustu" Label="NaDopustu" Category="Field" Description="bigint" />
+    <Node Id="Strazar_NadzornikNadzornikId" Label="NadzornikNadzornikId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Strazar_Pin" Label="Pin" Category="Field Optional" Description="text" />
+    <Node Id="Strazar_Plata" Label="Plata" Category="Field" Description="text" />
+    <Node Id="Strazar_Prezime" Label="Prezime" Category="Field Optional" Description="text" />
+    <Node Id="Strazar_RadnikId" Label="RadnikId" Category="Field" Description="bigint" />
+    <Node Id="Strazar_Username" Label="Username" Category="Field Optional" Description="text" />
+    <Node Id="Strazar_Zanimanje" Label="Zanimanje" Category="Field Optional" Description="text" />
+    <Node Id="Uposlenik" Label="Uposlenik" Category="Table" Group="Collapsed" />
+    <Node Id="Uposlenik_UposlenikId" Label="UposlenikId" Category="Field Primary" Description="bigint" />
+    <Node Id="Uposlenik_BrojIskoristenihDopusta" Label="BrojIskoristenihDopusta" Category="Field" Description="bigint" />
+    <Node Id="Uposlenik_DatumRodjenja" Label="DatumRodjenja" Category="Field" Description="text" />
+    <Node Id="Uposlenik_Ime" Label="Ime" Category="Field Optional" Description="text" />
+    <Node Id="Uposlenik_Jmbg" Label="Jmbg" Category="Field Optional" Description="text" />
+    <Node Id="Uposlenik_NaDopustu" Label="NaDopustu" Category="Field" Description="bigint" />
+    <Node Id="Uposlenik_Pin" Label="Pin" Category="Field Optional" Description="text" />
+    <Node Id="Uposlenik_Plata" Label="Plata" Category="Field" Description="text" />
+    <Node Id="Uposlenik_Prezime" Label="Prezime" Category="Field Optional" Description="text" />
+    <Node Id="Uposlenik_RadnikId" Label="RadnikId" Category="Field" Description="bigint" />
+    <Node Id="Uposlenik_Username" Label="Username" Category="Field Optional" Description="text" />
+    <Node Id="Uposlenik_Zanimanje" Label="Zanimanje" Category="Field Optional" Description="text" />
+    <Node Id="UpraviteljZaLjudskeResurse" Label="UpraviteljZaLjudskeResurse" Category="Table" Group="Collapsed" />
+    <Node Id="UpraviteljZaLjudskeResurse_Id" Label="Id" Category="Field Primary" Description="bigint" />
+    <Node Id="UpraviteljZaLjudskeResurse_DatumRodjenja" Label="DatumRodjenja" Category="Field" Description="text" />
+    <Node Id="UpraviteljZaLjudskeResurse_Ime" Label="Ime" Category="Field Optional" Description="text" />
+    <Node Id="UpraviteljZaLjudskeResurse_Jmbg" Label="Jmbg" Category="Field Optional" Description="text" />
+    <Node Id="UpraviteljZaLjudskeResurse_Pin" Label="Pin" Category="Field Optional" Description="text" />
+    <Node Id="UpraviteljZaLjudskeResurse_Plata" Label="Plata" Category="Field" Description="text" />
+    <Node Id="UpraviteljZaLjudskeResurse_Prezime" Label="Prezime" Category="Field Optional" Description="text" />
+    <Node Id="UpraviteljZaLjudskeResurse_Username" Label="Username" Category="Field Optional" Description="text" />
+    <Node Id="Upravnik" Label="Upravnik" Category="Table" Group="Collapsed" />
+    <Node Id="Upravnik_UpravnikId" Label="UpravnikId" Category="Field Primary" Description="bigint" />
+    <Node Id="Upravnik_Budzet" Label="Budzet" Category="Field" Description="text" />
+    <Node Id="Upravnik_DatumRodjenja" Label="DatumRodjenja" Category="Field" Description="text" />
+    <Node Id="Upravnik_Ime" Label="Ime" Category="Field Optional" Description="text" />
+    <Node Id="Upravnik_Jmbg" Label="Jmbg" Category="Field Optional" Description="text" />
+    <Node Id="Upravnik_Pin" Label="Pin" Category="Field Optional" Description="text" />
+    <Node Id="Upravnik_Plata" Label="Plata" Category="Field" Description="text" />
+    <Node Id="Upravnik_Prezime" Label="Prezime" Category="Field Optional" Description="text" />
+    <Node Id="Upravnik_Prihod" Label="Prihod" Category="Field" Description="text" />
+    <Node Id="Upravnik_Rashod" Label="Rashod" Category="Field" Description="text" />
+    <Node Id="Upravnik_Usermane" Label="Usermane" Category="Field Optional" Description="text" />
+    <Node Id="Upravnik_loginLoginPodaciId" Label="loginLoginPodaciId" Category="Field Foreign" Description="bigint" />
+    <Node Id="UpravnikKluba" Label="UpravnikKluba" Category="Table" Group="Collapsed" />
+    <Node Id="UpravnikKluba_UpravnikKlubaId" Label="UpravnikKlubaId" Category="Field Primary" Description="bigint" />
+    <Node Id="UpravnikKluba_BrojIskoristenihDopusta" Label="BrojIskoristenihDopusta" Category="Field" Description="bigint" />
+    <Node Id="UpravnikKluba_DatumRodjenja" Label="DatumRodjenja" Category="Field" Description="text" />
+    <Node Id="UpravnikKluba_Ime" Label="Ime" Category="Field Optional" Description="text" />
+    <Node Id="UpravnikKluba_Jmbg" Label="Jmbg" Category="Field Optional" Description="text" />
+    <Node Id="UpravnikKluba_NaDopustu" Label="NaDopustu" Category="Field" Description="bigint" />
+    <Node Id="UpravnikKluba_Pin" Label="Pin" Category="Field Optional" Description="text" />
+    <Node Id="UpravnikKluba_Plata" Label="Plata" Category="Field" Description="text" />
+    <Node Id="UpravnikKluba_Prezime" Label="Prezime" Category="Field Optional" Description="text" />
+    <Node Id="UpravnikKluba_RadnikId" Label="RadnikId" Category="Field" Description="bigint" />
+    <Node Id="UpravnikKluba_Username" Label="Username" Category="Field Optional" Description="text" />
+    <Node Id="UpravnikKluba_Zanimanje" Label="Zanimanje" Category="Field Optional" Description="text" />
+    <Node Id="Vozac" Label="Vozac" Category="Table" Group="Collapsed" />
+    <Node Id="Vozac_VozacId" Label="VozacId" Category="Field Primary" Description="bigint" />
+    <Node Id="Vozac_BrojIskoristenihDopusta" Label="BrojIskoristenihDopusta" Category="Field" Description="bigint" />
+    <Node Id="Vozac_DatumRodjenja" Label="DatumRodjenja" Category="Field" Description="text" />
+    <Node Id="Vozac_Ime" Label="Ime" Category="Field Optional" Description="text" />
+    <Node Id="Vozac_Jmbg" Label="Jmbg" Category="Field Optional" Description="text" />
+    <Node Id="Vozac_KoordinatorZaPosjeteITransportId" Label="KoordinatorZaPosjeteITransportId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Vozac_NaDopustu" Label="NaDopustu" Category="Field" Description="bigint" />
+    <Node Id="Vozac_Pin" Label="Pin" Category="Field Optional" Description="text" />
+    <Node Id="Vozac_Plata" Label="Plata" Category="Field" Description="text" />
+    <Node Id="Vozac_Prezime" Label="Prezime" Category="Field Optional" Description="text" />
+    <Node Id="Vozac_RadnikId" Label="RadnikId" Category="Field" Description="bigint" />
+    <Node Id="Vozac_Username" Label="Username" Category="Field Optional" Description="text" />
+    <Node Id="Vozac_Zanimanje" Label="Zanimanje" Category="Field Optional" Description="text" />
+    <Node Id="Voznja" Label="Voznja" Category="Table" Group="Collapsed" />
+    <Node Id="Voznja_VoznjaId" Label="VoznjaId" Category="Field Primary" Description="bigint" />
+    <Node Id="Voznja_KoordinatorZaPosjeteITransportId" Label="KoordinatorZaPosjeteITransportId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Voznja_Mjesto" Label="Mjesto" Category="Field Optional" Description="text" />
+    <Node Id="Voznja_TerminId" Label="TerminId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Voznja_UspjesnaVoznja" Label="UspjesnaVoznja" Category="Field" Description="bigint" />
+    <Node Id="Voznja_VozacVozacId" Label="VozacVozacId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Voznja_ZatvorenikZatvorenikId" Label="ZatvorenikZatvorenikId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Zahtjev&lt;Radnik&gt;" Label="Zahtjev&lt;Radnik&gt;" Category="Table" Group="Collapsed" />
+    <Node Id="Zahtjev&lt;Radnik&gt;_Id" Label="Id" Category="Field Primary" Description="bigint" />
+    <Node Id="Zahtjev&lt;Radnik&gt;_JeLiOdobren" Label="JeLiOdobren" Category="Field" Description="bigint" />
+    <Node Id="Zahtjev&lt;Radnik&gt;_Naziv" Label="Naziv" Category="Field Optional" Description="text" />
+    <Node Id="Zahtjev&lt;Radnik&gt;_PosiljalacRadnikId" Label="PosiljalacRadnikId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Zahtjev&lt;Radnik&gt;_TekstMolbe" Label="TekstMolbe" Category="Field Optional" Description="text" />
+    <Node Id="Zahtjev&lt;Radnik&gt;_UpravnikUpravnikId" Label="UpravnikUpravnikId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Zahtjev&lt;Zatvorenik&gt;" Label="Zahtjev&lt;Zatvorenik&gt;" Category="Table" Group="Collapsed" />
+    <Node Id="Zahtjev&lt;Zatvorenik&gt;_Id" Label="Id" Category="Field Primary" Description="bigint" />
+    <Node Id="Zahtjev&lt;Zatvorenik&gt;_JeLiOdobren" Label="JeLiOdobren" Category="Field" Description="bigint" />
+    <Node Id="Zahtjev&lt;Zatvorenik&gt;_Naziv" Label="Naziv" Category="Field Optional" Description="text" />
+    <Node Id="Zahtjev&lt;Zatvorenik&gt;_PosiljalacZatvorenikId" Label="PosiljalacZatvorenikId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Zahtjev&lt;Zatvorenik&gt;_TekstMolbe" Label="TekstMolbe" Category="Field Optional" Description="text" />
+    <Node Id="Zahtjev&lt;Zatvorenik&gt;_UpravnikUpravnikId" Label="UpravnikUpravnikId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Zaliha" Label="Zaliha" Category="Table" Group="Collapsed" />
+    <Node Id="Zaliha_ZalihaId" Label="ZalihaId" Category="Field Primary" Description="bigint" />
+    <Node Id="Zaliha_DoktorDoktorId" Label="DoktorDoktorId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Zaliha_Kolicina" Label="Kolicina" Category="Field" Description="bigint" />
+    <Node Id="Zaliha_KuharKuharId" Label="KuharKuharId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Zaliha_Naziv" Label="Naziv" Category="Field Optional" Description="text" />
+    <Node Id="Zaliha_TipZalihe" Label="TipZalihe" Category="Field" Description="bigint" />
+    <Node Id="Zaliha_UposlenikUposlenikId" Label="UposlenikUposlenikId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Zatvorenik" Label="Zatvorenik" Category="Table" Group="Collapsed" />
+    <Node Id="Zatvorenik_ZatvorenikId" Label="ZatvorenikId" Category="Field Primary" Description="bigint" />
+    <Node Id="Zatvorenik_DatumRodjenja" Label="DatumRodjenja" Category="Field" Description="text" />
+    <Node Id="Zatvorenik_DoktorDoktorId" Label="DoktorDoktorId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Zatvorenik_Ime" Label="Ime" Category="Field Optional" Description="text" />
+    <Node Id="Zatvorenik_Jmbg" Label="Jmbg" Category="Field Optional" Description="text" />
+    <Node Id="Zatvorenik_KoordinatorZaPosjeteITransportId" Label="KoordinatorZaPosjeteITransportId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Zatvorenik_OptuzenZa" Label="OptuzenZa" Category="Field Optional" Description="text" />
+    <Node Id="Zatvorenik_Otpusten" Label="Otpusten" Category="Field" Description="text" />
+    <Node Id="Zatvorenik_Pin" Label="Pin" Category="Field Optional" Description="text" />
+    <Node Id="Zatvorenik_PinZaKlub" Label="PinZaKlub" Category="Field Optional" Description="text" />
+    <Node Id="Zatvorenik_Prezime" Label="Prezime" Category="Field Optional" Description="text" />
+    <Node Id="Zatvorenik_Primljen" Label="Primljen" Category="Field" Description="text" />
+    <Node Id="Zatvorenik_SmrtnaKaznaSmrtnaKaznaId" Label="SmrtnaKaznaSmrtnaKaznaId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Zatvorenik_StrazarStrazarId" Label="StrazarStrazarId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Zatvorenik_UpraviteljZaLjudskeResurseId" Label="UpraviteljZaLjudskeResurseId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Zatvorenik_UpravnikKlubaUpravnikKlubaId" Label="UpravnikKlubaUpravnikKlubaId" Category="Field Foreign" Description="bigint" />
+    <Node Id="Zatvorenik_UpravnikKlubaUpravnikKlubaId1" Label="UpravnikKlubaUpravnikKlubaId1" Category="Field Foreign" Description="bigint" />
+    <Node Id="Zatvorenik_UpravnikUpravnikId" Label="UpravnikUpravnikId" Category="Field Foreign" Description="bigint" />
+  </Nodes>
+  <Links>
+    <Link Source="Database" Target="Celija" Category="Contains" />
+    <Link Source="Celija" Target="Celija_CelijaId" Category="Contains" />
+    <Link Source="Celija" Target="Celija_BrojCelije" Category="Contains" />
+    <Link Source="Celija" Target="Celija_Pin" Category="Contains" />
+    <Link Source="Celija" Target="Celija_StatusCelije" Category="Contains" />
+    <Link Source="Celija" Target="Celija_UpraviteljZaLjudskeResurseId" Category="Contains" />
+    <Link Source="Celija_UpraviteljZaLjudskeResurseId" Target="UpraviteljZaLjudskeResurse_Id" Label="FK_Celija_0_0" Category="Foreign Key" />
+    <Link Source="Database" Target="Doktor" Category="Contains" />
+    <Link Source="Doktor" Target="Doktor_DoktorId" Category="Contains" />
+    <Link Source="Doktor" Target="Doktor_BrojIskoristenihDopusta" Category="Contains" />
+    <Link Source="Doktor" Target="Doktor_DatumRodjenja" Category="Contains" />
+    <Link Source="Doktor" Target="Doktor_Ime" Category="Contains" />
+    <Link Source="Doktor" Target="Doktor_Jmbg" Category="Contains" />
+    <Link Source="Doktor" Target="Doktor_NaDopustu" Category="Contains" />
+    <Link Source="Doktor" Target="Doktor_Pin" Category="Contains" />
+    <Link Source="Doktor" Target="Doktor_Plata" Category="Contains" />
+    <Link Source="Doktor" Target="Doktor_Prezime" Category="Contains" />
+    <Link Source="Doktor" Target="Doktor_RadnikId" Category="Contains" />
+    <Link Source="Doktor" Target="Doktor_UposlenikId" Category="Contains" />
+    <Link Source="Doktor" Target="Doktor_Username" Category="Contains" />
+    <Link Source="Doktor" Target="Doktor_Zanimanje" Category="Contains" />
+    <Link Source="Database" Target="ElementRasporeda&lt;Posjetilac&gt;" Category="Contains" />
+    <Link Source="ElementRasporeda&lt;Posjetilac&gt;" Target="ElementRasporeda&lt;Posjetilac&gt;_Id" Category="Contains" />
+    <Link Source="ElementRasporeda&lt;Posjetilac&gt;" Target="ElementRasporeda&lt;Posjetilac&gt;_Datum" Category="Contains" />
+    <Link Source="ElementRasporeda&lt;Posjetilac&gt;" Target="ElementRasporeda&lt;Posjetilac&gt;_KoordinatorZaPosjeteITransportId" Category="Contains" />
+    <Link Source="ElementRasporeda&lt;Posjetilac&gt;" Target="ElementRasporeda&lt;Posjetilac&gt;_Mjesto" Category="Contains" />
+    <Link Source="ElementRasporeda&lt;Posjetilac&gt;" Target="ElementRasporeda&lt;Posjetilac&gt;_TipRasporedaPosjetilacId" Category="Contains" />
+    <Link Source="ElementRasporeda&lt;Posjetilac&gt;" Target="ElementRasporeda&lt;Posjetilac&gt;_Vrijeme" Category="Contains" />
+    <Link Source="ElementRasporeda&lt;Posjetilac&gt;_TipRasporedaPosjetilacId" Target="Posjetilac_PosjetilacId" Label="FK_ElementRasporeda&lt;Posjetilac&gt;_0_0" Category="Foreign Key" />
+    <Link Source="ElementRasporeda&lt;Posjetilac&gt;_KoordinatorZaPosjeteITransportId" Target="KoordinatorZaPosjeteITransport_Id" Label="FK_ElementRasporeda&lt;Posjetilac&gt;_1_0" Category="Foreign Key" />
+    <Link Source="Database" Target="ElementRasporeda&lt;Strazar&gt;" Category="Contains" />
+    <Link Source="ElementRasporeda&lt;Strazar&gt;" Target="ElementRasporeda&lt;Strazar&gt;_Id" Category="Contains" />
+    <Link Source="ElementRasporeda&lt;Strazar&gt;" Target="ElementRasporeda&lt;Strazar&gt;_Datum" Category="Contains" />
+    <Link Source="ElementRasporeda&lt;Strazar&gt;" Target="ElementRasporeda&lt;Strazar&gt;_Mjesto" Category="Contains" />
+    <Link Source="ElementRasporeda&lt;Strazar&gt;" Target="ElementRasporeda&lt;Strazar&gt;_NadzornikNadzornikId" Category="Contains" />
+    <Link Source="ElementRasporeda&lt;Strazar&gt;" Target="ElementRasporeda&lt;Strazar&gt;_TipRasporedaStrazarId" Category="Contains" />
+    <Link Source="ElementRasporeda&lt;Strazar&gt;" Target="ElementRasporeda&lt;Strazar&gt;_Vrijeme" Category="Contains" />
+    <Link Source="ElementRasporeda&lt;Strazar&gt;_TipRasporedaStrazarId" Target="Strazar_StrazarId" Label="FK_ElementRasporeda&lt;Strazar&gt;_0_0" Category="Foreign Key" />
+    <Link Source="ElementRasporeda&lt;Strazar&gt;_NadzornikNadzornikId" Target="Nadzornik_NadzornikId" Label="FK_ElementRasporeda&lt;Strazar&gt;_1_0" Category="Foreign Key" />
+    <Link Source="Database" Target="ElementRasporeda&lt;Vozac&gt;" Category="Contains" />
+    <Link Source="ElementRasporeda&lt;Vozac&gt;" Target="ElementRasporeda&lt;Vozac&gt;_Id" Category="Contains" />
+    <Link Source="ElementRasporeda&lt;Vozac&gt;" Target="ElementRasporeda&lt;Vozac&gt;_Datum" Category="Contains" />
+    <Link Source="ElementRasporeda&lt;Vozac&gt;" Target="ElementRasporeda&lt;Vozac&gt;_Mjesto" Category="Contains" />
+    <Link Source="ElementRasporeda&lt;Vozac&gt;" Target="ElementRasporeda&lt;Vozac&gt;_TipRasporedaVozacId" Category="Contains" />
+    <Link Source="ElementRasporeda&lt;Vozac&gt;" Target="ElementRasporeda&lt;Vozac&gt;_Vrijeme" Category="Contains" />
+    <Link Source="ElementRasporeda&lt;Vozac&gt;_TipRasporedaVozacId" Target="Vozac_VozacId" Label="FK_ElementRasporeda&lt;Vozac&gt;_0_0" Category="Foreign Key" />
+    <Link Source="Database" Target="ElementRasporeda&lt;Voznja&gt;" Category="Contains" />
+    <Link Source="ElementRasporeda&lt;Voznja&gt;" Target="ElementRasporeda&lt;Voznja&gt;_Id" Category="Contains" />
+    <Link Source="ElementRasporeda&lt;Voznja&gt;" Target="ElementRasporeda&lt;Voznja&gt;_Datum" Category="Contains" />
+    <Link Source="ElementRasporeda&lt;Voznja&gt;" Target="ElementRasporeda&lt;Voznja&gt;_Mjesto" Category="Contains" />
+    <Link Source="ElementRasporeda&lt;Voznja&gt;" Target="ElementRasporeda&lt;Voznja&gt;_TipRasporedaVoznjaId" Category="Contains" />
+    <Link Source="ElementRasporeda&lt;Voznja&gt;" Target="ElementRasporeda&lt;Voznja&gt;_Vrijeme" Category="Contains" />
+    <Link Source="ElementRasporeda&lt;Voznja&gt;_TipRasporedaVoznjaId" Target="Voznja_VoznjaId" Label="FK_ElementRasporeda&lt;Voznja&gt;_0_0" Category="Foreign Key" />
+    <Link Source="Database" Target="Izvjestaj" Category="Contains" />
+    <Link Source="Izvjestaj" Target="Izvjestaj_IzvjestajId" Category="Contains" />
+    <Link Source="Izvjestaj" Target="Izvjestaj_StrazarStrazarId" Category="Contains" />
+    <Link Source="Izvjestaj" Target="Izvjestaj_Tekst" Category="Contains" />
+    <Link Source="Izvjestaj" Target="Izvjestaj_TipIzvjestaja" Category="Contains" />
+    <Link Source="Izvjestaj" Target="Izvjestaj_ZatvorenikZatvorenikId" Category="Contains" />
+    <Link Source="Izvjestaj_ZatvorenikZatvorenikId" Target="Zatvorenik_ZatvorenikId" Label="FK_Izvjestaj_0_0" Category="Foreign Key" />
+    <Link Source="Izvjestaj_StrazarStrazarId" Target="Strazar_StrazarId" Label="FK_Izvjestaj_1_0" Category="Foreign Key" />
+    <Link Source="Database" Target="Klub" Category="Contains" />
+    <Link Source="Klub" Target="Klub_KlubId" Category="Contains" />
+    <Link Source="Klub" Target="Klub_BrojClanova" Category="Contains" />
+    <Link Source="Klub" Target="Klub_ImeKluba" Category="Contains" />
+    <Link Source="Klub" Target="Klub_StrazarKlubaStrazarId" Category="Contains" />
+    <Link Source="Klub" Target="Klub_UpravnikKlubaUpravnikKlubaId" Category="Contains" />
+    <Link Source="Klub_UpravnikKlubaUpravnikKlubaId" Target="UpravnikKluba_UpravnikKlubaId" Label="FK_Klub_0_0" Category="Foreign Key" />
+    <Link Source="Klub_StrazarKlubaStrazarId" Target="Strazar_StrazarId" Label="FK_Klub_1_0" Category="Foreign Key" />
+    <Link Source="Database" Target="KoordinatorZaPosjeteITransport" Category="Contains" />
+    <Link Source="KoordinatorZaPosjeteITransport" Target="KoordinatorZaPosjeteITransport_Id" Category="Contains" />
+    <Link Source="KoordinatorZaPosjeteITransport" Target="KoordinatorZaPosjeteITransport_BrojIskoristenihDopusta" Category="Contains" />
+    <Link Source="KoordinatorZaPosjeteITransport" Target="KoordinatorZaPosjeteITransport_DatumRodjenja" Category="Contains" />
+    <Link Source="KoordinatorZaPosjeteITransport" Target="KoordinatorZaPosjeteITransport_Ime" Category="Contains" />
+    <Link Source="KoordinatorZaPosjeteITransport" Target="KoordinatorZaPosjeteITransport_Jmbg" Category="Contains" />
+    <Link Source="KoordinatorZaPosjeteITransport" Target="KoordinatorZaPosjeteITransport_NaDopustu" Category="Contains" />
+    <Link Source="KoordinatorZaPosjeteITransport" Target="KoordinatorZaPosjeteITransport_Pin" Category="Contains" />
+    <Link Source="KoordinatorZaPosjeteITransport" Target="KoordinatorZaPosjeteITransport_Plata" Category="Contains" />
+    <Link Source="KoordinatorZaPosjeteITransport" Target="KoordinatorZaPosjeteITransport_Prezime" Category="Contains" />
+    <Link Source="KoordinatorZaPosjeteITransport" Target="KoordinatorZaPosjeteITransport_RadnikId" Category="Contains" />
+    <Link Source="KoordinatorZaPosjeteITransport" Target="KoordinatorZaPosjeteITransport_Username" Category="Contains" />
+    <Link Source="KoordinatorZaPosjeteITransport" Target="KoordinatorZaPosjeteITransport_Zanimanje" Category="Contains" />
+    <Link Source="Database" Target="Kuhar" Category="Contains" />
+    <Link Source="Kuhar" Target="Kuhar_KuharId" Category="Contains" />
+    <Link Source="Kuhar" Target="Kuhar_BrojIskoristenihDopusta" Category="Contains" />
+    <Link Source="Kuhar" Target="Kuhar_DatumRodjenja" Category="Contains" />
+    <Link Source="Kuhar" Target="Kuhar_Ime" Category="Contains" />
+    <Link Source="Kuhar" Target="Kuhar_Jmbg" Category="Contains" />
+    <Link Source="Kuhar" Target="Kuhar_NaDopustu" Category="Contains" />
+    <Link Source="Kuhar" Target="Kuhar_Pin" Category="Contains" />
+    <Link Source="Kuhar" Target="Kuhar_Plata" Category="Contains" />
+    <Link Source="Kuhar" Target="Kuhar_Prezime" Category="Contains" />
+    <Link Source="Kuhar" Target="Kuhar_RadnikId" Category="Contains" />
+    <Link Source="Kuhar" Target="Kuhar_UposlenikId" Category="Contains" />
+    <Link Source="Kuhar" Target="Kuhar_Username" Category="Contains" />
+    <Link Source="Kuhar" Target="Kuhar_Zanimanje" Category="Contains" />
+    <Link Source="Database" Target="LoginPodaci" Category="Contains" />
+    <Link Source="LoginPodaci" Target="LoginPodaci_LoginPodaciId" Category="Contains" />
+    <Link Source="LoginPodaci" Target="LoginPodaci_Password" Category="Contains" />
+    <Link Source="LoginPodaci" Target="LoginPodaci_Username" Category="Contains" />
+    <Link Source="Database" Target="Nadzornik" Category="Contains" />
+    <Link Source="Nadzornik" Target="Nadzornik_NadzornikId" Category="Contains" />
+    <Link Source="Nadzornik" Target="Nadzornik_DatumRodjenja" Category="Contains" />
+    <Link Source="Nadzornik" Target="Nadzornik_Ime" Category="Contains" />
+    <Link Source="Nadzornik" Target="Nadzornik_Jmbg" Category="Contains" />
+    <Link Source="Nadzornik" Target="Nadzornik_Pin" Category="Contains" />
+    <Link Source="Nadzornik" Target="Nadzornik_Plata" Category="Contains" />
+    <Link Source="Nadzornik" Target="Nadzornik_Prezime" Category="Contains" />
+    <Link Source="Nadzornik" Target="Nadzornik_Username" Category="Contains" />
+    <Link Source="Database" Target="Narudzba" Category="Contains" />
+    <Link Source="Narudzba" Target="Narudzba_NarudzbaId" Category="Contains" />
+    <Link Source="Narudzba" Target="Narudzba_Cijena" Category="Contains" />
+    <Link Source="Narudzba" Target="Narudzba_Kolicina" Category="Contains" />
+    <Link Source="Narudzba" Target="Narudzba_NazivArtikla" Category="Contains" />
+    <Link Source="Narudzba" Target="Narudzba_Odobreno" Category="Contains" />
+    <Link Source="Narudzba" Target="Narudzba_UpravnikUpravnikId" Category="Contains" />
+    <Link Source="Narudzba_UpravnikUpravnikId" Target="Upravnik_UpravnikId" Label="FK_Narudzba_0_0" Category="Foreign Key" />
+    <Link Source="Database" Target="Posjetilac" Category="Contains" />
+    <Link Source="Posjetilac" Target="Posjetilac_PosjetilacId" Category="Contains" />
+    <Link Source="Posjetilac" Target="Posjetilac_BrojLicneKarte" Category="Contains" />
+    <Link Source="Posjetilac" Target="Posjetilac_Ime" Category="Contains" />
+    <Link Source="Posjetilac" Target="Posjetilac_KoordinatorZaPosjeteITransportId" Category="Contains" />
+    <Link Source="Posjetilac" Target="Posjetilac_Prezime" Category="Contains" />
+    <Link Source="Posjetilac_KoordinatorZaPosjeteITransportId" Target="KoordinatorZaPosjeteITransport_Id" Label="FK_Posjetilac_0_0" Category="Foreign Key" />
+    <Link Source="Database" Target="Prekrsaj" Category="Contains" />
+    <Link Source="Prekrsaj" Target="Prekrsaj_PrekrsajId" Category="Contains" />
+    <Link Source="Prekrsaj" Target="Prekrsaj_Opis" Category="Contains" />
+    <Link Source="Prekrsaj" Target="Prekrsaj_PocinilacPrekrsajaZatvorenikId" Category="Contains" />
+    <Link Source="Prekrsaj" Target="Prekrsaj_Tip" Category="Contains" />
+    <Link Source="Prekrsaj_PocinilacPrekrsajaZatvorenikId" Target="Zatvorenik_ZatvorenikId" Label="FK_Prekrsaj_0_0" Category="Foreign Key" />
+    <Link Source="Database" Target="Radnik" Category="Contains" />
+    <Link Source="Radnik" Target="Radnik_RadnikId" Category="Contains" />
+    <Link Source="Radnik" Target="Radnik_BrojIskoristenihDopusta" Category="Contains" />
+    <Link Source="Radnik" Target="Radnik_DatumRodjenja" Category="Contains" />
+    <Link Source="Radnik" Target="Radnik_Ime" Category="Contains" />
+    <Link Source="Radnik" Target="Radnik_Jmbg" Category="Contains" />
+    <Link Source="Radnik" Target="Radnik_NaDopustu" Category="Contains" />
+    <Link Source="Radnik" Target="Radnik_Pin" Category="Contains" />
+    <Link Source="Radnik" Target="Radnik_Plata" Category="Contains" />
+    <Link Source="Radnik" Target="Radnik_Prezime" Category="Contains" />
+    <Link Source="Radnik" Target="Radnik_UpraviteljZaLjudskeResurseId" Category="Contains" />
+    <Link Source="Radnik" Target="Radnik_UpravnikUpravnikId" Category="Contains" />
+    <Link Source="Radnik" Target="Radnik_Username" Category="Contains" />
+    <Link Source="Radnik" Target="Radnik_Zanimanje" Category="Contains" />
+    <Link Source="Radnik_UpravnikUpravnikId" Target="Upravnik_UpravnikId" Label="FK_Radnik_0_0" Category="Foreign Key" />
+    <Link Source="Radnik_UpraviteljZaLjudskeResurseId" Target="UpraviteljZaLjudskeResurse_Id" Label="FK_Radnik_1_0" Category="Foreign Key" />
+    <Link Source="Database" Target="SmrtnaKazna" Category="Contains" />
+    <Link Source="SmrtnaKazna" Target="SmrtnaKazna_SmrtnaKaznaId" Category="Contains" />
+    <Link Source="SmrtnaKazna" Target="SmrtnaKazna_Mjesto" Category="Contains" />
+    <Link Source="SmrtnaKazna" Target="SmrtnaKazna_PosljednjaZelja" Category="Contains" />
+    <Link Source="SmrtnaKazna" Target="SmrtnaKazna_Vrijeme" Category="Contains" />
+    <Link Source="Database" Target="Strazar" Category="Contains" />
+    <Link Source="Strazar" Target="Strazar_StrazarId" Category="Contains" />
+    <Link Source="Strazar" Target="Strazar_BrojIskoristenihDopusta" Category="Contains" />
+    <Link Source="Strazar" Target="Strazar_DatumRodjenja" Category="Contains" />
+    <Link Source="Strazar" Target="Strazar_Ime" Category="Contains" />
+    <Link Source="Strazar" Target="Strazar_Jmbg" Category="Contains" />
+    <Link Source="Strazar" Target="Strazar_NaDopustu" Category="Contains" />
+    <Link Source="Strazar" Target="Strazar_NadzornikNadzornikId" Category="Contains" />
+    <Link Source="Strazar" Target="Strazar_Pin" Category="Contains" />
+    <Link Source="Strazar" Target="Strazar_Plata" Category="Contains" />
+    <Link Source="Strazar" Target="Strazar_Prezime" Category="Contains" />
+    <Link Source="Strazar" Target="Strazar_RadnikId" Category="Contains" />
+    <Link Source="Strazar" Target="Strazar_Username" Category="Contains" />
+    <Link Source="Strazar" Target="Strazar_Zanimanje" Category="Contains" />
+    <Link Source="Strazar_NadzornikNadzornikId" Target="Nadzornik_NadzornikId" Label="FK_Strazar_0_0" Category="Foreign Key" />
+    <Link Source="Database" Target="Uposlenik" Category="Contains" />
+    <Link Source="Uposlenik" Target="Uposlenik_UposlenikId" Category="Contains" />
+    <Link Source="Uposlenik" Target="Uposlenik_BrojIskoristenihDopusta" Category="Contains" />
+    <Link Source="Uposlenik" Target="Uposlenik_DatumRodjenja" Category="Contains" />
+    <Link Source="Uposlenik" Target="Uposlenik_Ime" Category="Contains" />
+    <Link Source="Uposlenik" Target="Uposlenik_Jmbg" Category="Contains" />
+    <Link Source="Uposlenik" Target="Uposlenik_NaDopustu" Category="Contains" />
+    <Link Source="Uposlenik" Target="Uposlenik_Pin" Category="Contains" />
+    <Link Source="Uposlenik" Target="Uposlenik_Plata" Category="Contains" />
+    <Link Source="Uposlenik" Target="Uposlenik_Prezime" Category="Contains" />
+    <Link Source="Uposlenik" Target="Uposlenik_RadnikId" Category="Contains" />
+    <Link Source="Uposlenik" Target="Uposlenik_Username" Category="Contains" />
+    <Link Source="Uposlenik" Target="Uposlenik_Zanimanje" Category="Contains" />
+    <Link Source="Database" Target="UpraviteljZaLjudskeResurse" Category="Contains" />
+    <Link Source="UpraviteljZaLjudskeResurse" Target="UpraviteljZaLjudskeResurse_Id" Category="Contains" />
+    <Link Source="UpraviteljZaLjudskeResurse" Target="UpraviteljZaLjudskeResurse_DatumRodjenja" Category="Contains" />
+    <Link Source="UpraviteljZaLjudskeResurse" Target="UpraviteljZaLjudskeResurse_Ime" Category="Contains" />
+    <Link Source="UpraviteljZaLjudskeResurse" Target="UpraviteljZaLjudskeResurse_Jmbg" Category="Contains" />
+    <Link Source="UpraviteljZaLjudskeResurse" Target="UpraviteljZaLjudskeResurse_Pin" Category="Contains" />
+    <Link Source="UpraviteljZaLjudskeResurse" Target="UpraviteljZaLjudskeResurse_Plata" Category="Contains" />
+    <Link Source="UpraviteljZaLjudskeResurse" Target="UpraviteljZaLjudskeResurse_Prezime" Category="Contains" />
+    <Link Source="UpraviteljZaLjudskeResurse" Target="UpraviteljZaLjudskeResurse_Username" Category="Contains" />
+    <Link Source="Database" Target="Upravnik" Category="Contains" />
+    <Link Source="Upravnik" Target="Upravnik_UpravnikId" Category="Contains" />
+    <Link Source="Upravnik" Target="Upravnik_Budzet" Category="Contains" />
+    <Link Source="Upravnik" Target="Upravnik_DatumRodjenja" Category="Contains" />
+    <Link Source="Upravnik" Target="Upravnik_Ime" Category="Contains" />
+    <Link Source="Upravnik" Target="Upravnik_Jmbg" Category="Contains" />
+    <Link Source="Upravnik" Target="Upravnik_Pin" Category="Contains" />
+    <Link Source="Upravnik" Target="Upravnik_Plata" Category="Contains" />
+    <Link Source="Upravnik" Target="Upravnik_Prezime" Category="Contains" />
+    <Link Source="Upravnik" Target="Upravnik_Prihod" Category="Contains" />
+    <Link Source="Upravnik" Target="Upravnik_Rashod" Category="Contains" />
+    <Link Source="Upravnik" Target="Upravnik_Usermane" Category="Contains" />
+    <Link Source="Upravnik" Target="Upravnik_loginLoginPodaciId" Category="Contains" />
+    <Link Source="Upravnik_loginLoginPodaciId" Target="LoginPodaci_LoginPodaciId" Label="FK_Upravnik_0_0" Category="Foreign Key" />
+    <Link Source="Database" Target="UpravnikKluba" Category="Contains" />
+    <Link Source="UpravnikKluba" Target="UpravnikKluba_UpravnikKlubaId" Category="Contains" />
+    <Link Source="UpravnikKluba" Target="UpravnikKluba_BrojIskoristenihDopusta" Category="Contains" />
+    <Link Source="UpravnikKluba" Target="UpravnikKluba_DatumRodjenja" Category="Contains" />
+    <Link Source="UpravnikKluba" Target="UpravnikKluba_Ime" Category="Contains" />
+    <Link Source="UpravnikKluba" Target="UpravnikKluba_Jmbg" Category="Contains" />
+    <Link Source="UpravnikKluba" Target="UpravnikKluba_NaDopustu" Category="Contains" />
+    <Link Source="UpravnikKluba" Target="UpravnikKluba_Pin" Category="Contains" />
+    <Link Source="UpravnikKluba" Target="UpravnikKluba_Plata" Category="Contains" />
+    <Link Source="UpravnikKluba" Target="UpravnikKluba_Prezime" Category="Contains" />
+    <Link Source="UpravnikKluba" Target="UpravnikKluba_RadnikId" Category="Contains" />
+    <Link Source="UpravnikKluba" Target="UpravnikKluba_Username" Category="Contains" />
+    <Link Source="UpravnikKluba" Target="UpravnikKluba_Zanimanje" Category="Contains" />
+    <Link Source="Database" Target="Vozac" Category="Contains" />
+    <Link Source="Vozac" Target="Vozac_VozacId" Category="Contains" />
+    <Link Source="Vozac" Target="Vozac_BrojIskoristenihDopusta" Category="Contains" />
+    <Link Source="Vozac" Target="Vozac_DatumRodjenja" Category="Contains" />
+    <Link Source="Vozac" Target="Vozac_Ime" Category="Contains" />
+    <Link Source="Vozac" Target="Vozac_Jmbg" Category="Contains" />
+    <Link Source="Vozac" Target="Vozac_KoordinatorZaPosjeteITransportId" Category="Contains" />
+    <Link Source="Vozac" Target="Vozac_NaDopustu" Category="Contains" />
+    <Link Source="Vozac" Target="Vozac_Pin" Category="Contains" />
+    <Link Source="Vozac" Target="Vozac_Plata" Category="Contains" />
+    <Link Source="Vozac" Target="Vozac_Prezime" Category="Contains" />
+    <Link Source="Vozac" Target="Vozac_RadnikId" Category="Contains" />
+    <Link Source="Vozac" Target="Vozac_Username" Category="Contains" />
+    <Link Source="Vozac" Target="Vozac_Zanimanje" Category="Contains" />
+    <Link Source="Vozac_KoordinatorZaPosjeteITransportId" Target="KoordinatorZaPosjeteITransport_Id" Label="FK_Vozac_0_0" Category="Foreign Key" />
+    <Link Source="Database" Target="Voznja" Category="Contains" />
+    <Link Source="Voznja" Target="Voznja_VoznjaId" Category="Contains" />
+    <Link Source="Voznja" Target="Voznja_KoordinatorZaPosjeteITransportId" Category="Contains" />
+    <Link Source="Voznja" Target="Voznja_Mjesto" Category="Contains" />
+    <Link Source="Voznja" Target="Voznja_TerminId" Category="Contains" />
+    <Link Source="Voznja" Target="Voznja_UspjesnaVoznja" Category="Contains" />
+    <Link Source="Voznja" Target="Voznja_VozacVozacId" Category="Contains" />
+    <Link Source="Voznja" Target="Voznja_ZatvorenikZatvorenikId" Category="Contains" />
+    <Link Source="Voznja_ZatvorenikZatvorenikId" Target="Zatvorenik_ZatvorenikId" Label="FK_Voznja_0_0" Category="Foreign Key" />
+    <Link Source="Voznja_VozacVozacId" Target="Vozac_VozacId" Label="FK_Voznja_1_0" Category="Foreign Key" />
+    <Link Source="Voznja_TerminId" Target="ElementRasporeda&lt;Vozac&gt;_Id" Label="FK_Voznja_2_0" Category="Foreign Key" />
+    <Link Source="Voznja_KoordinatorZaPosjeteITransportId" Target="KoordinatorZaPosjeteITransport_Id" Label="FK_Voznja_3_0" Category="Foreign Key" />
+    <Link Source="Database" Target="Zahtjev&lt;Radnik&gt;" Category="Contains" />
+    <Link Source="Zahtjev&lt;Radnik&gt;" Target="Zahtjev&lt;Radnik&gt;_Id" Category="Contains" />
+    <Link Source="Zahtjev&lt;Radnik&gt;" Target="Zahtjev&lt;Radnik&gt;_JeLiOdobren" Category="Contains" />
+    <Link Source="Zahtjev&lt;Radnik&gt;" Target="Zahtjev&lt;Radnik&gt;_Naziv" Category="Contains" />
+    <Link Source="Zahtjev&lt;Radnik&gt;" Target="Zahtjev&lt;Radnik&gt;_PosiljalacRadnikId" Category="Contains" />
+    <Link Source="Zahtjev&lt;Radnik&gt;" Target="Zahtjev&lt;Radnik&gt;_TekstMolbe" Category="Contains" />
+    <Link Source="Zahtjev&lt;Radnik&gt;" Target="Zahtjev&lt;Radnik&gt;_UpravnikUpravnikId" Category="Contains" />
+    <Link Source="Zahtjev&lt;Radnik&gt;_UpravnikUpravnikId" Target="Upravnik_UpravnikId" Label="FK_Zahtjev&lt;Radnik&gt;_0_0" Category="Foreign Key" />
+    <Link Source="Zahtjev&lt;Radnik&gt;_PosiljalacRadnikId" Target="Radnik_RadnikId" Label="FK_Zahtjev&lt;Radnik&gt;_1_0" Category="Foreign Key" />
+    <Link Source="Database" Target="Zahtjev&lt;Zatvorenik&gt;" Category="Contains" />
+    <Link Source="Zahtjev&lt;Zatvorenik&gt;" Target="Zahtjev&lt;Zatvorenik&gt;_Id" Category="Contains" />
+    <Link Source="Zahtjev&lt;Zatvorenik&gt;" Target="Zahtjev&lt;Zatvorenik&gt;_JeLiOdobren" Category="Contains" />
+    <Link Source="Zahtjev&lt;Zatvorenik&gt;" Target="Zahtjev&lt;Zatvorenik&gt;_Naziv" Category="Contains" />
+    <Link Source="Zahtjev&lt;Zatvorenik&gt;" Target="Zahtjev&lt;Zatvorenik&gt;_PosiljalacZatvorenikId" Category="Contains" />
+    <Link Source="Zahtjev&lt;Zatvorenik&gt;" Target="Zahtjev&lt;Zatvorenik&gt;_TekstMolbe" Category="Contains" />
+    <Link Source="Zahtjev&lt;Zatvorenik&gt;" Target="Zahtjev&lt;Zatvorenik&gt;_UpravnikUpravnikId" Category="Contains" />
+    <Link Source="Zahtjev&lt;Zatvorenik&gt;_UpravnikUpravnikId" Target="Upravnik_UpravnikId" Label="FK_Zahtjev&lt;Zatvorenik&gt;_0_0" Category="Foreign Key" />
+    <Link Source="Zahtjev&lt;Zatvorenik&gt;_PosiljalacZatvorenikId" Target="Zatvorenik_ZatvorenikId" Label="FK_Zahtjev&lt;Zatvorenik&gt;_1_0" Category="Foreign Key" />
+    <Link Source="Database" Target="Zaliha" Category="Contains" />
+    <Link Source="Zaliha" Target="Zaliha_ZalihaId" Category="Contains" />
+    <Link Source="Zaliha" Target="Zaliha_DoktorDoktorId" Category="Contains" />
+    <Link Source="Zaliha" Target="Zaliha_Kolicina" Category="Contains" />
+    <Link Source="Zaliha" Target="Zaliha_KuharKuharId" Category="Contains" />
+    <Link Source="Zaliha" Target="Zaliha_Naziv" Category="Contains" />
+    <Link Source="Zaliha" Target="Zaliha_TipZalihe" Category="Contains" />
+    <Link Source="Zaliha" Target="Zaliha_UposlenikUposlenikId" Category="Contains" />
+    <Link Source="Zaliha_UposlenikUposlenikId" Target="Uposlenik_UposlenikId" Label="FK_Zaliha_0_0" Category="Foreign Key" />
+    <Link Source="Zaliha_KuharKuharId" Target="Kuhar_KuharId" Label="FK_Zaliha_1_0" Category="Foreign Key" />
+    <Link Source="Zaliha_DoktorDoktorId" Target="Doktor_DoktorId" Label="FK_Zaliha_2_0" Category="Foreign Key" />
+    <Link Source="Database" Target="Zatvorenik" Category="Contains" />
+    <Link Source="Zatvorenik" Target="Zatvorenik_ZatvorenikId" Category="Contains" />
+    <Link Source="Zatvorenik" Target="Zatvorenik_DatumRodjenja" Category="Contains" />
+    <Link Source="Zatvorenik" Target="Zatvorenik_DoktorDoktorId" Category="Contains" />
+    <Link Source="Zatvorenik" Target="Zatvorenik_Ime" Category="Contains" />
+    <Link Source="Zatvorenik" Target="Zatvorenik_Jmbg" Category="Contains" />
+    <Link Source="Zatvorenik" Target="Zatvorenik_KoordinatorZaPosjeteITransportId" Category="Contains" />
+    <Link Source="Zatvorenik" Target="Zatvorenik_OptuzenZa" Category="Contains" />
+    <Link Source="Zatvorenik" Target="Zatvorenik_Otpusten" Category="Contains" />
+    <Link Source="Zatvorenik" Target="Zatvorenik_Pin" Category="Contains" />
+    <Link Source="Zatvorenik" Target="Zatvorenik_PinZaKlub" Category="Contains" />
+    <Link Source="Zatvorenik" Target="Zatvorenik_Prezime" Category="Contains" />
+    <Link Source="Zatvorenik" Target="Zatvorenik_Primljen" Category="Contains" />
+    <Link Source="Zatvorenik" Target="Zatvorenik_SmrtnaKaznaSmrtnaKaznaId" Category="Contains" />
+    <Link Source="Zatvorenik" Target="Zatvorenik_StrazarStrazarId" Category="Contains" />
+    <Link Source="Zatvorenik" Target="Zatvorenik_UpraviteljZaLjudskeResurseId" Category="Contains" />
+    <Link Source="Zatvorenik" Target="Zatvorenik_UpravnikKlubaUpravnikKlubaId" Category="Contains" />
+    <Link Source="Zatvorenik" Target="Zatvorenik_UpravnikKlubaUpravnikKlubaId1" Category="Contains" />
+    <Link Source="Zatvorenik" Target="Zatvorenik_UpravnikUpravnikId" Category="Contains" />
+    <Link Source="Zatvorenik_ZatvorenikId" Target="Celija_CelijaId" Label="FK_Zatvorenik_0_0" Category="Foreign Key" />
+    <Link Source="Zatvorenik_UpravnikUpravnikId" Target="Upravnik_UpravnikId" Label="FK_Zatvorenik_1_0" Category="Foreign Key" />
+    <Link Source="Zatvorenik_UpravnikKlubaUpravnikKlubaId1" Target="UpravnikKluba_UpravnikKlubaId" Label="FK_Zatvorenik_2_0" Category="Foreign Key" />
+    <Link Source="Zatvorenik_UpravnikKlubaUpravnikKlubaId" Target="UpravnikKluba_UpravnikKlubaId" Label="FK_Zatvorenik_3_0" Category="Foreign Key" />
+    <Link Source="Zatvorenik_UpraviteljZaLjudskeResurseId" Target="UpraviteljZaLjudskeResurse_Id" Label="FK_Zatvorenik_4_0" Category="Foreign Key" />
+    <Link Source="Zatvorenik_StrazarStrazarId" Target="Strazar_StrazarId" Label="FK_Zatvorenik_5_0" Category="Foreign Key" />
+    <Link Source="Zatvorenik_SmrtnaKaznaSmrtnaKaznaId" Target="SmrtnaKazna_SmrtnaKaznaId" Label="FK_Zatvorenik_6_0" Category="Foreign Key" />
+    <Link Source="Zatvorenik_KoordinatorZaPosjeteITransportId" Target="KoordinatorZaPosjeteITransport_Id" Label="FK_Zatvorenik_7_0" Category="Foreign Key" />
+    <Link Source="Zatvorenik_DoktorDoktorId" Target="Doktor_DoktorId" Label="FK_Zatvorenik_8_0" Category="Foreign Key" />
+  </Links>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Table" ValueLabel="True">
+      <Condition Expression="HasCategory('Table')" />
+      <Setter Property="Background" Value="#FFC0C0C0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Schema" ValueLabel="True">
+      <Condition Expression="HasCategory('Schema')" />
+      <Setter Property="Background" Value="#FF7F9169" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field Primary" ValueLabel="True">
+      <Condition Expression="HasCategory('Field Primary')" />
+      <Setter Property="Background" Value="#FF008000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field Optional" ValueLabel="True">
+      <Condition Expression="HasCategory('Field Optional')" />
+      <Setter Property="Background" Value="#FF808040" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field Foreign" ValueLabel="True">
+      <Condition Expression="HasCategory('Field Foreign')" />
+      <Setter Property="Background" Value="#FF8080FF" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field" ValueLabel="True">
+      <Condition Expression="HasCategory('Field')" />
+      <Setter Property="Background" Value="#FFC0A000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Database" ValueLabel="True">
+      <Condition Expression="HasCategory('Database')" />
+      <Setter Property="Background" Value="#FFFFFFFF" />
+    </Style>
+  </Styles>
+</DirectedGraph>
