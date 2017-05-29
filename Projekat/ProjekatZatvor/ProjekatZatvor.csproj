@@ -99,9 +99,21 @@
     <Compile Include="Model\Izvjestaj.cs" />
     <Compile Include="Model\Klub.cs" />
     <Compile Include="Model\KoordinatorZaPosjeteITransport.cs" />
+    <Compile Include="Model\Korisnik.cs" />
+    <Compile Include="Model\Kuhar.cs" />
+    <Compile Include="Model\LoginPodaci.cs" />
+    <Compile Include="Model\Nadzornik.cs" />
+    <Compile Include="Model\Narudzba.cs" />
+    <Compile Include="Model\Posjetilac.cs" />
+    <Compile Include="Model\Prekrsaj.cs" />
+    <Compile Include="Model\Radnik.cs" />
+    <Compile Include="Model\SmrtnaKazna.cs" />
+    <Compile Include="Model\Strazar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\ComboBoxItemConvert.cs" />
     <Compile Include="ViewModel\CommandHandler.cs" />
+    <Compile Include="ViewModel\DateTimeToDateTimeOffsetConverter .cs" />
+    <Compile Include="ViewModel\RadioButtonConvert.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\AdmissionIcon.PNG" />
@@ -159,6 +171,54 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="View\NumericUpDown.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\OtpustiRadnika.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\PocetnaZatvorenik.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\PodnesiZahtjev.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\PodnosenjeZahtjeva.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Posjetioci.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\PrijavaUKlub.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\PrijemZatvorenika.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\PrikazUserControle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\PrikazZaliha.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\RasporedPosjeta.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\RasporedTransporta.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\StrazarForma.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
