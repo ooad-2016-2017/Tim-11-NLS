@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="ProjekatZatvor.PodnesiZahtjev"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ProjekatZatvor"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="8*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock HorizontalAlignment="Left" Grid.Row="0" Grid.Column="0" TextWrapping="Wrap" Text="Zahtjev za:" VerticalAlignment="Center"/>
+            <RadioButton x:ConnectionId='1' x:Name="radioButtonBolovanje" Content="Bolovanje"                                        HorizontalAlignment="Left" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"/>
+            <RadioButton x:ConnectionId='2' x:Name="radioButtonOdmor" Content="Godisnji odmor"                                    HorizontalAlignment="Left" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center"/>
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="3" Grid.Column="0" TextWrapping="Wrap" Text="Datum odlaska" />
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="4" Grid.Column="0" TextWrapping="Wrap" Text="Datum povratka" RenderTransformOrigin="0.533,1.65"/>
+
+            <DatePicker  HorizontalAlignment="Left" Date="{Binding DatumOdlaska, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay,Converter={StaticResource DateTimeToDateTimeOffsetConverter}}" Grid.Row="3" Grid.Column="1" VerticalAlignment="Top" Width="183"/>
+            <DatePicker HorizontalAlignment="Left"  Date="{Binding DatumPovratka, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay,Converter={StaticResource DateTimeToDateTimeOffsetConverter}}" Grid.Row="4" Grid.Column="1" VerticalAlignment="Top" Width="182"/>
+            <CalendarView HorizontalAlignment="Center" Grid.Row="5" Grid.ColumnSpan="2" VerticalAlignment="Top" Height="319"/>
+            <Button x:ConnectionId='3' Command="{Binding PodnesiZahtjevStrazarCommand}" x:Name="button" Content="Podnesi zahtjev" HorizontalAlignment="Center" Grid.Row="6" Grid.ColumnSpan="2" VerticalAlignment="Top"/>
+
+        </Grid>
+
+    </Grid>
+</Page>
+

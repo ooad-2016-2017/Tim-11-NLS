@@ -1,0 +1,112 @@
+﻿<Page
+    x:Class="ProjekatZatvor.UpravnikRaspored"
+
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ProjekatZatvor"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,20,0,-20">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+                <TextBlock Text=" Generalne informacije:"  Grid.Row="0" Grid.ColumnSpan="3" Grid.Column="1"  VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                <TextBlock x:ConnectionId='1' x:Name="textBlock1"  Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" Text=" Broj zaposlenika" VerticalAlignment="Center" />
+                <TextBlock x:ConnectionId='2' x:Name="textBlock2" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" Text=" Broj zatvorenika" VerticalAlignment="Center" />
+                <TextBlock x:ConnectionId='3' x:Name="textBlock3"  Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" Text=" Zauzete celije" VerticalAlignment="Center" />
+        <TextBox x:ConnectionId='4' Text="{Binding BrojZaposlenih,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" x:Name="textBlockBrojZaposlenika"   Grid.Row="1" Grid.Column="2" TextWrapping="Wrap"  VerticalAlignment="Center" HorizontalAlignment="Stretch"  />
+        <TextBox x:ConnectionId='5' Text="{Binding BrojZatvorenika,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"  x:Name="textBlockBrojZatvorenika"   Grid.Row="2" Grid.Column="2"  TextWrapping="Wrap"  VerticalAlignment="Center" HorizontalAlignment="Stretch"  />
+        <TextBox x:ConnectionId='6' Text="{Binding BrojCelija,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"  x:Name="textBlockBrojCelija"   Grid.Row="3" Grid.Column="2"  TextWrapping="Wrap"  VerticalAlignment="Center" HorizontalAlignment="Stretch"  />
+
+          
+                <TextBlock Text="Raspored strazara:" Grid.Row="0" Grid.Column="0"  TextWrapping="Wrap" VerticalAlignment="Center" />
+
+        <Grid Grid.Row="1" Grid.RowSpan="2" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <Grid.RowDefinitions>
+               
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="4*"></RowDefinition>
+               
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" ></ColumnDefinition>
+                <ColumnDefinition Width="2*" ></ColumnDefinition>
+                <ColumnDefinition Width="2*" ></ColumnDefinition>
+                <ColumnDefinition Width="2*" ></ColumnDefinition>
+                <ColumnDefinition Width="10" ></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Row="0" Grid.Column="1" CornerRadius="6" BorderBrush="Gray" Background="Silver" BorderThickness="2" Margin="0" >
+                <TextBlock Text="Strazar" HorizontalAlignment="Center" Foreground="Black" VerticalAlignment="Center"></TextBlock>
+            </Border>
+            <Border Grid.Row="0" Grid.Column="2" CornerRadius="6" BorderBrush="Gray" Background="Silver" BorderThickness="2" Margin="0" >
+                <TextBlock Text="Vrijeme" HorizontalAlignment="Center" Foreground="Black" VerticalAlignment="Center"></TextBlock>
+            </Border>
+            <Border Grid.Row="0" Grid.Column="3" CornerRadius="6" BorderBrush="Gray" Background="Silver" BorderThickness="2" Margin="0" >
+                <TextBlock Text="Mjesto" HorizontalAlignment="Center" Foreground="Black" VerticalAlignment="Center"></TextBlock>
+            </Border>
+     
+            <Border Grid.Row="2" Grid.Column="1" CornerRadius="6" BorderBrush="Gray" Background="Silver" BorderThickness="2" Margin="0" >
+                <ListBox x:ConnectionId='12' Name="listica1" Foreground="Black" ItemsSource="{Binding ListaImenaStrazara,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Background="Silver"></ListBox>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="2" CornerRadius="6" BorderBrush="Gray" Background="Silver" BorderThickness="2" Margin="0" >
+                <ListBox x:ConnectionId='11' Name="listica2" Foreground="Black" ItemsSource="{Binding ListaVremenaStrazara,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Background="Silver"></ListBox>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="3" CornerRadius="6" BorderBrush="Gray" Background="Silver" BorderThickness="2" Margin="0" >
+                <ListBox x:ConnectionId='10' Name="listica3" Foreground="Black" ItemsSource="{Binding ListaMjestaStrazara,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Background="Silver"></ListBox>
+            </Border>
+          
+        </Grid>
+
+        <TextBlock x:ConnectionId='7' x:Name="textBlock" Grid.Row="3" Grid.Column="0" TextWrapping="Wrap" Text="Raspored po celijama:" VerticalAlignment="Center"  />
+
+        <Grid Grid.Row="4" Grid.RowSpan="2" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="4*"></RowDefinition>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" ></ColumnDefinition>
+                <ColumnDefinition Width="2*" ></ColumnDefinition>
+                <ColumnDefinition Width="2*" ></ColumnDefinition>
+                <ColumnDefinition Width="10" ></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Row="0" Grid.Column="1" CornerRadius="6" BorderBrush="Gray" Background="Silver" BorderThickness="2" Margin="0" >
+                <TextBlock Text="Zatvorenik" HorizontalAlignment="Center" Foreground="Black" VerticalAlignment="Center"></TextBlock>
+            </Border>
+            <Border Grid.Row="0" Grid.Column="2" CornerRadius="6" BorderBrush="Gray" Background="Silver" BorderThickness="2" Margin="0" >
+                <TextBlock Text="Celija" HorizontalAlignment="Center" Foreground="Black" VerticalAlignment="Center"></TextBlock>
+            </Border>
+           
+
+            <Border Grid.Row="2" Grid.Column="1" CornerRadius="6" BorderBrush="Gray" Background="Silver" BorderThickness="2" Margin="0" >
+                <ListBox x:ConnectionId='9' Name="listica4" Foreground="Black" ItemsSource="{Binding ListaZatvorenika,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Background="Silver"></ListBox>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="2" CornerRadius="6" BorderBrush="Gray" Background="Silver" BorderThickness="2" Margin="0" >
+                <ListBox x:ConnectionId='8' Name="listica5" Foreground="Black" ItemsSource="{Binding ListaCelijaZatvorenika,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Background="Silver"></ListBox>
+            </Border>
+         
+
+        </Grid>
+
+    </Grid>
+</Page>
+

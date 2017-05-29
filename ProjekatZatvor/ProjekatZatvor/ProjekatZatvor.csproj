@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{E72F9986-2067-4862-86A6-C5393D89A366}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjekatZatvor</RootNamespace>
+    <AssemblyName>ProjekatZatvor</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.14393.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>ProjekatZatvor_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlankPage1.xaml.cs">
+      <DependentUpon>BlankPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20170528125949_InitialMigration.cs" />
+    <Compile Include="Migrations\20170528125949_InitialMigration.designer.cs">
+      <DependentUpon>20170528125949_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\dbContextModelSnapshot.cs" />
+    <Compile Include="Model\ClsNumTextTagIn.cs" />
+    <Compile Include="Model\dbContext.cs" />
+    <Compile Include="Model\DefaultPodaci.cs" />
+    <Compile Include="Model\Korisnik.cs" />
+    <Compile Include="Model\LoginPodaci.cs" />
+    <Compile Include="Model\ZatvorenikTabela.cs" />
+    <Compile Include="ViewModel\DateTimeToDateTimeOffsetConverter .cs" />
+    <Compile Include="Model\Celija.cs" />
+    <Compile Include="Model\ComboBoxItem.cs" />
+    <Compile Include="ViewModel\ComboBoxItemConvert.cs" />
+    <Compile Include="Model\Doktor.cs" />
+    <Compile Include="Model\ElementRasporeda.cs" />
+    <Compile Include="Model\Enumerative.cs" />
+    <Compile Include="Model\Izvjestaj.cs" />
+    <Compile Include="Model\Klub.cs" />
+    <Compile Include="Model\KoordinatorZaPosjeteITransport.cs" />
+    <Compile Include="Model\Kuhar.cs" />
+    <Compile Include="Model\Nadzornik.cs" />
+    <Compile Include="Model\Narudzba.cs" />
+    <Compile Include="Model\Posjetilac.cs" />
+    <Compile Include="Model\Prekrsaj.cs" />
+    <Compile Include="Model\Radnik.cs" />
+    <Compile Include="Model\SmrtnaKazna.cs" />
+    <Compile Include="Model\Strazar.cs" />
+    <Compile Include="Model\Uposlenik.cs" />
+    <Compile Include="Model\UpraviteljZaLjudskeResurse.cs" />
+    <Compile Include="Model\Upravnik.cs" />
+    <Compile Include="Model\UpravnikKluba.cs" />
+    <Compile Include="Model\Vozac.cs" />
+    <Compile Include="Model\Voznja.cs" />
+    <Compile Include="Model\Zahtjev.cs" />
+    <Compile Include="Model\Zaliha.cs" />
+    <Compile Include="Model\Zatvorenik.cs" />
+    <Compile Include="ViewModel\CommandHandler.cs" />
+    <Compile Include="ViewModel\RadioButtonConvert.cs" />
+    <Compile Include="ViewModel\UltraMegaGigaViewModel.cs" />
+    <Compile Include="ViewModel\Validacija.cs" />
+    <Compile Include="View\detaljiONarudzbi.xaml.cs">
+      <DependentUpon>detaljiONarudzbi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Finansije.xaml.cs">
+      <DependentUpon>Finansije.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\KoordinatorPocetna.xaml.cs">
+      <DependentUpon>KoordinatorPocetna.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\KoordinatorZaPosjeteITransportForma.xaml.cs">
+      <DependentUpon>KoordinatorZaPosjeteITransportForma.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MobilnaApp.xaml.cs">
+      <DependentUpon>MobilnaApp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\NarudzbaForma.xaml.cs">
+      <DependentUpon>NarudzbaForma.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\NarudzbeUpravnik.xaml.cs">
+      <DependentUpon>NarudzbeUpravnik.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\NumericTextBox.xaml.cs">
+      <DependentUpon>NumericTextBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\NumericUpDown.xaml.cs">
+      <DependentUpon>NumericUpDown.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\OtpustiRadnika.xaml.cs">
+      <DependentUpon>OtpustiRadnika.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PocetnaZatvorenik.xaml.cs">
+      <DependentUpon>PocetnaZatvorenik.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PodnesiZahtjev.xaml.cs">
+      <DependentUpon>PodnesiZahtjev.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PodnosenjeZahtjeva.xaml.cs">
+      <DependentUpon>PodnosenjeZahtjeva.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Posjetioci.xaml.cs">
+      <DependentUpon>Posjetioci.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PrijavaUKlub.xaml.cs">
+      <DependentUpon>PrijavaUKlub.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PrijemZatvorenika.xaml.cs">
+      <DependentUpon>PrijemZatvorenika.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PrikazUserControle.xaml.cs">
+      <DependentUpon>PrikazUserControle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PrikazZaliha.xaml.cs">
+      <DependentUpon>PrikazZaliha.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\RasporedPosjeta.xaml.cs">
+      <DependentUpon>RasporedPosjeta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\RasporedTransporta.xaml.cs">
+      <DependentUpon>RasporedTransporta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\StrazarForma.xaml.cs">
+      <DependentUpon>StrazarForma.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\strazarIzvjestaj.xaml.cs">
+      <DependentUpon>strazarIzvjestaj.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\strazarRaspored.xaml.cs">
+      <DependentUpon>strazarRaspored.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UposlenikForme.xaml.cs">
+      <DependentUpon>UposlenikForme.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UpraviteljForme.xaml.cs">
+      <DependentUpon>UpraviteljForme.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UpravnikForma.xaml.cs">
+      <DependentUpon>UpravnikForma.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UpravnikRaspored.xaml.cs">
+      <DependentUpon>UpravnikRaspored.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\VozacForma.xaml.cs">
+      <DependentUpon>VozacForma.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ZahtjeviUposlenika.xaml.cs">
+      <DependentUpon>ZahtjeviUposlenika.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ZahtjevZaOdlazakDoktoru.xaml.cs">
+      <DependentUpon>ZahtjevZaOdlazakDoktoru.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ZahtjevZaPremjestaj.xaml.cs">
+      <DependentUpon>ZahtjevZaPremjestaj.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ZaposliRadnika.xaml.cs">
+      <DependentUpon>ZaposliRadnika.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ZatvorenikForma.xaml.cs">
+      <DependentUpon>ZatvorenikForma.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\WelcomeUser.xaml.cs">
+      <DependentUpon>WelcomeUser.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="ProjekatZatvor_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\AdmissionIcon.PNG" />
+    <Content Include="Assets\Prison.jpg" />
+    <Content Include="View\Assets\AdmissionIcon.PNG" />
+    <Content Include="View\Assets\back.jpg" />
+    <Content Include="View\Assets\book.jpg" />
+    <Content Include="View\Assets\cell.png" />
+    <Content Include="View\Assets\doktor.jpg" />
+    <Content Include="View\Assets\finansije.jpg" />
+    <Content Include="Assets\FireIcon.PNG" />
+    <Content Include="Assets\HireIcon.JPG" />
+    <Content Include="Assets\HireIcon.PNG" />
+    <Content Include="View\Assets\FireIcon.PNG" />
+    <Content Include="View\Assets\HireIcon.JPG" />
+    <Content Include="View\Assets\HireIcon.PNG" />
+    <Content Include="View\Assets\Izvjestaj.png" />
+    <Content Include="View\Assets\koordinator.png" />
+    <Content Include="View\Assets\koverta.jpg" />
+    <Content Include="View\Assets\logout.png" />
+    <Content Include="View\Assets\logout1.png" />
+    <Content Include="View\Assets\narudzbe.jpg" />
+    <Content Include="View\Assets\OrderIcon.PNG" />
+    <Content Include="View\Assets\posjetilac.jpg" />
+    <Content Include="View\Assets\Prison.jpg" />
+    <Content Include="View\Assets\prisoner.jpg" />
+    <Content Include="View\Assets\raspored.jpg" />
+    <Content Include="View\Assets\rasporedposjeta.jpg" />
+    <Content Include="View\Assets\rasporedtransporta.jpg" />
+    <Content Include="View\Assets\redback.jpg" />
+    <Content Include="View\Assets\RequestIcon.PNG" />
+    <Content Include="View\Assets\StockIcon.PNG" />
+    <Content Include="View\Assets\transport.jpg" />
+    <Content Include="View\Assets\Zahtjev.jpg" />
+    <Content Include="View\Assets\Zatvorenik2.JPG" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="View\Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="BlankPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\detaljiONarudzbi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Finansije.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\KoordinatorPocetna.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\KoordinatorZaPosjeteITransportForma.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\LoginPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\MobilnaApp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\NarudzbaForma.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\NarudzbeUpravnik.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\NumericTextBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\NumericUpDown.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\OtpustiRadnika.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\PocetnaZatvorenik.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\PodnesiZahtjev.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\PodnosenjeZahtjeva.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Posjetioci.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\PrijavaUKlub.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\PrijemZatvorenika.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\PrikazUserControle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\PrikazZaliha.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\RasporedPosjeta.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\RasporedTransporta.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\StrazarForma.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\strazarIzvjestaj.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\strazarRaspored.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UposlenikForme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UpraviteljForme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UpravnikForma.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UpravnikRaspored.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\VozacForma.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\ZahtjeviUposlenika.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ZahtjevZaOdlazakDoktoru.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\ZahtjevZaPremjestaj.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\ZaposliRadnika.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\ZatvorenikForma.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\WelcomeUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

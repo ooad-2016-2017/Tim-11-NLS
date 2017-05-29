@@ -1,0 +1,61 @@
+﻿<Page
+    x:Class="ProjekatZatvor.Posjetioci"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ProjekatZatvor"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" ></ColumnDefinition>
+            <ColumnDefinition Width="2*" ></ColumnDefinition>
+            <ColumnDefinition Width="2*" ></ColumnDefinition>
+            <ColumnDefinition Width="2*" ></ColumnDefinition>
+            <ColumnDefinition Width="2*" ></ColumnDefinition>
+            <ColumnDefinition Width="*" ></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Button x:ConnectionId='1'                    Grid.Column="4" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Right"  Height="40" Background="White">
+            <Image Source="Assets/redback.jpg" Margin="-10"></Image>
+        </Button>
+
+        <Border Grid.Row="1" Grid.Column="1" CornerRadius="6" BorderBrush="Gray" Background="IndianRed" BorderThickness="2" Margin="0" >
+            <TextBlock Text="Ime" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center"></TextBlock>
+        </Border>
+        <Border Grid.Row="1" Grid.Column="2" CornerRadius="6" BorderBrush="Gray" Background="IndianRed" BorderThickness="2" Margin="0" >
+            <TextBlock Text="Prezime" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center"></TextBlock>
+        </Border>
+        <Border Grid.Row="1" Grid.Column="3" CornerRadius="6" BorderBrush="Gray" Background="IndianRed" BorderThickness="2" Margin="0" >
+            <TextBlock Text="Godiste" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" ></TextBlock>
+        </Border>
+        <Border Grid.Row="1" Grid.Column="4" CornerRadius="6" BorderBrush="Gray" Background="IndianRed" BorderThickness="2" Margin="0" >
+            <TextBlock Text="Broj licne karte" TextWrapping="Wrap" HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center"></TextBlock>
+        </Border>
+
+        <Border Grid.Row="2" Grid.Column="1" CornerRadius="6" BorderBrush="Gray" Background="IndianRed" BorderThickness="2" Margin="0" >
+            <ListBox x:ConnectionId='5' Name="listica1" Foreground="White" ItemsSource="{Binding ListaImenaPosjetilaca,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Background="IndianRed"></ListBox>
+
+        </Border>
+        <Border Grid.Row="2" Grid.Column="2" CornerRadius="6" BorderBrush="Gray" Background="IndianRed" BorderThickness="2" Margin="0" >
+            <ListBox x:ConnectionId='4' Name="listica2" Foreground="White" ItemsSource="{Binding ListaPrezimenaPosjetilaca,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Background="IndianRed"></ListBox>
+
+        </Border>
+        <Border Grid.Row="2" Grid.Column="3" CornerRadius="6" BorderBrush="Gray" Background="IndianRed" BorderThickness="2" Margin="0" >
+        <ListBox x:ConnectionId='3' Name="listica3" Foreground="White" ItemsSource="{Binding ListaGodistaPosjetilaca,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Background="IndianRed"></ListBox>
+   
+        </Border>
+        <Border Grid.Row="2" Grid.Column="4" CornerRadius="6" BorderBrush="Gray" Background="IndianRed" BorderThickness="2"  >
+            <ListBox x:ConnectionId='2' Name="listica4" Foreground="White" ItemsSource="{Binding ListaBrojevaLicneKartePosjetilaca,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Background="IndianRed"></ListBox>
+
+        </Border>
+    </Grid>
+</Page>
+
