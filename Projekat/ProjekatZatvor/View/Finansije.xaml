@@ -1,0 +1,82 @@
+﻿<Page
+    x:Class="ProjekatZatvor.Finansije"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ProjekatZatvor"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="textBlock" Grid.Row="0" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="Prihod" VerticalAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Stretch" Grid.Row="1" TextWrapping="Wrap" Text="Rashod" VerticalAlignment="Center"/>
+        <TextBox x:Name="textBox" Text="{Binding Prihod,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" HorizontalAlignment="Stretch"  Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center" Width="95"/>
+        <TextBox Text="{Binding Rashod,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"  HorizontalAlignment="Stretch" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center" Width="95"/>
+        <TextBlock  HorizontalAlignment="Stretch" Grid.Row="2"  TextWrapping="Wrap" Text="Trenutno stanje budzeta" VerticalAlignment="Center"/>
+        <TextBox Text="{Binding TrenutnoStanjeBudzeta,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" HorizontalAlignment="Stretch" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap"  VerticalAlignment="Center" Width="95"/>
+
+        <Grid Grid.Row="3" Grid.ColumnSpan="3" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="0.5*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="4*"></RowDefinition>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.2*" ></ColumnDefinition>
+                <ColumnDefinition Width="2*" ></ColumnDefinition>
+                <ColumnDefinition Width="0.2*" ></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Row="0" Grid.Column="1" CornerRadius="6" BorderBrush="Gray" Background="Silver" BorderThickness="2" Margin="0" >
+                <TextBlock Text="Podnosenje zahtjeva za prosirenje budzeta" HorizontalAlignment="Center" Foreground="Black" VerticalAlignment="Center"></TextBlock>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="1" CornerRadius="6" BorderBrush="Gray" Background="Silver" BorderThickness="2" Margin="0" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" ></ColumnDefinition>
+                        
+                        <ColumnDefinition Width="*" ></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="Iznos povecanja: " HorizontalAlignment="Left" Foreground="Black" VerticalAlignment="Center"></TextBlock>
+                    <TextBox Text="{Binding IznosPovecanja,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Grid.Column="1" VerticalAlignment="Center"></TextBox>
+                </Grid>
+                
+            </Border>
+
+
+            <Border Grid.Row="2" Grid.Column="1" CornerRadius="6" BorderBrush="Gray" Background="Silver" BorderThickness="2" Margin="0" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" ></ColumnDefinition>
+
+                        <ColumnDefinition Width="*" ></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="Razlog podnosenje zahtjeva:" HorizontalAlignment="Left" Foreground="Black" VerticalAlignment="Top"></TextBlock>
+                    <TextBox Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" Height="100"></TextBox>
+                    <Button Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Center" Content="Podnesi zahtjev"></Button>
+                </Grid>
+            </Border>
+            
+
+
+        </Grid>
+        <Button x:Name="button" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button x:Name="button1" Content="Podnesi zahtjev" HorizontalAlignment="Left" Margin="40,500,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.831,0.438" Width="279"/>
+    </Grid>
+</Page>
