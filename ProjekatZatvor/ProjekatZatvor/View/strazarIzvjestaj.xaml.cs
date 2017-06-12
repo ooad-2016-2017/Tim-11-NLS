@@ -27,9 +27,11 @@ namespace ProjekatZatvor
     public sealed partial class strazarIzvjestaj : Page, INotifyPropertyChanged
     {
         private UltraMegaGigaViewModel UltraMegaGiga;
+        Validacija val;
         public strazarIzvjestaj()
         {
             this.InitializeComponent();
+            val = new Validacija();
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -57,6 +59,8 @@ namespace ProjekatZatvor
             UltraMegaGiga.PrijaviPrekrsaj();
             //prekrsaj.Text = UltraMegaGiga.UkupanBrojPrekrsaja;
             pohvala.Text = UltraMegaGiga.UkupanBrojPohvala;
+            val.strazarIzvjestajPrekrsajValidacija(imeprek.Text, preimeprek.Text, celija.Text, prekprijava.Text);
+           
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
@@ -64,6 +68,11 @@ namespace ProjekatZatvor
             UltraMegaGiga.PrijaviPrekrsaj();
             prekrsaj.Text = UltraMegaGiga.UkupanBrojPrekrsaja;
             pohvala.Text = UltraMegaGiga.UkupanBrojPohvala;
+            val.strazarIzvjestajPohvalaValidacija(pohvalaime.Text, pohvalaprezime.Text, pohvalabrcelije.Text);
         }
+
+        
+
+        
     }
 }

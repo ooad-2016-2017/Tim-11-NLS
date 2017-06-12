@@ -22,10 +22,10 @@
         </Grid.ColumnDefinitions>
         <TextBlock x:ConnectionId='1' x:Name="textBlock" Grid.Row="0" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="Prihod" VerticalAlignment="Center"/>
         <TextBlock HorizontalAlignment="Stretch" Grid.Row="1" TextWrapping="Wrap" Text="Rashod" VerticalAlignment="Center"/>
-        <TextBox x:ConnectionId='2' x:Name="textBox" Text="{Binding Prihod,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" HorizontalAlignment="Stretch"  Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center" Width="95"/>
-        <TextBox Text="{Binding Rashod,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"  HorizontalAlignment="Stretch" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center" Width="95"/>
+        <TextBox x:ConnectionId='2' x:Name="Prihod" Text="{Binding Prihod,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" HorizontalAlignment="Stretch"  Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center" Width="95"/>
+        <TextBox x:ConnectionId='3' Name="Rashod" Text="{Binding Rashod,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"  HorizontalAlignment="Stretch" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center" Width="95"/>
         <TextBlock  HorizontalAlignment="Stretch" Grid.Row="2"  TextWrapping="Wrap" Text="Trenutno stanje budzeta" VerticalAlignment="Center"/>
-        <TextBox Text="{Binding TrenutnoStanjeBudzeta,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" HorizontalAlignment="Stretch" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap"  VerticalAlignment="Center" Width="95"/>
+        <TextBox x:ConnectionId='4' Name="budzet" Text="{Binding TrenutnoStanjeBudzeta,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" HorizontalAlignment="Stretch" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap"  VerticalAlignment="Center" Width="95"/>
 
         <Grid Grid.Row="3" Grid.ColumnSpan="3" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
             <Grid.RowDefinitions>
@@ -53,7 +53,7 @@
                     </Grid.ColumnDefinitions>
 
                     <TextBlock Text="Iznos povecanja: " HorizontalAlignment="Left" Foreground="Black" VerticalAlignment="Center"></TextBlock>
-                    <TextBox Text="{Binding IznosPovecanja,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Grid.Column="1" VerticalAlignment="Center"></TextBox>
+                    <TextBox x:ConnectionId='9' Name="povecanje" Text="{Binding IznosPovecanja,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Grid.Column="1" VerticalAlignment="Center"></TextBox>
                 </Grid>
                 
             </Border>
@@ -68,16 +68,16 @@
                     </Grid.ColumnDefinitions>
 
                     <TextBlock Text="Razlog podnosenje zahtjeva:" HorizontalAlignment="Left" Foreground="Black" VerticalAlignment="Top"></TextBlock>
-                    <TextBox Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" Height="100"></TextBox>
-                    <Button Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Center" Content="Podnesi zahtjev"></Button>
+                    <TextBox x:ConnectionId='7' Name="razlog" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" Height="100"></TextBox>
+                    <Button x:ConnectionId='8' Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Center" Content="Podnesi zahtjev"                     ></Button>
                 </Grid>
             </Border>
             
 
 
         </Grid>
-        <Button x:ConnectionId='3' x:Name="button" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Button x:ConnectionId='4' x:Name="button1" Content="Podnesi zahtjev" HorizontalAlignment="Left" Margin="40,500,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.831,0.438" Width="279"/>
+        <Button x:ConnectionId='5' x:Name="button" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='6' x:Name="button1" Content="Podnesi zahtjev" HorizontalAlignment="Left" Margin="40,500,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.831,0.438" Width="279"/>
     </Grid>
 </Page>
 

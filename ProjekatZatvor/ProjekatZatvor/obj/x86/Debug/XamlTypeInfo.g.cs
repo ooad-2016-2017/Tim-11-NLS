@@ -144,13 +144,13 @@ namespace ProjekatZatvor.ProjekatZatvor_XamlTypeInfo
             _typeNameTable[8] = "ProjekatZatvor.KoordinatorPocetna";
             _typeNameTable[9] = "ProjekatZatvor.KoordinatorZaPosjeteITransportForma";
             _typeNameTable[10] = "ProjekatZatvor.LoginPage";
-            _typeNameTable[11] = "ProjekatZatvor.MainPage";
-            _typeNameTable[12] = "ProjekatZatvor.View.MobilnaApp";
-            _typeNameTable[13] = "ProjekatZatvor.NarudzbaForma";
-            _typeNameTable[14] = "ProjekatZatvor.NarudzbeUpravnik";
-            _typeNameTable[15] = "ProjekatZatvor.Model.ClsNumTextTagIn";
-            _typeNameTable[16] = "String";
-            _typeNameTable[17] = "Boolean";
+            _typeNameTable[11] = "Boolean";
+            _typeNameTable[12] = "ProjekatZatvor.MainPage";
+            _typeNameTable[13] = "ProjekatZatvor.View.MobilnaApp";
+            _typeNameTable[14] = "ProjekatZatvor.NarudzbaForma";
+            _typeNameTable[15] = "ProjekatZatvor.NarudzbeUpravnik";
+            _typeNameTable[16] = "ProjekatZatvor.Model.ClsNumTextTagIn";
+            _typeNameTable[17] = "String";
             _typeNameTable[18] = "System.Collections.Generic.List`1<String>";
             _typeNameTable[19] = "ProjekatZatvor.View.NumericTextBox";
             _typeNameTable[20] = "ProjekatZatvor.View.NumericUpDown";
@@ -193,13 +193,13 @@ namespace ProjekatZatvor.ProjekatZatvor_XamlTypeInfo
             _typeTable[8] = typeof(global::ProjekatZatvor.KoordinatorPocetna);
             _typeTable[9] = typeof(global::ProjekatZatvor.KoordinatorZaPosjeteITransportForma);
             _typeTable[10] = typeof(global::ProjekatZatvor.LoginPage);
-            _typeTable[11] = typeof(global::ProjekatZatvor.MainPage);
-            _typeTable[12] = typeof(global::ProjekatZatvor.View.MobilnaApp);
-            _typeTable[13] = typeof(global::ProjekatZatvor.NarudzbaForma);
-            _typeTable[14] = typeof(global::ProjekatZatvor.NarudzbeUpravnik);
-            _typeTable[15] = typeof(global::ProjekatZatvor.Model.ClsNumTextTagIn);
-            _typeTable[16] = typeof(global::System.String);
-            _typeTable[17] = typeof(global::System.Boolean);
+            _typeTable[11] = typeof(global::System.Boolean);
+            _typeTable[12] = typeof(global::ProjekatZatvor.MainPage);
+            _typeTable[13] = typeof(global::ProjekatZatvor.View.MobilnaApp);
+            _typeTable[14] = typeof(global::ProjekatZatvor.NarudzbaForma);
+            _typeTable[15] = typeof(global::ProjekatZatvor.NarudzbeUpravnik);
+            _typeTable[16] = typeof(global::ProjekatZatvor.Model.ClsNumTextTagIn);
+            _typeTable[17] = typeof(global::System.String);
             _typeTable[18] = typeof(global::System.Collections.Generic.List<global::System.String>);
             _typeTable[19] = typeof(global::ProjekatZatvor.View.NumericTextBox);
             _typeTable[20] = typeof(global::ProjekatZatvor.View.NumericUpDown);
@@ -271,11 +271,11 @@ namespace ProjekatZatvor.ProjekatZatvor_XamlTypeInfo
         private object Activate_8_KoordinatorPocetna() { return new global::ProjekatZatvor.KoordinatorPocetna(); }
         private object Activate_9_KoordinatorZaPosjeteITransportForma() { return new global::ProjekatZatvor.KoordinatorZaPosjeteITransportForma(); }
         private object Activate_10_LoginPage() { return new global::ProjekatZatvor.LoginPage(); }
-        private object Activate_11_MainPage() { return new global::ProjekatZatvor.MainPage(); }
-        private object Activate_12_MobilnaApp() { return new global::ProjekatZatvor.View.MobilnaApp(); }
-        private object Activate_13_NarudzbaForma() { return new global::ProjekatZatvor.NarudzbaForma(); }
-        private object Activate_14_NarudzbeUpravnik() { return new global::ProjekatZatvor.NarudzbeUpravnik(); }
-        private object Activate_15_ClsNumTextTagIn() { return new global::ProjekatZatvor.Model.ClsNumTextTagIn(); }
+        private object Activate_12_MainPage() { return new global::ProjekatZatvor.MainPage(); }
+        private object Activate_13_MobilnaApp() { return new global::ProjekatZatvor.View.MobilnaApp(); }
+        private object Activate_14_NarudzbaForma() { return new global::ProjekatZatvor.NarudzbaForma(); }
+        private object Activate_15_NarudzbeUpravnik() { return new global::ProjekatZatvor.NarudzbeUpravnik(); }
+        private object Activate_16_ClsNumTextTagIn() { return new global::ProjekatZatvor.Model.ClsNumTextTagIn(); }
         private object Activate_18_List() { return new global::System.Collections.Generic.List<global::System.String>(); }
         private object Activate_19_NumericTextBox() { return new global::ProjekatZatvor.View.NumericTextBox(); }
         private object Activate_20_NumericUpDown() { return new global::ProjekatZatvor.View.NumericUpDown(); }
@@ -385,41 +385,46 @@ namespace ProjekatZatvor.ProjekatZatvor_XamlTypeInfo
             case 10:   //  ProjekatZatvor.LoginPage
                 userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_10_LoginPage;
+                userType.AddMemberName("HasErrors");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 11:   //  ProjekatZatvor.MainPage
+            case 11:   //  Boolean
+                xamlType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 12:   //  ProjekatZatvor.MainPage
                 userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_MainPage;
+                userType.Activator = Activate_12_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 12:   //  ProjekatZatvor.View.MobilnaApp
+            case 13:   //  ProjekatZatvor.View.MobilnaApp
                 userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_12_MobilnaApp;
+                userType.Activator = Activate_13_MobilnaApp;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 13:   //  ProjekatZatvor.NarudzbaForma
+            case 14:   //  ProjekatZatvor.NarudzbaForma
                 userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_13_NarudzbaForma;
+                userType.Activator = Activate_14_NarudzbaForma;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 14:   //  ProjekatZatvor.NarudzbeUpravnik
+            case 15:   //  ProjekatZatvor.NarudzbeUpravnik
                 userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_14_NarudzbeUpravnik;
+                userType.Activator = Activate_15_NarudzbeUpravnik;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 15:   //  ProjekatZatvor.Model.ClsNumTextTagIn
+            case 16:   //  ProjekatZatvor.Model.ClsNumTextTagIn
                 userType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_15_ClsNumTextTagIn;
+                userType.Activator = Activate_16_ClsNumTextTagIn;
                 userType.AddMemberName("MyPattern");
                 userType.AddMemberName("IsNumOnly");
                 userType.AddMemberName("IsDotSepa");
@@ -430,11 +435,7 @@ namespace ProjekatZatvor.ProjekatZatvor_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 16:   //  String
-                xamlType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 17:   //  Boolean
+            case 17:   //  String
                 xamlType = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
@@ -644,82 +645,87 @@ namespace ProjekatZatvor.ProjekatZatvor_XamlTypeInfo
         }
 
 
-        private object get_0_ClsNumTextTagIn_MyPattern(object instance)
+        private object get_0_LoginPage_HasErrors(object instance)
+        {
+            var that = (global::ProjekatZatvor.LoginPage)instance;
+            return that.HasErrors;
+        }
+        private object get_1_ClsNumTextTagIn_MyPattern(object instance)
         {
             var that = (global::ProjekatZatvor.Model.ClsNumTextTagIn)instance;
             return that.MyPattern;
         }
-        private void set_0_ClsNumTextTagIn_MyPattern(object instance, object Value)
+        private void set_1_ClsNumTextTagIn_MyPattern(object instance, object Value)
         {
             var that = (global::ProjekatZatvor.Model.ClsNumTextTagIn)instance;
             that.MyPattern = (global::System.String)Value;
         }
-        private object get_1_ClsNumTextTagIn_IsNumOnly(object instance)
+        private object get_2_ClsNumTextTagIn_IsNumOnly(object instance)
         {
             var that = (global::ProjekatZatvor.Model.ClsNumTextTagIn)instance;
             return that.IsNumOnly;
         }
-        private void set_1_ClsNumTextTagIn_IsNumOnly(object instance, object Value)
+        private void set_2_ClsNumTextTagIn_IsNumOnly(object instance, object Value)
         {
             var that = (global::ProjekatZatvor.Model.ClsNumTextTagIn)instance;
             that.IsNumOnly = (global::System.Boolean)Value;
         }
-        private object get_2_ClsNumTextTagIn_IsDotSepa(object instance)
+        private object get_3_ClsNumTextTagIn_IsDotSepa(object instance)
         {
             var that = (global::ProjekatZatvor.Model.ClsNumTextTagIn)instance;
             return that.IsDotSepa;
         }
-        private void set_2_ClsNumTextTagIn_IsDotSepa(object instance, object Value)
+        private void set_3_ClsNumTextTagIn_IsDotSepa(object instance, object Value)
         {
             var that = (global::ProjekatZatvor.Model.ClsNumTextTagIn)instance;
             that.IsDotSepa = (global::System.Boolean)Value;
         }
-        private object get_3_ClsNumTextTagIn_CanNegNum(object instance)
+        private object get_4_ClsNumTextTagIn_CanNegNum(object instance)
         {
             var that = (global::ProjekatZatvor.Model.ClsNumTextTagIn)instance;
             return that.CanNegNum;
         }
-        private void set_3_ClsNumTextTagIn_CanNegNum(object instance, object Value)
+        private void set_4_ClsNumTextTagIn_CanNegNum(object instance, object Value)
         {
             var that = (global::ProjekatZatvor.Model.ClsNumTextTagIn)instance;
             that.CanNegNum = (global::System.Boolean)Value;
         }
-        private object get_4_ClsNumTextTagIn_LstRemStr(object instance)
+        private object get_5_ClsNumTextTagIn_LstRemStr(object instance)
         {
             var that = (global::ProjekatZatvor.Model.ClsNumTextTagIn)instance;
             return that.LstRemStr;
         }
-        private void set_4_ClsNumTextTagIn_LstRemStr(object instance, object Value)
+        private void set_5_ClsNumTextTagIn_LstRemStr(object instance, object Value)
         {
             var that = (global::ProjekatZatvor.Model.ClsNumTextTagIn)instance;
             that.LstRemStr = (global::System.Collections.Generic.List<global::System.String>)Value;
         }
-        private object get_5_ClsNumTextTagIn_Tag(object instance)
+        private object get_6_ClsNumTextTagIn_Tag(object instance)
         {
             var that = (global::ProjekatZatvor.Model.ClsNumTextTagIn)instance;
             return that.Tag;
         }
-        private void set_5_ClsNumTextTagIn_Tag(object instance, object Value)
+        private void set_6_ClsNumTextTagIn_Tag(object instance, object Value)
         {
             var that = (global::ProjekatZatvor.Model.ClsNumTextTagIn)instance;
             that.Tag = (global::System.Object)Value;
         }
-        private object get_6_NumericTextBox_textblock(object instance)
+        private object get_7_NumericTextBox_textblock(object instance)
         {
             var that = (global::ProjekatZatvor.View.NumericTextBox)instance;
             return that.textblock;
         }
-        private void set_6_NumericTextBox_textblock(object instance, object Value)
+        private void set_7_NumericTextBox_textblock(object instance, object Value)
         {
             var that = (global::ProjekatZatvor.View.NumericTextBox)instance;
             that.textblock = (global::System.String)Value;
         }
-        private object get_7_NumericUpDown_NumValue(object instance)
+        private object get_8_NumericUpDown_NumValue(object instance)
         {
             var that = (global::ProjekatZatvor.View.NumericUpDown)instance;
             return that.NumValue;
         }
-        private void set_7_NumericUpDown_NumValue(object instance, object Value)
+        private void set_8_NumericUpDown_NumValue(object instance, object Value)
         {
             var that = (global::ProjekatZatvor.View.NumericUpDown)instance;
             that.NumValue = (global::System.Int32)Value;
@@ -732,54 +738,60 @@ namespace ProjekatZatvor.ProjekatZatvor_XamlTypeInfo
 
             switch (longMemberName)
             {
+            case "ProjekatZatvor.LoginPage.HasErrors":
+                userType = (global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ProjekatZatvor.LoginPage");
+                xamlMember = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlMember(this, "HasErrors", "Boolean");
+                xamlMember.Getter = get_0_LoginPage_HasErrors;
+                xamlMember.SetIsReadOnly();
+                break;
             case "ProjekatZatvor.Model.ClsNumTextTagIn.MyPattern":
                 userType = (global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ProjekatZatvor.Model.ClsNumTextTagIn");
                 xamlMember = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlMember(this, "MyPattern", "String");
-                xamlMember.Getter = get_0_ClsNumTextTagIn_MyPattern;
-                xamlMember.Setter = set_0_ClsNumTextTagIn_MyPattern;
+                xamlMember.Getter = get_1_ClsNumTextTagIn_MyPattern;
+                xamlMember.Setter = set_1_ClsNumTextTagIn_MyPattern;
                 break;
             case "ProjekatZatvor.Model.ClsNumTextTagIn.IsNumOnly":
                 userType = (global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ProjekatZatvor.Model.ClsNumTextTagIn");
                 xamlMember = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlMember(this, "IsNumOnly", "Boolean");
-                xamlMember.Getter = get_1_ClsNumTextTagIn_IsNumOnly;
-                xamlMember.Setter = set_1_ClsNumTextTagIn_IsNumOnly;
+                xamlMember.Getter = get_2_ClsNumTextTagIn_IsNumOnly;
+                xamlMember.Setter = set_2_ClsNumTextTagIn_IsNumOnly;
                 break;
             case "ProjekatZatvor.Model.ClsNumTextTagIn.IsDotSepa":
                 userType = (global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ProjekatZatvor.Model.ClsNumTextTagIn");
                 xamlMember = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlMember(this, "IsDotSepa", "Boolean");
-                xamlMember.Getter = get_2_ClsNumTextTagIn_IsDotSepa;
-                xamlMember.Setter = set_2_ClsNumTextTagIn_IsDotSepa;
+                xamlMember.Getter = get_3_ClsNumTextTagIn_IsDotSepa;
+                xamlMember.Setter = set_3_ClsNumTextTagIn_IsDotSepa;
                 break;
             case "ProjekatZatvor.Model.ClsNumTextTagIn.CanNegNum":
                 userType = (global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ProjekatZatvor.Model.ClsNumTextTagIn");
                 xamlMember = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlMember(this, "CanNegNum", "Boolean");
-                xamlMember.Getter = get_3_ClsNumTextTagIn_CanNegNum;
-                xamlMember.Setter = set_3_ClsNumTextTagIn_CanNegNum;
+                xamlMember.Getter = get_4_ClsNumTextTagIn_CanNegNum;
+                xamlMember.Setter = set_4_ClsNumTextTagIn_CanNegNum;
                 break;
             case "ProjekatZatvor.Model.ClsNumTextTagIn.LstRemStr":
                 userType = (global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ProjekatZatvor.Model.ClsNumTextTagIn");
                 xamlMember = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlMember(this, "LstRemStr", "System.Collections.Generic.List`1<String>");
-                xamlMember.Getter = get_4_ClsNumTextTagIn_LstRemStr;
-                xamlMember.Setter = set_4_ClsNumTextTagIn_LstRemStr;
+                xamlMember.Getter = get_5_ClsNumTextTagIn_LstRemStr;
+                xamlMember.Setter = set_5_ClsNumTextTagIn_LstRemStr;
                 break;
             case "ProjekatZatvor.Model.ClsNumTextTagIn.Tag":
                 userType = (global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ProjekatZatvor.Model.ClsNumTextTagIn");
                 xamlMember = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlMember(this, "Tag", "Object");
-                xamlMember.Getter = get_5_ClsNumTextTagIn_Tag;
-                xamlMember.Setter = set_5_ClsNumTextTagIn_Tag;
+                xamlMember.Getter = get_6_ClsNumTextTagIn_Tag;
+                xamlMember.Setter = set_6_ClsNumTextTagIn_Tag;
                 break;
             case "ProjekatZatvor.View.NumericTextBox.textblock":
                 userType = (global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ProjekatZatvor.View.NumericTextBox");
                 xamlMember = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlMember(this, "textblock", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_6_NumericTextBox_textblock;
-                xamlMember.Setter = set_6_NumericTextBox_textblock;
+                xamlMember.Getter = get_7_NumericTextBox_textblock;
+                xamlMember.Setter = set_7_NumericTextBox_textblock;
                 break;
             case "ProjekatZatvor.View.NumericUpDown.NumValue":
                 userType = (global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ProjekatZatvor.View.NumericUpDown");
                 xamlMember = new global::ProjekatZatvor.ProjekatZatvor_XamlTypeInfo.XamlMember(this, "NumValue", "Int32");
-                xamlMember.Getter = get_7_NumericUpDown_NumValue;
-                xamlMember.Setter = set_7_NumericUpDown_NumValue;
+                xamlMember.Getter = get_8_NumericUpDown_NumValue;
+                xamlMember.Setter = set_8_NumericUpDown_NumValue;
                 break;
             }
             return xamlMember;

@@ -12,11 +12,11 @@
         <TextBlock HorizontalAlignment="Left" Margin="20,84,0,0" TextWrapping="Wrap" Text="Cijena" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="20,124,0,0" TextWrapping="Wrap" Text="Kolicina" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="20,164,0,0" TextWrapping="Wrap" Text="Ukupno za platiti" VerticalAlignment="Top"/>
-        <TextBox  HorizontalAlignment="Left" Margin="148,44,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="194"/>
-        <TextBox  HorizontalAlignment="Left" Margin="148,84,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="194"/>
-        <TextBox  HorizontalAlignment="Left" Margin="148,124,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="194"/>
-        <TextBox  HorizontalAlignment="Left" Margin="148,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194"/>
-        <Button  Content="Naruci" HorizontalAlignment="Left" Margin="241,211,0,0" VerticalAlignment="Top" Width="98"/>
+        <TextBox  Name="Naziv" HorizontalAlignment="Left" Margin="148,44,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="194"/>
+        <TextBox  Name="Cijena" HorizontalAlignment="Left" Margin="148,84,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="194"/>
+        <TextBox Name="Kolicina" HorizontalAlignment="Left" Margin="148,124,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="194"/>
+        <TextBox Name="Platiti" HorizontalAlignment="Left" Margin="148,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194"/>
+        <Button  Content="Naruci" HorizontalAlignment="Left" Margin="241,211,0,0" VerticalAlignment="Top" Width="98" Click="Button_Click"/>
         <Button  Content="Odustani" HorizontalAlignment="Left" Margin="241,251,0,0" VerticalAlignment="Top" Width="98"/>
 
     </Grid>

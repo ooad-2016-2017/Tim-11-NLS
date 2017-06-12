@@ -78,21 +78,21 @@
                 </Grid.ColumnDefinitions>
 
                 <TextBlock Grid.Row="0" Foreground="White" Grid.Column="0" Text="Ime vozača" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                <ComboBox Grid.Row="0" Grid.Column="1"  VerticalAlignment="Center" HorizontalAlignment="Stretch"
+                <ComboBox Name="ime" Grid.Row="0" Grid.Column="1"  VerticalAlignment="Center" HorizontalAlignment="Stretch"
                           SelectedValue="{Binding OznaceniVozac,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                   ItemsSource="{Binding ListaVozaca,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" 
                 ></ComboBox>
                 <TextBlock Grid.Row="1" Foreground="White" Grid.Column="0" Text="Zatvorenik" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                <ComboBox Grid.Row="1" Grid.Column="1"  HorizontalAlignment="Stretch" VerticalAlignment="Center"
+                <ComboBox Name="zatvorenik" Grid.Row="1" Grid.Column="1"  HorizontalAlignment="Stretch" VerticalAlignment="Center"
                             SelectedValue="{Binding OznaceniZatvorenik,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                   ItemsSource="{Binding ListaZatvorenika,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"  ></ComboBox>
 
                 <TextBlock Grid.Row="3" Foreground="White" Grid.Column="0" Text="Odredište" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                <TextBox Grid.Row="2" Grid.Column="1" Height="20" Text="{Binding Odrediste,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"></TextBox>
+                <TextBox Name="Odrediste" Grid.Row="2" Grid.Column="1" Height="20" Text="{Binding Odrediste,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"></TextBox>
 
                 <DatePicker Grid.Row="1" Grid.Column="3" Date="{Binding DatumVoznje,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay,Converter={StaticResource DateTimeToDateTimeOffsetConverter}}" ></DatePicker>
                 <TextBlock Grid.Row="0" Foreground="White" Grid.Column="3" TextWrapping="Wrap" Text="Datum" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                <Button Command="{Binding DodajVoznjuCommand}" Grid.Row="2" Grid.Column="3" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button Command="{Binding DodajVoznjuCommand}" Grid.Row="2" Grid.Column="3" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click">
                     <TextBlock Text="Dodaj" ></TextBlock>
                 </Button>
 

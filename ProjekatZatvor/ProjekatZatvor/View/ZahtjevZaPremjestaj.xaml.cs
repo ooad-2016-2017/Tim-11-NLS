@@ -25,10 +25,11 @@ namespace ProjekatZatvor
     public sealed partial class ZahtjevZaPremjestaj : Page, INotifyPropertyChanged
     {
         private UltraMegaGigaViewModel UltraMegaGiga;
+        Validacija val;
         public ZahtjevZaPremjestaj()
         {
             this.InitializeComponent();
-            
+            val = new Validacija();
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -52,6 +53,11 @@ namespace ProjekatZatvor
             UltraMegaGiga = (UltraMegaGigaViewModel)e.Parameter;
             this.DataContext = UltraMegaGiga;
             base.OnNavigatedTo(e);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            val.ZahtjevZaPremjestajValidacija(Ime.Text, Prezime.Text, Pin.Text, Klub.Text);
         }
     }
 }

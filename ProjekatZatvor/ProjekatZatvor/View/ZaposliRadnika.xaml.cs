@@ -27,8 +27,10 @@ namespace ProjekatZatvor
     public sealed partial class ZaposliRadnika : Page, INotifyPropertyChanged
     {
         private UltraMegaGigaViewModel UltraMegaGiga;
+        Validacija val;
         public ZaposliRadnika() {
             this.InitializeComponent();
+            val = new Validacija();
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -66,6 +68,11 @@ namespace ProjekatZatvor
         private void textBox5_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            val.ZaposliRadnikaValidacija(textBox1.Text, prezime.Text, textBox.Text, textBox2.Text, textBox3.Text, textBox4.Text, comboBox.Items[comboBox.SelectedIndex].ToString(), textBox5.Text);
         }
     }
 }

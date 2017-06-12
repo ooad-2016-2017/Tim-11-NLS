@@ -41,8 +41,8 @@
         <Button Click="Back_Click" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center"  Height="40" Background="White">
             <Image Source="Assets/back.jpg" Margin="-10"></Image>
         </Button>
-        <Button Command="{Binding PosaljiZahtjevZaPrijavuUKlubCommand}" Grid.Column="4" Grid.Row="7"  HorizontalAlignment="Center"  >
-            <TextBlock  Text="Posalji zahtjev"></TextBlock>
+        <Button Command="{Binding PosaljiZahtjevZaPrijavuUKlubCommand}" Grid.Column="4" Grid.Row="7"  HorizontalAlignment="Center" Click="Button_Click"  >
+            <TextBlock  Text="Posalji zahtjev" SelectionChanged="TextBlock_SelectionChanged"></TextBlock>
         </Button>
 
         <Grid 

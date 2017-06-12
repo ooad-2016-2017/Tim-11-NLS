@@ -25,12 +25,13 @@ namespace ProjekatZatvor
     public sealed partial class RasporedPosjeta : Page,INotifyPropertyChanged
     {
         private UltraMegaGigaViewModel UltraMegaGiga;
-        
+        Validacija val;   
         public RasporedPosjeta()
         {
             this.InitializeComponent();
             //UltraMegaGiga = new UltraMegaGigaViewModel();
             //this.DataContext = UltraMegaGiga;
+            val = new Validacija();
            
         }
 
@@ -44,6 +45,7 @@ namespace ProjekatZatvor
     }
     public void Back_Click(object sender, RoutedEventArgs e)
         {
+
             if (this.Frame != null && this.Frame.CanGoBack) this.Frame.GoBack();
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -54,6 +56,16 @@ namespace ProjekatZatvor
             UltraMegaGiga=(UltraMegaGigaViewModel)e.Parameter;
             this.DataContext = UltraMegaGiga;
             base.OnNavigatedTo(e);
+        }
+
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            val.RasporedPosjetaValidacija(ime.Text, prezime.Text, Licna.Text, Termin.Text);
         }
     }
    

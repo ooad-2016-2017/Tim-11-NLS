@@ -24,9 +24,11 @@ namespace ProjekatZatvor
     /// </summary>
     public sealed partial class ZahtjevZaOdlazakDoktoru : Page, INotifyPropertyChanged
     {
+        Validacija val;
         private UltraMegaGigaViewModel UltraMegaGiga;
         public ZahtjevZaOdlazakDoktoru()
         {
+            val = new Validacija();
             this.InitializeComponent();
             
         }
@@ -54,6 +56,15 @@ namespace ProjekatZatvor
             this.DataContext = UltraMegaGiga;
             base.OnNavigatedTo(e);
         }
-   
+
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void PosaljiZahtjevButton_Click(object sender, RoutedEventArgs e)
+        {
+            val.ZahtjevZaOdlazakDoktoruValidacija(Ime.Text, Prezime.Text, Pin.Text, Razlog.Text);
+                    }
     }
 }

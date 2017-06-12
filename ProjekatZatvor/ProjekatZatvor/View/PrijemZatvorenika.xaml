@@ -75,7 +75,7 @@
         <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Celija:" VerticalAlignment="Center" Grid.Row="8" Grid.Column="0"/>
         <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Danasnji datum:" VerticalAlignment="Center" Grid.Row="9" Grid.Column="0"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="JMBG" VerticalAlignment="Center" Grid.Row="3" Grid.Column="0"></TextBlock>
-        <TextBox HorizontalAlignment="Left"  TextWrapping="Wrap" Text="{Binding NoviZatvorenik.Jmbg, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" VerticalAlignment="Center" Width="230" Grid.Row="3" Grid.Column="1"></TextBox>
+        <TextBox Name="jmbg" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="{Binding NoviZatvorenik.Jmbg, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" VerticalAlignment="Center" Width="230" Grid.Row="3" Grid.Column="1" TextChanged="TextBox_TextChanged"></TextBox>
         <TextBox x:Name="textBo" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="{Binding NoviZatvorenik.Ime, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" VerticalAlignment="Center" Width="230" Grid.Row="1" Grid.Column="1"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="{Binding NoviZatvorenik.Prezime, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" VerticalAlignment="Center" Width="230" Grid.Row="2" Grid.Column="1"/>
         <TextBox x:Name="textBox1" Text="{Binding NoviZatvorenik.OptuzenZa, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" HorizontalAlignment="Left" TextWrapping="Wrap"  VerticalAlignment="Center" Width="230" Grid.Row="7" Grid.Column="1"/>
@@ -88,7 +88,7 @@
 
 
 
-        <Button Command="{Binding PrijemZatvorenikaCommand}" x:Name="button" Content="POTVRDI" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="197" Grid.Row="10" Grid.ColumnSpan="2"/>
+        <Button Command="{Binding PrijemZatvorenikaCommand}" x:Name="button" Content="POTVRDI" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="197" Grid.Row="10" Grid.ColumnSpan="2" Click="button_Click"/>
 
     </Grid>
 </Page>

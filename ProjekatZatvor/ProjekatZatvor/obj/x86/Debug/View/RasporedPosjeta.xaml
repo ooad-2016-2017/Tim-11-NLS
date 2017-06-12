@@ -30,7 +30,7 @@
         <TextBlock Text="    Dodaj posjetu" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
 
         <Border Grid.Row="2" CornerRadius="6" BorderBrush="Gray" Background="IndianRed" BorderThickness="2" Margin="10" >
-            <ListBox x:ConnectionId='2' Name="listica" Foreground="White" ItemsSource="{Binding ListaPosjetaString,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Background="IndianRed">
+            <ListBox x:ConnectionId='8' Name="listica" Foreground="White" ItemsSource="{Binding ListaPosjetaString,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Background="IndianRed">
                 
             </ListBox>
            </Border>
@@ -49,20 +49,20 @@
                 </Grid.ColumnDefinitions>
 
                 <TextBlock Grid.Row="0" Foreground="White" Grid.Column="0" Text="Ime" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                <TextBox Grid.Row="0" Text="{Binding ImePosjetioca,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Grid.Column="1" Height="20"></TextBox>
-                <TextBlock Grid.Row="1" Foreground="White" Grid.Column="0" Text="Prezime" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                <TextBox Grid.Row="1" Text="{Binding PrezimePosjetioca,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Grid.Column="1" Height="20"></TextBox>
+                <TextBox x:ConnectionId='4' Name="ime" Grid.Row="0" Text="{Binding ImePosjetioca,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Grid.Column="1" Height="20"></TextBox>
+                <TextBlock  Grid.Row="1" Foreground="White" Grid.Column="0" Text="Prezime" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+                <TextBox x:ConnectionId='5' Name="prezime"  Grid.Row="1" Text="{Binding PrezimePosjetioca,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Grid.Column="1" Height="20"></TextBox>
                 <TextBlock Grid.Row="2" Foreground="White" Grid.Column="0" TextWrapping="Wrap" Text="Broj licne karte" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding BrojLicneKartePosjetioca,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Height="20"></TextBox>
+                <TextBox x:ConnectionId='6' Name="Licna" Grid.Row="2" Grid.Column="1" Text="{Binding BrojLicneKartePosjetioca,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Height="20"></TextBox>
                 <TextBlock Grid.Row="3" Foreground="White" Grid.Column="0" Text="Datum" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
                 <DatePicker Grid.Row="3" Grid.Column="1" Date="{Binding DatumPosjete,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay,Converter={StaticResource DateTimeToDateTimeOffsetConverter}}" ></DatePicker>
                 <TextBlock Grid.Row="4" Foreground="White" Grid.Column="0" TextWrapping="Wrap" Text="Termin" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                <TextBox Grid.Row="4" Grid.Column="1" Height="20" Text="{Binding TerminPosjete,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"></TextBox>
+                <TextBox x:ConnectionId='7' Name="Termin" Grid.Row="4" Grid.Column="1" Height="20" Text="{Binding TerminPosjete,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"></TextBox>
 
             </Grid>
         </Border>
-        <Button Grid.Row="3" Grid.Column="1" Command="{Binding DodajPosjetuCommand}" HorizontalAlignment="Center">
-            <TextBlock><Bold>Dodaj</Bold></TextBlock>
+        <Button x:ConnectionId='2' Grid.Row="3" Grid.Column="1" Command="{Binding DodajPosjetuCommand}" HorizontalAlignment="Center"                     >
+            <TextBlock x:ConnectionId='3'                                              ><Bold>Dodaj</Bold></TextBlock>
         </Button>
     </Grid>
 </Page>

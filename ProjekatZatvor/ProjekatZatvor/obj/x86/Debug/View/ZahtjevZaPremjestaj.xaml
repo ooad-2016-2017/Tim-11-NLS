@@ -40,7 +40,7 @@
         <TextBox x:ConnectionId='4' x:Name="Pin" Text="{Binding PasswordZatvorenika,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Grid.Row="2" Grid.Column="2" Height="20" VerticalAlignment="Center"  ></TextBox>
         <TextBox x:ConnectionId='5' x:Name="Klub" Text="{Binding Molba,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" AcceptsReturn="True" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="4" Height="60" VerticalAlignment="Center"  ></TextBox>
 
-        <Button Grid.Row="6" Command="{Binding PosaljiZahtjevZaPremjestajCommand}" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" >
+        <Button x:ConnectionId='6' Grid.Row="6" Command="{Binding PosaljiZahtjevZaPremjestajCommand}" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"                      >
             <Button.Content>
                 <TextBlock><Bold>Pošalji zahtjev</Bold></TextBlock>
             </Button.Content>

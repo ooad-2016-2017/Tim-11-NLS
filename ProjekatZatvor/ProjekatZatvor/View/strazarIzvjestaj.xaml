@@ -37,19 +37,19 @@
                 <TextBlock  Grid.Column="0" Grid.Row="3" TextWrapping="Wrap" Text=" Prezime:" VerticalAlignment="Center" />
                 <TextBlock   Grid.Column="0" Grid.Row="4"  TextWrapping="Wrap" Text=" Broj celije:"  VerticalAlignment="Center"/>
                 <TextBlock   Grid.Column="0" Grid.Row="5"  TextWrapping="Wrap" Text=" Prekrsaj:" VerticalAlignment="Top" />
-        <TextBox Text="{Binding ImeZatvorenikaIzvjestaj,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" />
-        <TextBox  Text="{Binding PrezimeZatvorenikaIzvjestaj,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"  Grid.Column="1" Grid.Row="3"  TextWrapping="Wrap"  VerticalAlignment="Center" />
-        <TextBox Text="{Binding CelijaZatvorenikaIzvjestaj,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"   Grid.Column="1" Grid.Row="4"  TextWrapping="Wrap"  VerticalAlignment="Center" />
-                <TextBox Text="{Binding TekstPrekrsaja, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Grid.ColumnSpan="2" Grid.Row="5" Grid.RowSpan="2"  />
-        <Button Command="{Binding PrijaviPrekrsajCommand}" x:Name="button1"  Content="Prijavi prekrsaj"  Grid.ColumnSpan="2" Grid.Row="7" HorizontalAlignment="Stretch"  VerticalAlignment="Top" />
+        <TextBox Name="imeprek" Text="{Binding ImeZatvorenikaIzvjestaj,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" />
+        <TextBox  Name="preimeprek" Text="{Binding PrezimeZatvorenikaIzvjestaj,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"  Grid.Column="1" Grid.Row="3"  TextWrapping="Wrap"  VerticalAlignment="Center" />
+        <TextBox Name="celija" Text="{Binding CelijaZatvorenikaIzvjestaj,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"   Grid.Column="1" Grid.Row="4"  TextWrapping="Wrap"  VerticalAlignment="Center" />
+                <TextBox  Name="prekprijava" Text="{Binding TekstPrekrsaja, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Grid.ColumnSpan="2" Grid.Row="5" Grid.RowSpan="2"  />
+        <Button Command="{Binding PrijaviPrekrsajCommand}" x:Name="button1"  Content="Prijavi prekrsaj"  Grid.ColumnSpan="2" Grid.Row="7" HorizontalAlignment="Stretch"  VerticalAlignment="Top" Click="button1_Click" />
 
         <TextBlock  TextWrapping="Wrap" Text="Pohvale za dobro ponasanje" Grid.ColumnSpan="4" Grid.Row="0" Grid.Column="3" />
         <TextBlock   Grid.Row="1"  Grid.Column="3" TextWrapping="Wrap" Text=" Ime:" />
         <TextBlock   Grid.Row="2"  Grid.Column="3" TextWrapping="Wrap" Text=" Prezime:" />
         <TextBlock   Grid.Row="3"  Grid.Column="3" TextWrapping="Wrap" Text=" Broj celije:" />
-        <TextBox Text="{Binding ImeZatvorenikaIzvjestaj,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"  Grid.Row="1"  Grid.Column="4" TextWrapping="Wrap"  VerticalAlignment="Top" />
-        <TextBox  Text="{Binding PrezimeZatvorenikaIzvjestaj,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"  Grid.Row="2"  Grid.Column="4" TextWrapping="Wrap"  VerticalAlignment="Top" />
-        <TextBox  Text="{Binding CelijaZatvorenikaIzvjestaj,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"  Grid.Row="3"  Grid.Column="4" TextWrapping="Wrap"  VerticalAlignment="Top" />
+        <TextBox Name="pohvalaime" Text="{Binding ImeZatvorenikaIzvjestaj,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"  Grid.Row="1"  Grid.Column="4" TextWrapping="Wrap"  VerticalAlignment="Top" />
+        <TextBox  Name="pohvalaprezime" Text="{Binding PrezimeZatvorenikaIzvjestaj,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"  Grid.Row="2"  Grid.Column="4" TextWrapping="Wrap"  VerticalAlignment="Top" />
+        <TextBox  Name="pohvalabrcelije" Text="{Binding CelijaZatvorenikaIzvjestaj,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"  Grid.Row="3"  Grid.Column="4" TextWrapping="Wrap"  VerticalAlignment="Top" />
         <Button x:Name="button" Click="button_Click" Content="Prijavi"  Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="2"   VerticalAlignment="Top" HorizontalAlignment="Stretch"/>
 
         <TextBlock   Grid.Row="5" Grid.Column="3" TextWrapping="Wrap" Text=" Ukupan broj prekrsaja:" />

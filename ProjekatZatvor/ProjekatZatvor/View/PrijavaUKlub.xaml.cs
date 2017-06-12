@@ -39,10 +39,11 @@ namespace ProjekatZatvor
         }
         private UltraMegaGigaViewModel UltraMegaGiga;
 
+        Validacija val;
         public PrijavaUKlub()
         {
             this.InitializeComponent();
-          
+            val = new Validacija();
         }
 
         public void Back_Click(object sender, RoutedEventArgs e)
@@ -58,10 +59,17 @@ namespace ProjekatZatvor
             this.DataContext = UltraMegaGiga;
             base.OnNavigatedTo(e);
         }
-      
-    
-   
 
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            String naziv = Klub.Items[Klub.SelectedIndex].ToString();
+            val.PrijavaUKlubValidacija(Ime.Text, Prezime.Text, Pin.Text, naziv);
+        }
     }
     
 }

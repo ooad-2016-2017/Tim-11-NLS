@@ -69,7 +69,7 @@
 
         <TextBox x:ConnectionId='7' x:Name="textBox" HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" Text="{Binding NovaNarudzba.Kolicina,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" VerticalAlignment="Center" Width="180" Grid.Row="1" Grid.Column="1"/>
 
-        <Button x:ConnectionId='8' Command="{Binding IzvrsiNarudzbuCommand}" x:Name="button" Content="Podnesi zahtjev" HorizontalAlignment="Center" Margin="30,20,0,0" VerticalAlignment="Center" Width="215" Grid.Row="2" Grid.ColumnSpan="2"/>
+        <Button x:ConnectionId='8' Command="{Binding IzvrsiNarudzbuCommand}" x:Name="button" Content="Podnesi zahtjev" HorizontalAlignment="Center" Margin="30,20,0,0" VerticalAlignment="Center" Width="215" Grid.Row="2" Grid.ColumnSpan="2"                     />
 
 
     </Grid>

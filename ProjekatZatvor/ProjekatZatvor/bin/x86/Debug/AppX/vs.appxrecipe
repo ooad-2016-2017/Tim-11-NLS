@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>7be98fdb-cb79-4c6e-aaac-9b9a4e055b8a</PackageIdentityName>
     <PackageIdentityPublisher>CN=Korisnik</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -25,16 +25,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-05-29T09:38:47.074</Modified>
+      <Modified>2017-06-12T09:58:04.836</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\bin\x86\Debug\ProjekatZatvor.exe">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\bin\x86\Debug\ProjekatZatvor.exe">
       <PackagePath>entrypoint\ProjekatZatvor.exe</PackagePath>
-      <Modified>2017-05-29T09:38:44.880</Modified>
+      <Modified>2017-06-12T09:57:59.478</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\.nuget\packages\EntityFramework.Core\7.0.0-beta6\lib\dotnet\EntityFramework.Core.dll">
       <PackagePath>EntityFramework.Core.dll</PackagePath>
@@ -187,6 +187,18 @@
     <AppxPackagedFile Include="C:\Users\Korisnik\.nuget\packages\Newtonsoft.Json\6.0.4\lib\netcore45\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
       <Modified>2014-08-03T18:33:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Korisnik\.nuget\packages\Prism.Mvvm\1.1.1\lib\windows8\Microsoft.Practices.Prism.Mvvm.Store.dll">
+      <PackagePath>Microsoft.Practices.Prism.Mvvm.Store.dll</PackagePath>
+      <Modified>2014-08-20T11:32:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Korisnik\.nuget\packages\Prism.Mvvm\1.1.1\lib\windows8\Microsoft.Practices.Prism.Mvvm.dll">
+      <PackagePath>Microsoft.Practices.Prism.Mvvm.dll</PackagePath>
+      <Modified>2014-08-20T11:32:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Korisnik\.nuget\packages\Prism.Mvvm\1.1.1\lib\windows8\Microsoft.Practices.Prism.SharedInterfaces.dll">
+      <PackagePath>Microsoft.Practices.Prism.SharedInterfaces.dll</PackagePath>
+      <Modified>2014-08-20T11:32:22.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\.nuget\packages\Remotion.Linq\2.0.0-alpha-004\lib\portable-net45+win+wpa81+wp80\Remotion.Linq.dll">
       <PackagePath>Remotion.Linq.dll</PackagePath>
@@ -544,172 +556,172 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-22T21:11:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\Assets\AdmissionIcon.PNG">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\Assets\AdmissionIcon.PNG">
       <PackagePath>Assets\AdmissionIcon.PNG</PackagePath>
       <Modified>2017-05-18T19:27:21.486</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\AdmissionIcon.PNG">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\AdmissionIcon.PNG">
       <PackagePath>View\Assets\AdmissionIcon.PNG</PackagePath>
       <Modified>2017-05-22T19:04:45.042</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\cell.png">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\cell.png">
       <PackagePath>View\Assets\cell.png</PackagePath>
       <Modified>2017-05-18T19:27:21.517</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\Assets\FireIcon.PNG">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\Assets\FireIcon.PNG">
       <PackagePath>Assets\FireIcon.PNG</PackagePath>
       <Modified>2017-05-18T19:27:21.487</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\Assets\HireIcon.PNG">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\Assets\HireIcon.PNG">
       <PackagePath>Assets\HireIcon.PNG</PackagePath>
       <Modified>2017-05-18T19:27:21.490</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\FireIcon.PNG">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\FireIcon.PNG">
       <PackagePath>View\Assets\FireIcon.PNG</PackagePath>
       <Modified>2017-05-22T19:04:45.052</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\HireIcon.PNG">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\HireIcon.PNG">
       <PackagePath>View\Assets\HireIcon.PNG</PackagePath>
       <Modified>2017-05-22T19:04:45.063</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\Izvjestaj.png">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\Izvjestaj.png">
       <PackagePath>View\Assets\Izvjestaj.png</PackagePath>
       <Modified>2017-05-22T19:04:45.070</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\koordinator.png">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\koordinator.png">
       <PackagePath>View\Assets\koordinator.png</PackagePath>
       <Modified>2017-05-18T19:27:21.522</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\logout.png">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\logout.png">
       <PackagePath>View\Assets\logout.png</PackagePath>
       <Modified>2017-05-18T19:27:21.525</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\logout1.png">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\logout1.png">
       <PackagePath>View\Assets\logout1.png</PackagePath>
       <Modified>2017-05-18T19:27:21.526</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\OrderIcon.PNG">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\OrderIcon.PNG">
       <PackagePath>View\Assets\OrderIcon.PNG</PackagePath>
       <Modified>2017-05-18T19:27:21.495</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\RequestIcon.PNG">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\RequestIcon.PNG">
       <PackagePath>View\Assets\RequestIcon.PNG</PackagePath>
       <Modified>2017-05-22T19:04:45.077</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\StockIcon.PNG">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\StockIcon.PNG">
       <PackagePath>View\Assets\StockIcon.PNG</PackagePath>
       <Modified>2017-05-22T19:04:45.023</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2017-05-18T19:27:21.494</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-05-18T19:27:21.498</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-05-18T19:27:21.500</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-05-18T19:27:21.502</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-05-18T19:27:21.503</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\StoreLogo.png">
       <PackagePath>View\Assets\StoreLogo.png</PackagePath>
       <Modified>2017-05-18T19:27:21.506</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-05-18T19:27:21.508</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\Assets\Prison.jpg">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\Assets\Prison.jpg">
       <PackagePath>Assets\Prison.jpg</PackagePath>
       <Modified>2017-05-28T00:46:57.790</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\back.jpg">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\back.jpg">
       <PackagePath>View\Assets\back.jpg</PackagePath>
       <Modified>2017-05-18T19:27:21.513</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\book.jpg">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\book.jpg">
       <PackagePath>View\Assets\book.jpg</PackagePath>
       <Modified>2017-05-18T19:27:21.516</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\doktor.jpg">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\doktor.jpg">
       <PackagePath>View\Assets\doktor.jpg</PackagePath>
       <Modified>2017-05-18T19:27:21.519</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\finansije.jpg">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\finansije.jpg">
       <PackagePath>View\Assets\finansije.jpg</PackagePath>
       <Modified>2017-05-22T19:04:45.048</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\Assets\HireIcon.JPG">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\Assets\HireIcon.JPG">
       <PackagePath>Assets\HireIcon.JPG</PackagePath>
       <Modified>2017-05-18T19:27:21.489</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\HireIcon.JPG">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\HireIcon.JPG">
       <PackagePath>View\Assets\HireIcon.JPG</PackagePath>
       <Modified>2017-05-22T19:04:45.058</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\koverta.jpg">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\koverta.jpg">
       <PackagePath>View\Assets\koverta.jpg</PackagePath>
       <Modified>2017-05-18T19:27:21.523</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\narudzbe.jpg">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\narudzbe.jpg">
       <PackagePath>View\Assets\narudzbe.jpg</PackagePath>
       <Modified>2017-05-18T19:27:21.527</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\posjetilac.jpg">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\posjetilac.jpg">
       <PackagePath>View\Assets\posjetilac.jpg</PackagePath>
       <Modified>2017-05-18T19:27:21.529</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\Prison.jpg">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\Prison.jpg">
       <PackagePath>View\Assets\Prison.jpg</PackagePath>
       <Modified>2017-05-29T09:24:24.588</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\prisoner.jpg">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\prisoner.jpg">
       <PackagePath>View\Assets\prisoner.jpg</PackagePath>
       <Modified>2017-05-18T19:27:21.530</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\raspored.jpg">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\raspored.jpg">
       <PackagePath>View\Assets\raspored.jpg</PackagePath>
       <Modified>2017-05-18T19:27:21.532</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\rasporedposjeta.jpg">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\rasporedposjeta.jpg">
       <PackagePath>View\Assets\rasporedposjeta.jpg</PackagePath>
       <Modified>2017-05-18T19:27:21.534</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\rasporedtransporta.jpg">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\rasporedtransporta.jpg">
       <PackagePath>View\Assets\rasporedtransporta.jpg</PackagePath>
       <Modified>2017-05-18T19:27:21.535</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\redback.jpg">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\redback.jpg">
       <PackagePath>View\Assets\redback.jpg</PackagePath>
       <Modified>2017-05-18T19:27:21.536</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\transport.jpg">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\transport.jpg">
       <PackagePath>View\Assets\transport.jpg</PackagePath>
       <Modified>2017-05-18T19:27:21.537</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\Zahtjev.jpg">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\Zahtjev.jpg">
       <PackagePath>View\Assets\Zahtjev.jpg</PackagePath>
       <Modified>2017-05-22T19:04:45.037</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\View\Assets\Zatvorenik2.JPG">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\View\Assets\Zatvorenik2.JPG">
       <PackagePath>View\Assets\Zatvorenik2.JPG</PackagePath>
       <Modified>2017-05-18T19:27:21.511</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2017-05-18T19:27:21.580</Modified>
     </AppxPackagedFile>
@@ -721,22 +733,22 @@
       <PackagePath>EntityFramework.Commands.dll</PackagePath>
       <Modified>2015-07-21T17:12:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\bin\x86\Debug\ProjekatZatvor.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\bin\x86\Debug\ProjekatZatvor.xr.xml">
       <PackagePath>ProjekatZatvor.xr.xml</PackagePath>
-      <Modified>2017-05-29T09:38:43.469</Modified>
+      <Modified>2017-06-05T10:26:48.456</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-05-18T07:39:48.083</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-05-29T09:38:46.314</Modified>
+      <Modified>2017-06-12T09:58:03.229</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\bin\x86\Debug\Core\ProjekatZatvor.exe">
+    <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\bin\x86\Debug\Core\ProjekatZatvor.exe">
       <PackagePath>ProjekatZatvor.exe</PackagePath>
-      <Modified>2017-05-29T09:38:47.064</Modified>
+      <Modified>2017-06-12T09:58:04.825</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

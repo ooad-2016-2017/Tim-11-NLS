@@ -5,9 +5,13 @@
     xmlns:local="using:ProjekatZatvor"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:DataAnnotations="using:Validation" 
+    xmlns:SilverlightValidation="clr-namespace:SilverlightValidation"   
     mc:Ignorable="d">
+    
     <Grid>
-        <Frame x:ConnectionId='1' Name="GlavniFrame">
+        
+            <Frame x:ConnectionId='1' Name="GlavniFrame">
             <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"></ColumnDefinition>
@@ -19,19 +23,33 @@
                     <RowDefinition Height="2*"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
-                    <RowDefinition Height="2*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
                 </Grid.RowDefinitions>
+                
+                
                 
         <TextBlock x:ConnectionId='2' x:Name="textBlock" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Korisnicko ime:" VerticalAlignment="Center"/>
                 <TextBlock x:ConnectionId='3' x:Name="textBlock1"  Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Lozinka:" VerticalAlignment="Center"/>
 
-                <TextBox x:ConnectionId='4' x:Name="textBox1" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="178"/>
+                <TextBox x:ConnectionId='4' x:Name="textBox1" 
+                         Grid.Row="1" Grid.Column="2"
+                         HorizontalAlignment="Center"
+                         TextWrapping="Wrap" 
+                                              
+                        
+                         Text="{Binding Id, Mode=TwoWay}"
+                         VerticalAlignment="Center" 
+                         Width="178"/>
+                <TextBlock x:ConnectionId='5' Name="Labela" Grid.Row="4" Grid.Column="2" HorizontalAlignment="Right" TextWrapping="Wrap" Text="" VerticalAlignment="Top"  Foreground="Red" 
+/>
 
-                <PasswordBox x:ConnectionId='5' x:Name="passwordBox" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="178"/>
-                <Button x:ConnectionId='6'                      x:Name="button" Content="Prijavi se" Grid.Row="3" Grid.Column="2"  HorizontalAlignment="Center" VerticalAlignment="Top" Width="150"/>
+                <PasswordBox x:ConnectionId='6' x:Name="passwordBox" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="178"/>
+                <Button x:ConnectionId='7'                      x:Name="button" Content="Prijavi se" Grid.Row="3" Grid.Column="2"  HorizontalAlignment="Center" VerticalAlignment="Top" Width="150"/>
                
     </Grid>
         </Frame>
+       
     </Grid>
 </Page>
 

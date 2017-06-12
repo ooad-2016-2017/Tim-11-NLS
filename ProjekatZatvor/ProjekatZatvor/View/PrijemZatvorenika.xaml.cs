@@ -25,9 +25,13 @@ namespace ProjekatZatvor
     public sealed partial class PrijemZatvorenika : Page, INotifyPropertyChanged
     {
         private UltraMegaGigaViewModel UltraMegaGiga;
+        Validacija val;
         public PrijemZatvorenika()
         {
             this.InitializeComponent();
+
+            val = new Validacija();
+           
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -44,6 +48,18 @@ namespace ProjekatZatvor
             UltraMegaGiga = (UltraMegaGigaViewModel)e.Parameter;
             this.DataContext = UltraMegaGiga;
             base.OnNavigatedTo(e);
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            val.PrijemZatvorenikaValidacija(textBo.Text, textBox.Text, jmbg.Text, textBox1.Text, "celija" /*textBox2.Items[textBox2.SelectedIndex].ToString()*/, "Upravitelj");
+
+
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

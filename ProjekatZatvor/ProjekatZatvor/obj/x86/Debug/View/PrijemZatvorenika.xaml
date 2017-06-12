@@ -75,20 +75,20 @@
         <TextBlock x:ConnectionId='9' x:Name="textBlock5" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Celija:" VerticalAlignment="Center" Grid.Row="8" Grid.Column="0"/>
         <TextBlock x:ConnectionId='10' x:Name="textBlock6" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Danasnji datum:" VerticalAlignment="Center" Grid.Row="9" Grid.Column="0"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="JMBG" VerticalAlignment="Center" Grid.Row="3" Grid.Column="0"></TextBlock>
-        <TextBox HorizontalAlignment="Left"  TextWrapping="Wrap" Text="{Binding NoviZatvorenik.Jmbg, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" VerticalAlignment="Center" Width="230" Grid.Row="3" Grid.Column="1"></TextBox>
-        <TextBox x:ConnectionId='11' x:Name="textBo" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="{Binding NoviZatvorenik.Ime, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" VerticalAlignment="Center" Width="230" Grid.Row="1" Grid.Column="1"/>
-        <TextBox x:ConnectionId='12' x:Name="textBox" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="{Binding NoviZatvorenik.Prezime, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" VerticalAlignment="Center" Width="230" Grid.Row="2" Grid.Column="1"/>
-        <TextBox x:ConnectionId='13' x:Name="textBox1" Text="{Binding NoviZatvorenik.OptuzenZa, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" HorizontalAlignment="Left" TextWrapping="Wrap"  VerticalAlignment="Center" Width="230" Grid.Row="7" Grid.Column="1"/>
-        <ComboBox x:ConnectionId='14' x:Name="textBox2" ItemsSource="{Binding ListaCelija,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" SelectedItem="{Binding OznacenaCelija,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" HorizontalAlignment="Left" VerticalAlignment="Center" Width="230" Grid.Row="8" Grid.Column="1"/>
+        <TextBox x:ConnectionId='11' Name="jmbg" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="{Binding NoviZatvorenik.Jmbg, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" VerticalAlignment="Center" Width="230" Grid.Row="3" Grid.Column="1"                                  ></TextBox>
+        <TextBox x:ConnectionId='12' x:Name="textBo" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="{Binding NoviZatvorenik.Ime, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" VerticalAlignment="Center" Width="230" Grid.Row="1" Grid.Column="1"/>
+        <TextBox x:ConnectionId='13' x:Name="textBox" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="{Binding NoviZatvorenik.Prezime, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" VerticalAlignment="Center" Width="230" Grid.Row="2" Grid.Column="1"/>
+        <TextBox x:ConnectionId='14' x:Name="textBox1" Text="{Binding NoviZatvorenik.OptuzenZa, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" HorizontalAlignment="Left" TextWrapping="Wrap"  VerticalAlignment="Center" Width="230" Grid.Row="7" Grid.Column="1"/>
+        <ComboBox x:ConnectionId='15' x:Name="textBox2" ItemsSource="{Binding ListaCelija,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" SelectedItem="{Binding OznacenaCelija,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" HorizontalAlignment="Left" VerticalAlignment="Center" Width="230" Grid.Row="8" Grid.Column="1"/>
 
-        <DatePicker x:ConnectionId='15' x:Name="datePicker1" Date="{Binding NoviZatvorenik.DatumRodjenja, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay,Converter={StaticResource DateTimeToDateTimeOffsetConverter}}" HorizontalAlignment="Left"  VerticalAlignment="Center" Grid.Row="4" Grid.Column="1"/>
-        <DatePicker x:ConnectionId='16' x:Name="datePicker2" Date="{Binding NoviZatvorenik.Primljen, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay,Converter={StaticResource DateTimeToDateTimeOffsetConverter}}" HorizontalAlignment="Left"  VerticalAlignment="Center" Grid.Row="5" Grid.Column="1"/>
-        <DatePicker x:ConnectionId='17' x:Name="datePicker3"  HorizontalAlignment="Left" Date="{Binding NoviZatvorenik.Otpusten, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay,Converter={StaticResource DateTimeToDateTimeOffsetConverter}}" VerticalAlignment="Center" Grid.Row="6" Grid.Column="1"/>
-        <DatePicker x:ConnectionId='18' x:Name="datePicker4" HorizontalAlignment="Left"  VerticalAlignment="Center" Grid.Row="9" Grid.Column="1"/>
+        <DatePicker x:ConnectionId='16' x:Name="datePicker1" Date="{Binding NoviZatvorenik.DatumRodjenja, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay,Converter={StaticResource DateTimeToDateTimeOffsetConverter}}" HorizontalAlignment="Left"  VerticalAlignment="Center" Grid.Row="4" Grid.Column="1"/>
+        <DatePicker x:ConnectionId='17' x:Name="datePicker2" Date="{Binding NoviZatvorenik.Primljen, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay,Converter={StaticResource DateTimeToDateTimeOffsetConverter}}" HorizontalAlignment="Left"  VerticalAlignment="Center" Grid.Row="5" Grid.Column="1"/>
+        <DatePicker x:ConnectionId='18' x:Name="datePicker3"  HorizontalAlignment="Left" Date="{Binding NoviZatvorenik.Otpusten, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay,Converter={StaticResource DateTimeToDateTimeOffsetConverter}}" VerticalAlignment="Center" Grid.Row="6" Grid.Column="1"/>
+        <DatePicker x:ConnectionId='19' x:Name="datePicker4" HorizontalAlignment="Left"  VerticalAlignment="Center" Grid.Row="9" Grid.Column="1"/>
 
 
 
-        <Button x:ConnectionId='19' Command="{Binding PrijemZatvorenikaCommand}" x:Name="button" Content="POTVRDI" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="197" Grid.Row="10" Grid.ColumnSpan="2"/>
+        <Button x:ConnectionId='20' Command="{Binding PrijemZatvorenikaCommand}" x:Name="button" Content="POTVRDI" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="197" Grid.Row="10" Grid.ColumnSpan="2"                     />
 
     </Grid>
 </Page>

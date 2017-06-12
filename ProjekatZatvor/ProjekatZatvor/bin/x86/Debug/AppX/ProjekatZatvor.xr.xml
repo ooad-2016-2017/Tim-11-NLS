@@ -8,6 +8,7 @@
     <RootPropertyPathName Name="TrenutnoStanjeBudzeta" />
     <RootPropertyPathName Name="Rashod" />
     <RootPropertyPathName Name="Prihod" />
+    <RootPropertyPathName Name="Id" />
     <RootPropertyPathName Name="IzvrsiNarudzbuCommand" />
     <RootPropertyPathName Name="NovaNarudzba" />
     <RootPropertyPathName Name="Kolicina" />
@@ -141,10 +142,10 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="Name" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Width" />
       <RootProperty Name="Inlines" />
-      <RootProperty Name="Name" />
       <RootProperty Name="TextAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="FontFamily" />
@@ -186,6 +187,7 @@
     </RootType>
     <RootType FullName="ProjekatZatvor.BlankPage1" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Name" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="TextWrapping" />
@@ -194,11 +196,11 @@
       <RootProperty Name="Text" />
       <RootProperty Name="Height" />
       <RootProperty Name="PlaceholderText" />
-      <RootProperty Name="Name" />
       <RootProperty Name="InputScope" />
       <RootProperty Name="Tag" />
       <RootProperty Name="AcceptsReturn" />
       <RootProperty Name="RenderTransformOrigin" />
+      <RootEvent Name="KeyDown" />
       <RootEvent Name="SelectionChanged" />
       <RootEvent Name="TextChanged" />
       <RootEvent Name="TextChanging" />
@@ -363,6 +365,7 @@
       <RootProperty Name="Width" />
       <RootProperty Name="SelectedItem" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Name" />
     </RootType>
     <RootType FullName="ProjekatZatvor.PrijavaUKlub" />
     <RootType FullName="ProjekatZatvor.PrijemZatvorenika" />

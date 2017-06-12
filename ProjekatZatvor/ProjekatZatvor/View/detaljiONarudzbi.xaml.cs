@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjekatZatvor.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,9 +23,16 @@ namespace ProjekatZatvor
     /// </summary>
     public sealed partial class detaljiONarudzbi : Page
     {
+        Validacija val;
         public detaljiONarudzbi()
         {
             this.InitializeComponent();
+          val = new Validacija();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            val.detaljiONarudzbiValidacija(Naziv.Text, Cijena.Text, Kolicina.Text);
         }
     }
 }

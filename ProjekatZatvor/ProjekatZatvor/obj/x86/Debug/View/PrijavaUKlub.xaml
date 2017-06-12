@@ -41,8 +41,8 @@
         <Button x:ConnectionId='5'                    Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center"  Height="40" Background="White">
             <Image Source="Assets/back.jpg" Margin="-10"></Image>
         </Button>
-        <Button Command="{Binding PosaljiZahtjevZaPrijavuUKlubCommand}" Grid.Column="4" Grid.Row="7"  HorizontalAlignment="Center"  >
-            <TextBlock  Text="Posalji zahtjev"></TextBlock>
+        <Button x:ConnectionId='6' Command="{Binding PosaljiZahtjevZaPrijavuUKlubCommand}" Grid.Column="4" Grid.Row="7"  HorizontalAlignment="Center"                       >
+            <TextBlock x:ConnectionId='7'  Text="Posalji zahtjev"                                              ></TextBlock>
         </Button>
 
         <Grid 

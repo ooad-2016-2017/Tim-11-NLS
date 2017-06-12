@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjekatZatvor.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -21,11 +22,17 @@ namespace ProjekatZatvor
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
+    /// 
+
     public sealed partial class Finansije : Page
+
     {
+        Validacija val;
+
         public Finansije()
         {
             this.InitializeComponent();
+            val = new Validacija();
         }
        /* protected override void OnNavigatedTo(NavigationEventArgs e)
         {
@@ -36,6 +43,11 @@ namespace ProjekatZatvor
         private void textBlock_SelectionChanged(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            val.finansijeValidacija(povecanje.Text, razlog.Text);
         }
     }
 }

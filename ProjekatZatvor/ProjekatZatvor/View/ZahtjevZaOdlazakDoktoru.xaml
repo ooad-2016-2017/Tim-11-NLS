@@ -60,9 +60,9 @@
                     
                 </StackPanel>
             </Border>
-            <Button Name="PosaljiZahtjevButton" Command="{Binding PosaljiZahtjevZaDoktoraCommand}" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Name="PosaljiZahtjevButton" Command="{Binding PosaljiZahtjevZaDoktoraCommand}" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Click="PosaljiZahtjevButton_Click">
                 <Button.Content>
-                    <TextBlock><Bold>Pošalji zahtjev</Bold></TextBlock>
+                    <TextBlock SelectionChanged="TextBlock_SelectionChanged"><Bold>Pošalji zahtjev</Bold></TextBlock>
                 </Button.Content>
             </Button>
         </Grid>

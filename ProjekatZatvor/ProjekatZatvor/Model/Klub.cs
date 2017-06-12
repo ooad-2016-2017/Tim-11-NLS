@@ -19,6 +19,9 @@ namespace ProjekatZatvor.Model
         private UpravnikKluba upravnikKluba;
         private Strazar strazarKluba;
 
+        public Klub() {
+
+        }
         public Klub(Enumerative.VrstaKluba ime, UpravnikKluba upravnikKluba, Strazar strazar)
         {
             ImeKluba = ime;

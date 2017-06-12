@@ -1,1 +1,1 @@
-C:\Users\Korisnik\Desktop\ProjekatLilaForme\ProjekatZatvor\ProjekatZatvor.csproj;x86
+C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\ProjekatZatvor.csproj;x86

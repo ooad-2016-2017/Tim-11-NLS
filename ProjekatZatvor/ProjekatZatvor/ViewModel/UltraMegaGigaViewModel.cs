@@ -43,8 +43,8 @@ namespace ProjekatZatvor.ViewModel
         private List<Narudzba> listaNarudzbi;
         private List<Narudzba> listaOdobrenihNarudzbi;
         private List<Prekrsaj> listaSvihPrekrsaja;
-        private List<LoginPodaci> listaLogina; 
-
+        private List<LoginPodaci> listaLogina;
+        private List<Posjetilac> listaPosjetilaca;
         private Model.KoordinatorZaPosjeteITransport koordinator;
         private Model.Upravnik upravnik;
         private Zatvorenik zatvorenikTrenutni;
@@ -73,7 +73,7 @@ namespace ProjekatZatvor.ViewModel
         private String prezimePosjetioca;
         private String brojLicneKartePosjetioca;
         private String terminPosjete;
-        private DateTime datumPosjete;
+        private DateTime datumPosjete= DateTime.Now;
         private Posjetilac noviPosjetilac;
 
         private Vozac oznaceniVozac;
@@ -186,11 +186,11 @@ namespace ProjekatZatvor.ViewModel
             Koordinator.ListaPosjeta = ListaPosjeta;
             ListaZahtjevaUposlenika = new ObservableCollection<Zahtjev<Radnik>>();
             ListaZahtjevaZatvorenika = new ObservableCollection<Zahtjev<Zatvorenik>>();
-            ListaZahtjevaZatvorenika.Add(pomZahtjev);
+           // ListaZahtjevaZatvorenika.Add(pomZahtjev);
             ListaNarudzbi = new List<Narudzba>();
             ListaStrazara = new List<Strazar>();
             ListaCelija = new List<Celija>();
-           
+            PopuniListuCelija();
             ListaRadnika = new List<Radnik>();
             StrazarTrenutni = new Strazar();
             VozacTrenutni = new Vozac();
@@ -198,9 +198,140 @@ namespace ProjekatZatvor.ViewModel
             ListaOdobrenihNarudzbi = new List<Narudzba>();
             ListaSvihPrekrsaja = new List<Prekrsaj>();
 
-          
-                #region Zatvorenik
-                ListaVrstaKlubova = new List<Enumerative.VrstaKluba>();
+            Celija c1 = new Celija(1, "1");
+            Celija c2 = new Celija(2, "2");
+            ListaCelija.Add(c1); ListaCelija.Add(c2);
+            listaPosjetilaca = new List<Posjetilac>();
+
+            ListaImenaPosjetilaca = new ObservableCollection<string>();
+            ListaPrezimenaPosjetilaca = new ObservableCollection<string>();
+            ListaBrojevaLicneKartePosjetilaca = new ObservableCollection<string>();
+
+            ListaZatvorenikaVoznja = new ObservableCollection<String>();
+            listaDatumaVoznja = new ObservableCollection<String>();
+            listaOdredistaVoznja = new ObservableCollection<String>();
+            listaVozacaVoznja = new ObservableCollection<String>();
+
+            ListaImenaStrazara = new ObservableCollection<string>();
+            ListaVremenaStrazara = new ObservableCollection<string>();
+            ListaMjestaStrazara = new ObservableCollection<string>();
+            ListaDatumaStrazara = new ObservableCollection<string>();
+
+            ListaCelijaZatvorenika = new ObservableCollection<string>();
+
+            ListaVozaca = new List<Vozac>();
+
+            ListaVoznji = new List<Voznja>();
+            ListaOdredistaVoznja = new ObservableCollection<string>();
+            ListaDatumaVoznja = new ObservableCollection<string>();
+            ListaZatvorenikaVoznja = new ObservableCollection<string>();
+            ListaVozacaVoznja = new ObservableCollection<string>();
+
+            OznaceniZahtjevZatvorenik = new Zahtjev<Zatvorenik>();
+
+            OznaceniZahtjevUposlenik = new Zahtjev<Radnik>();
+
+            NovaNarudzba = new Narudzba();
+
+            using (var db = new dbContext())
+            {
+
+                var lista = db.Strazari.ToList();
+                ListaStrazara = lista;
+                PomLista = ListaStrazara.ElementAt(0).ToString();
+
+                var lista1 = db.Logini.ToList();
+                ListaLogina = lista1;
+
+                var lista2 = db.Upravnici.ToList();
+                Upravnik = lista2.ElementAt(0);
+
+                var lista3 = db.ZahtjeviRadnika.ToList();
+
+                foreach (var i in lista3)
+                {
+                    ListaZahtjevaUposlenika.Add(i);
+                }
+
+                var lista4 = db.RasporedPosjeta.ToList();
+                ListaPosjeta = lista4;
+
+                var lista5 = db.Posjetioci.ToList();
+                listaPosjetilaca = lista5;
+
+
+                foreach (var i in lista5)
+                {
+                    ListaPosjetaString.Add(i.Ime + " " + i.Prezime + " " + DateTime.Now.ToString());
+                    ListaImenaPosjetilaca.Add(i.Ime);
+                    ListaPrezimenaPosjetilaca.Add(i.Prezime);
+                    ListaBrojevaLicneKartePosjetilaca.Add(i.BrojLicneKarte);
+
+                }
+
+                var lista6 = db.Voznje.ToList();
+                ListaVoznji = lista6;
+
+                foreach (var i in lista6)
+                {
+                    foreach (var j in db.Zatvorenici)
+                    {
+                        if (i.Zatvorenik == j) listaZatvorenikaVoznja.Add(j.ToString());
+
+                    }
+
+                    listaDatumaVoznja.Add(i.Termin.Datum.ToString());
+                    listaOdredistaVoznja.Add(i.Mjesto);
+                    //listaVozacaVoznja.Add(i.Termin.TipRasporeda.Ime);
+                }
+
+                var lista7 = db.Narudzba.ToList();
+                ListaNarudzbi = lista7;
+
+                var lista8 = db.Strazari.ToList();
+                var lista9 = db.RasporedStrazara.ToList();
+
+                foreach (var i in lista8)
+                {
+                    ListaImenaStrazara.Add(i.Ime);
+                    //ListaVremenaStrazara.Add(/*new DateTime().ToString()*/i.RasporedStrazara.ElementAt(0).ToString());
+
+                    foreach (var j in lista9)
+                    {
+                        if (j.Id == i.Id)
+                        {
+                            ListaVremenaStrazara.Add(j.Vrijeme);
+                            ListaDatumaStrazara.Add(j.Datum.ToString().Substring(0, j.Datum.ToString().Length - 11));
+                            ListaMjestaStrazara.Add(j.Mjesto);
+                        }
+                    }
+                }
+
+                ListaZatvorenika = db.Zatvorenici.ToList();
+
+                var lista11 = db.Celije.ToList();
+
+                foreach (var i in lista11)
+                {
+                    ListaCelijaZatvorenika.Add(i.ToString());
+                }
+
+                foreach (var i in db.Strazari) ListaRadnika.Add(i);
+                foreach (var i in db.KoordinatorPT) ListaRadnika.Add(i);
+               // foreach (var i in db.Doktor) ListaRadnika.Add(i);
+                //foreach (var i in db.Doktor) ListaRadnika.Add(i);
+                //foreach (var i in db.Kuhari) ListaRadnika.Add(i);
+               // foreach (var i in db.UpravniciKluba) ListaRadnika.Add(i);
+                //foreach (var i in db.Vozaci) ListaRadnika.Add(i);
+
+                ListaVozaca = db.Vozaci.ToList();
+
+                foreach (var i in db.ZahtjeviZatvorenika) ListaZahtjevaZatvorenika.Add(i);
+
+            }
+
+            #region Zatvorenik
+            ListaVrstaKlubova = new List<Enumerative.VrstaKluba>();
             ListaVrstaKlubova.Add(Enumerative.VrstaKluba.Biblioteka);
             ListaVrstaKlubova.Add(Enumerative.VrstaKluba.Teretana);
             ListaVrstaKlubova.Add(Enumerative.VrstaKluba.InternetKlub);
@@ -216,26 +347,26 @@ namespace ProjekatZatvor.ViewModel
             #region Koordinator za posjete i transport
             NoviPosjetilac = new Posjetilac();
             PomocnaPosjeta = new ElementRasporeda<Posjetilac>();
-            ListaImenaPosjetilaca = new ObservableCollection<string>();
-            ListaPrezimenaPosjetilaca = new ObservableCollection<string>();
-            ListaBrojevaLicneKartePosjetilaca = new ObservableCollection<string>();
+           // ListaImenaPosjetilaca = new ObservableCollection<string>();
+            //ListaPrezimenaPosjetilaca = new ObservableCollection<string>();
+            //ListaBrojevaLicneKartePosjetilaca = new ObservableCollection<string>();
             ListaGodistaPosjetilaca = new ObservableCollection<string>();
-            ListaVozaca = new List<Vozac>();
+            /*ListaVozaca = new List<Vozac>();
             ListaVoznji = new List<Voznja>();
             ListaOdredistaVoznja = new ObservableCollection<string>();
             ListaDatumaVoznja = new ObservableCollection<string>();
             ListaZatvorenikaVoznja = new ObservableCollection<string>();
-            ListaVozacaVoznja = new ObservableCollection<string>();
+            ListaVozacaVoznja = new ObservableCollection<string>();*/
             #endregion
 
             #region Upravnik
-            OznaceniZahtjevUposlenik = new Zahtjev<Radnik>();
-            OznaceniZahtjevZatvorenik = new Zahtjev<Zatvorenik>();
+           // OznaceniZahtjevUposlenik = new Zahtjev<Radnik>();
+            //OznaceniZahtjevZatvorenik = new Zahtjev<Zatvorenik>();
             listaRadnikaNaDopustu = new List<Radnik>();
             ListaImenaRadnikaNaDopustu = new ObservableCollection<string>();
             ListaPrezimenaRadnikaNaDopustu = new ObservableCollection<string>();
             OznacenaNarudzba = new Narudzba();
-            ListaCelijaZatvorenika = new ObservableCollection<string>();
+            //ListaCelijaZatvorenika = new ObservableCollection<string>();
 
             #region Pomocni
             ListaZatvorenika.Add(pomZatvorenik1);
@@ -249,17 +380,17 @@ namespace ProjekatZatvor.ViewModel
             VozacTrenutni = pomVozac1;
             ListaNarudzbi.Add(new Narudzba("mlijeko", 2, 100));
             #endregion
-
-            BrojCelija = ListaCelija.Count();
+            BrojCelija = ListaCelijaZatvorenika.Count();
+           // BrojCelija = ListaCelija.Count();
             BrojZaposlenih = ListaRadnika.Count();
             BrojZatvorenika = ListaZatvorenika.Count();
             #endregion
 
             #region Strazar
-            ListaImenaStrazara = new ObservableCollection<string>();
+           /* ListaImenaStrazara = new ObservableCollection<string>();
             ListaVremenaStrazara = new ObservableCollection<string>();
             ListaMjestaStrazara = new ObservableCollection<string>();
-            ListaDatumaStrazara = new ObservableCollection<string>();
+            ListaDatumaStrazara = new ObservableCollection<string>();*/
             Bolovanje = false;
             GodisnjiOdmor = false;
             #endregion
@@ -269,7 +400,7 @@ namespace ProjekatZatvor.ViewModel
             ListaZatvorenikaVozac = new ObservableCollection<string>();
             ListaDatumaVozac = new ObservableCollection<string>();
             ListaOdredistaVozac = new ObservableCollection<string>();
-            
+            PopuniListeZaVozaca();
             VoznjaZaObrisati = new Voznja();
             IndeksOznaceneVoznje = 0;
             #endregion
@@ -278,13 +409,14 @@ namespace ProjekatZatvor.ViewModel
 
             NoviRadnik=new Radnik();
             ListaPozicija = new ObservableCollection<string>();
-            
+            PopuniListuPozicija();
             NoviZatvorenik = new Zatvorenik();
+          
             OznacenaCelija = new Celija();
             #endregion
 
             #region Uposlenik
-            NovaNarudzba = new Narudzba();
+           // NovaNarudzba = new Narudzba();
             #endregion
 
         }
@@ -438,7 +570,7 @@ namespace ProjekatZatvor.ViewModel
         }
         public void PopuniListeZaVozaca()
         {
-            foreach (Voznja x in ListaVoznji)
+           /* foreach (Voznja x in ListaVoznji)
             {
                 if (x.Termin.TipRasporeda.Ime == VozacTrenutni.Ime)
                 {
@@ -448,7 +580,7 @@ namespace ProjekatZatvor.ViewModel
                     ListaOdredistaVozac.Add(x.Mjesto);
                     VozacTrenutni.ListaVoznji.Add(x);
                 }
-            }
+            }*/
         }
         public void PopuniListuPosjetaString()
         {
@@ -496,8 +628,8 @@ namespace ProjekatZatvor.ViewModel
                 db.Narudzba.Add(NovaNarudzba);
                 db.SaveChanges();
             }
-
-            NovaNarudzba.Kolicina = 0;
+            NovaNarudzba = new Narudzba();
+            // NovaNarudzba.Kolicina = 0;
         }
 
         public void PrijemZatvorenika()
@@ -516,19 +648,70 @@ namespace ProjekatZatvor.ViewModel
             }
             //obavijestiti zatvorenika o pinu i pinu celije
         }
-
+      /*  public void PopuniListuCelija()
+        {
+            //UPIS IZ BAZE POSTAVITI
+            Celija c1 = new Celija(1, "1");
+            Celija c2 = new Celija(2, "2");
+            Celija c3 = new Celija(3, "3");
+            Celija c4 = new Celija(4, "4");
+            ListaCelija.Add(c1); ListaCelija.Add(c2); ListaCelija.Add(c3); ListaCelija.Add(c4);
+        }
+        */
 
         public void OtpustiRadnika()
         {
-            foreach(Radnik x in ListaRadnika)
-	            {
-	                if (x.Ime == ImeRadnika && x.Prezime == PrezimeRadnika) { OtpustiRadnik = x; break; }
-	            }
-	            ListaRadnika.Remove(OtpustiRadnik);
+            /* foreach(Radnik x in ListaRadnika)
+                 {
+                     if (x.Ime == ImeRadnika && x.Prezime == PrezimeRadnika) { OtpustiRadnik = x; break; }
+                 }
+                 ListaRadnika.Remove(OtpustiRadnik);*/
             //poslati radniku obavijest!!!
-	        }
-	
-	        public void DodajNovogRadnika()
+
+
+          
+            using (var db = new dbContext())
+            {
+                String TipRadnika = "";
+
+                foreach (var i in db.Kuhari)
+                {
+                    if (i.Ime == ImeRadnika && i.Prezime == PrezimeRadnika) { OtpustiRadnik = i; TipRadnika = "Kuhar"; break; }
+                }
+
+                foreach (var i in db.Doktor)
+                {
+                    if (i.Ime == ImeRadnika && i.Prezime == PrezimeRadnika) { OtpustiRadnik = i; TipRadnika = "Doktor"; break; }
+                }
+
+                foreach (var i in db.KoordinatorPT)
+                {
+                    if (i.Ime == ImeRadnika && i.Prezime == PrezimeRadnika) { OtpustiRadnik = i; TipRadnika = "Koordinator"; break; }
+                }
+
+                foreach (var i in db.UpravniciKluba)
+                {
+                    if (i.Ime == ImeRadnika && i.Prezime == PrezimeRadnika) { OtpustiRadnik = i; TipRadnika = "UpravnikKluba"; break; }
+                }
+
+                foreach (var i in db.Vozaci)
+                {
+                    if (i.Ime == ImeRadnika && i.Prezime == PrezimeRadnika) { OtpustiRadnik = i; TipRadnika = "Vozac"; break; }
+                }
+
+                if (TipRadnika == "Kuhar") db.Kuhari.Remove(OtpustiRadnik as Kuhar);
+                else if (TipRadnika == "Doktor") db.Doktor.Remove(OtpustiRadnik as Doktor);
+                else if (TipRadnika == "Koordinator") db.KoordinatorPT.Remove(OtpustiRadnik as KoordinatorZaPosjeteITransport);
+                else if (TipRadnika == "UpravnikKluba") db.UpravniciKluba.Remove(OtpustiRadnik as UpravnikKluba);
+                else if (TipRadnika == "Vozac") db.Vozaci.Remove(OtpustiRadnik as Vozac);
+
+                db.SaveChanges();
+            }
+            
+
+        }
+
+        public void DodajNovogRadnika()
 	        {
 	            bool a = decimal.TryParse(PlataText, out pomPlata);
 	            if (!a) NoviRadnik.Plata = 0;
@@ -541,9 +724,53 @@ namespace ProjekatZatvor.ViewModel
 	            else if (OznacenaPozicija == "UpravnikKluba") { ListaRadnika.Add(NoviRadnik as UpravnikKluba); }
 	            //UPDATE OSTALE LISTE
 	            Debug.WriteLine(pomocniRadnik);
-	        }
+            using (var db = new dbContext())
+            {
 
-        public event PropertyChangedEventHandler PropertyChanged;
+                if (OznacenaPozicija == "Strazar") db.Strazari.Add(new Strazar(NoviRadnik.Ime, NoviRadnik.Prezime, NoviRadnik.Jmbg, NoviRadnik.Zanimanje, NoviRadnik.DatumRodjenja, NoviRadnik.Plata));
+                else if (OznacenaPozicija == "Doktor") db.Doktor.Add(new Doktor(NoviRadnik.Ime, NoviRadnik.Prezime, NoviRadnik.Jmbg, NoviRadnik.DatumRodjenja, NoviRadnik.Plata, NoviRadnik.Zanimanje));
+                else if (OznacenaPozicija == "Kuhar") db.Kuhari.Add(new Kuhar(NoviRadnik.Ime, NoviRadnik.Prezime, NoviRadnik.Jmbg, NoviRadnik.DatumRodjenja, NoviRadnik.Plata, NoviRadnik.Zanimanje));
+                else if (OznacenaPozicija == "KoordinatorZaPosjeteITransport") db.KoordinatorPT.Add(new KoordinatorZaPosjeteITransport(NoviRadnik.Ime, NoviRadnik.Prezime, NoviRadnik.Jmbg, NoviRadnik.Zanimanje, NoviRadnik.DatumRodjenja, NoviRadnik.Plata));
+                else if (OznacenaPozicija == "UpravnikKluba") db.UpravniciKluba.Add(new UpravnikKluba(NoviRadnik.Ime, NoviRadnik.Prezime, NoviRadnik.Jmbg, NoviRadnik.Zanimanje, NoviRadnik.DatumRodjenja, NoviRadnik.Plata, new Klub()));
+
+                else if (OznacenaPozicija == "Vozac")
+                {
+                    db.Vozaci.Add(new Vozac(NoviRadnik.Ime, NoviRadnik.Prezime, NoviRadnik.Jmbg, NoviRadnik.DatumRodjenja));
+                    ListaVozaca.Add(new Vozac(NoviRadnik.Ime, NoviRadnik.Prezime, NoviRadnik.Jmbg, NoviRadnik.DatumRodjenja));
+                }
+
+
+
+                db.SaveChanges();
+            }
+
+        }
+     /*   public void PopuniListuPozicija()
+       {			
+	            ListaPozicija.Add("Strazar");
+            ListaPozicija.Add("Kuhar");			
+    ListaPozicija.Add("Doktor");			
+	            ListaPozicija.Add("Uposlenik");			
+	            ListaPozicija.Add("Vozac");			
+	            ListaPozicija.Add("KoordinatorZaPosjeteITransport");			
+	            ListaPozicija.Add("UpravnikKluba");			
+	        }			
+	        public void PopuniListeZaVozaca()
+	        {			
+	            /*foreach (Voznja x in ListaVoznji)			
+575	            {			
+576	                if (x.Termin.TipRasporeda.Ime == VozacTrenutni.Ime)			
+577	                {			
+578	                    ListaVozacaVozac.Add(x.Termin.TipRasporeda.ToString());			
+579	                    ListaZatvorenikaVozac.Add(x.Zatvorenik.ToString());			
+580	                    ListaDatumaVozac.Add(x.Termin.Datum.Day.ToString() + "." + x.Termin.Datum.Month.ToString() + "." + x.Termin.Datum.Year.ToString() + ".");			
+581	                    ListaOdredistaVozac.Add(x.Mjesto);			
+582	                    VozacTrenutni.ListaVoznji.Add(x);			
+583	                }			
+584	            }		
+	        }*/
+
+public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string propertyName)
         {
             if (PropertyChanged != null)
@@ -600,12 +827,12 @@ namespace ProjekatZatvor.ViewModel
 
                     using (var db = new dbContext())
                     {
-                        db.Prekrsaj.Add(new Prekrsaj("Another","Sanja",ZatvorenikTrenutni) { Tip ="Another", Opis = "Sanja", PocinilacPrekrsaja = ZatvorenikTrenutni});
+                        db.Prekrsaj.Add(new Prekrsaj("Kazna", TekstPrekrsaja, x));
                         db.SaveChanges();
                     }
 
 
-                        foreach (Izvjestaj y in x.ListaPrekrsaja) { if (y.TipIzvjestaja == Enumerative.TipIzvjestaja.Kazna) brojacPrekrsaj++; else brojacPohvale++; }
+                    foreach (Izvjestaj y in x.ListaPrekrsaja) { if (y.TipIzvjestaja == Enumerative.TipIzvjestaja.Kazna) brojacPrekrsaj++; else brojacPohvale++; }
                 }
             }
             UkupanBrojPohvala = brojacPohvale.ToString();
@@ -620,6 +847,13 @@ namespace ProjekatZatvor.ViewModel
                 if (x.Ime == ImeZatvorenikaIzvjestaj && x.Prezime == PrezimeZatvorenikaIzvjestaj && x.Celija.BrojCelije.ToString() == CelijaZatvorenikaIzvjestaj)
                 {
                     x.ListaPrekrsaja.Add(new Izvjestaj(x, "Pohvala za dobro ponasanje", Enumerative.TipIzvjestaja.Pohvala));
+
+                    using (var db = new dbContext())
+                    {
+                        db.Izvjestaji.Add(new Izvjestaj(x, "Pohvala", Enumerative.TipIzvjestaja.Pohvala));
+                        db.SaveChanges();
+                    }
+
                     foreach (Izvjestaj y in x.ListaPrekrsaja) { if (y.TipIzvjestaja == Enumerative.TipIzvjestaja.Kazna) brojacPrekrsaj++; else brojacPohvale++; }
 
                 }
@@ -629,34 +863,64 @@ namespace ProjekatZatvor.ViewModel
         }
         public void OdbijZahtjev()
         {
-            if (ListaZahtjevaZatvorenika.Contains(OznaceniZahtjevZatvorenik))
+            if (ListaZahtjevaZatvorenika.Contains(oznaceniZahtjevZatvorenik))
             {
                 //OBAVIJESTITI ZATVORENIKA
-                ListaZahtjevaZatvorenika.Remove(OznaceniZahtjevZatvorenik);
+                using (var db = new dbContext())
+                {
+                    db.ZahtjeviZatvorenika.Remove(oznaceniZahtjevZatvorenik);
+                    db.SaveChanges();
+                }
+
+                ListaZahtjevaZatvorenika.Remove(oznaceniZahtjevZatvorenik);
             }
             if (ListaZahtjevaUposlenika.Contains(OznaceniZahtjevUposlenik))
             {
+                using (var db = new dbContext())
+                {
+                    db.ZahtjeviRadnika.Remove(OznaceniZahtjevUposlenik);
+                    db.SaveChanges();
+                }
 
                 ListaZahtjevaUposlenika.Remove(OznaceniZahtjevUposlenik);
             }
         }
         public void OdobriZahtjev()
         {
-            if (ListaZahtjevaZatvorenika.Contains(OznaceniZahtjevZatvorenik)) ListaZahtjevaZatvorenika.Remove(OznaceniZahtjevZatvorenik);
+            if (ListaZahtjevaZatvorenika.Contains(OznaceniZahtjevZatvorenik))
+            {
+
+                using (var db = new dbContext())
+                {
+                    db.ZahtjeviZatvorenika.Remove(OznaceniZahtjevZatvorenik);
+                    db.SaveChanges();
+                }
+
+                ListaZahtjevaZatvorenika.Remove(OznaceniZahtjevZatvorenik);
+            }
+
             if (ListaZahtjevaUposlenika.Contains(OznaceniZahtjevUposlenik))
             {
-                if (OznaceniZahtjevUposlenik.Posiljalac.BrojIskoristenihDopusta < 30)
+                // if (OznaceniZahtjevUposlenik.Posiljalac.BrojIskoristenihDopusta < 30)
+                // {
+                //    OznaceniZahtjevUposlenik.Posiljalac.NaDopustu = true;
+                //    Debug.WriteLine(OznaceniZahtjevUposlenik.Posiljalac.Ime);
+                //     ListaImenaRadnikaNaDopustu.Add(OznaceniZahtjevUposlenik.Posiljalac.Ime);
+                //    ListaPrezimenaRadnikaNaDopustu.Add(OznaceniZahtjevUposlenik.Posiljalac.Prezime);
+                //}
+
+                using (var db = new dbContext())
                 {
-                    OznaceniZahtjevUposlenik.Posiljalac.NaDopustu = true;
-                    Debug.WriteLine(OznaceniZahtjevUposlenik.Posiljalac.Ime);
-                    ListaImenaRadnikaNaDopustu.Add(OznaceniZahtjevUposlenik.Posiljalac.Ime);
-                    ListaPrezimenaRadnikaNaDopustu.Add(OznaceniZahtjevUposlenik.Posiljalac.Prezime);
+                    db.ZahtjeviRadnika.Remove(OznaceniZahtjevUposlenik);
+                    db.SaveChanges();
                 }
+
                 ListaZahtjevaUposlenika.Remove(OznaceniZahtjevUposlenik);
+                Upravnik.ListaZahtjevaRadnika.Remove(OznaceniZahtjevUposlenik);
             }
 
         }
-       
+
         public String SelektovanZahtjevZatvorenika()
         {
             if (OznaceniZahtjevZatvorenik != null)
@@ -700,6 +964,12 @@ private void PosaljiZahtjevZaPrijavuUKlub()
             ZahtjevDoktor = new Zahtjev<Zatvorenik>("Zahtjev za posjetu doktoru", Molba, ZatvorenikTrenutni);
             Upravnik.ListaZahtjevaZatvorenika.Add(ZahtjevDoktor);
             ListaZahtjevaZatvorenika.Add(ZahtjevDoktor);
+
+            using (var db = new dbContext())
+            {
+                db.ZahtjeviZatvorenika.Add(ZahtjevDoktor);
+                db.SaveChanges();
+            }
         }
 
         private void PosaljiZahtjevZaPremjestaj()
@@ -707,6 +977,12 @@ private void PosaljiZahtjevZaPrijavuUKlub()
             ZahtjevZaPremjestaj = new Zahtjev<Zatvorenik>("Zahtjev za premjestaj", Molba, ZatvorenikTrenutni);
             Upravnik.ListaZahtjevaZatvorenika.Add(ZahtjevZaPremjestaj);
             ListaZahtjevaZatvorenika.Add(ZahtjevZaPremjestaj);
+
+            using (var db = new dbContext())
+            {
+                db.ZahtjeviZatvorenika.Add(ZahtjevZaPremjestaj);
+                db.SaveChanges();
+            }
         }
 
         private void DodajPosjetu()
@@ -715,6 +991,14 @@ private void PosaljiZahtjevZaPrijavuUKlub()
             NoviPosjetilac = new Posjetilac(ImePosjetioca, PrezimePosjetioca, BrojLicneKartePosjetioca);
             PomocnaPosjeta = new ElementRasporeda<Posjetilac>(NoviPosjetilac, DatumPosjete, "Zatvor", TerminPosjete);
             ListaPosjeta.Add(PomocnaPosjeta);
+
+            using (var db = new dbContext())
+            {
+                db.RasporedPosjeta.Add(PomocnaPosjeta);
+                db.Posjetioci.Add(NoviPosjetilac);
+                db.SaveChanges();
+            }
+
             ListaPosjetaString.Add(PomocnaPosjeta.Ispisi());//
             ListaGodistaPosjetilaca.Add(DatumPosjete.Year.ToString());
             ListaImenaPosjetilaca.Add(ImePosjetioca);
@@ -727,6 +1011,7 @@ private void PosaljiZahtjevZaPrijavuUKlub()
             OnPropertyChanged("ListaPosjeta");
         }
 
+
         private void DodajVoznju()
         {
             Voznja pomVoznja = new Voznja(new ElementRasporeda<Vozac>(OznaceniVozac, DatumPosjete, "Zatvor", ""), Odrediste, OznaceniZatvorenik);
@@ -735,23 +1020,49 @@ private void PosaljiZahtjevZaPrijavuUKlub()
             ListaDatumaVoznja.Add(DatumPosjete.Date.ToString() + "." + DatumPosjete.Month.ToString() + "." + DatumPosjete.Year.ToString());
             ListaOdredistaVoznja.Add(Odrediste);
             ListaVozacaVoznja.Add(OznaceniVozac.ToString());
+
+            using (var db = new dbContext())
+            {
+                db.Voznje.Add(pomVoznja);
+                db.SaveChanges();
+            }
         }
+
 
         private void OdobriNarudzbu()
         {
             if (OznacenaNarudzba != null)
             {
-                ListaOdobrenihNarudzbi.Add(OznacenaNarudzba);
-                ListaNarudzbi.Remove(OznacenaNarudzba);
-               // Debug.Write(ListaNarudzbi.ElementAt(0));
-            }
-            
-        }
 
+                using (var db = new dbContext())
+                {
+                    Upravnik.ListaNarudzbi.Remove(OznacenaNarudzba);
+                    ListaNarudzbi.Remove(OznacenaNarudzba);
+                    if (db.Narudzba.Count() != 0 && db.Narudzba != null)//SANJA
+                        db.Narudzba.Remove(OznacenaNarudzba);
+                    db.SaveChanges();
+                }
+
+                ListaOdobrenihNarudzbi.Add(OznacenaNarudzba);
+
+
+                // Debug.Write(ListaNarudzbi.ElementAt(0));
+            }
+
+        }
         private void OdbaciNarudzbu()
         {
             if (OznacenaNarudzba != null)
+            {
+                using (var db = new dbContext())
+                {
+                    if(db.Narudzba.Count()!=0 && db.Narudzba!=null)//SANJA
+                    db.Narudzba.Remove(OznacenaNarudzba);
+                    db.SaveChanges();
+                }
+
                 ListaNarudzbi.Remove(OznacenaNarudzba);
+            }
             //OBAVIJESTITI DOKTORA/KUHARA
         }
 
@@ -764,6 +1075,11 @@ private void PosaljiZahtjevZaPrijavuUKlub()
             Zahtjev<Radnik> pom = new Zahtjev<Radnik>(naziv, Molba, StrazarTrenutni, Upravnik);
             Upravnik.ListaZahtjevaRadnika.Add(pom);
             ListaZahtjevaUposlenika.Add(pom);
+            using (var db = new dbContext())
+            {
+                db.ZahtjeviRadnika.Add(pom);
+                db.SaveChanges();
+            }
         }
 
         #endregion

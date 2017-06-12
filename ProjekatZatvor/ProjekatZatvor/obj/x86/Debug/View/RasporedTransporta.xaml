@@ -30,7 +30,7 @@
                 <ColumnDefinition Width="*" ></ColumnDefinition>
             </Grid.ColumnDefinitions>
             
-            <Button x:ConnectionId='1'                    Grid.Column="4" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Right"  Height="40" Background="White">
+            <Button x:ConnectionId='5'                    Grid.Column="4" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Right"  Height="40" Background="White">
                 <Image Source="Assets/redback.jpg" Margin="-10"></Image>
             </Button>
 
@@ -48,16 +48,16 @@
             </Border>
 
             <Border Grid.Row="2" Grid.Column="1" CornerRadius="6" BorderBrush="Gray" Background="IndianRed" BorderThickness="2" Margin="0" >
-                <ListBox x:ConnectionId='5' Name="listica1" Foreground="White" ItemsSource="{Binding ListaZatvorenikaVoznja,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Background="IndianRed"></ListBox>
+                <ListBox x:ConnectionId='9' Name="listica1" Foreground="White" ItemsSource="{Binding ListaZatvorenikaVoznja,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Background="IndianRed"></ListBox>
             </Border>
             <Border Grid.Row="2" Grid.Column="2" CornerRadius="6" BorderBrush="Gray" Background="IndianRed" BorderThickness="2" Margin="0" >
-                <ListBox x:ConnectionId='4' Name="listica2" Foreground="White" ItemsSource="{Binding ListaDatumaVoznja,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Background="IndianRed"></ListBox>
+                <ListBox x:ConnectionId='8' Name="listica2" Foreground="White" ItemsSource="{Binding ListaDatumaVoznja,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Background="IndianRed"></ListBox>
                 </Border>
             <Border Grid.Row="2" Grid.Column="3" CornerRadius="6" BorderBrush="Gray" Background="IndianRed" BorderThickness="2" Margin="0" >
-                <ListBox x:ConnectionId='3' Name="listica3" Foreground="White" ItemsSource="{Binding ListaOdredistaVoznja,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Background="IndianRed"></ListBox>
+                <ListBox x:ConnectionId='7' Name="listica3" Foreground="White" ItemsSource="{Binding ListaOdredistaVoznja,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Background="IndianRed"></ListBox>
             </Border>
             <Border Grid.Row="2" Grid.Column="4" CornerRadius="6" BorderBrush="Gray" Background="IndianRed" BorderThickness="2" Margin="0" >
-                <ListBox x:ConnectionId='2' Name="listica4" Foreground="White" ItemsSource="{Binding ListaVozacaVoznja,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Background="IndianRed"></ListBox>
+                <ListBox x:ConnectionId='6' Name="listica4" Foreground="White" ItemsSource="{Binding ListaVozacaVoznja,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Background="IndianRed"></ListBox>
             </Border>
         </Grid>
 
@@ -78,21 +78,21 @@
                 </Grid.ColumnDefinitions>
 
                 <TextBlock Grid.Row="0" Foreground="White" Grid.Column="0" Text="Ime vozača" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                <ComboBox Grid.Row="0" Grid.Column="1"  VerticalAlignment="Center" HorizontalAlignment="Stretch"
+                <ComboBox x:ConnectionId='1' Name="ime" Grid.Row="0" Grid.Column="1"  VerticalAlignment="Center" HorizontalAlignment="Stretch"
                           SelectedValue="{Binding OznaceniVozac,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                   ItemsSource="{Binding ListaVozaca,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" 
                 ></ComboBox>
                 <TextBlock Grid.Row="1" Foreground="White" Grid.Column="0" Text="Zatvorenik" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                <ComboBox Grid.Row="1" Grid.Column="1"  HorizontalAlignment="Stretch" VerticalAlignment="Center"
+                <ComboBox x:ConnectionId='2' Name="zatvorenik" Grid.Row="1" Grid.Column="1"  HorizontalAlignment="Stretch" VerticalAlignment="Center"
                             SelectedValue="{Binding OznaceniZatvorenik,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
                   ItemsSource="{Binding ListaZatvorenika,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"  ></ComboBox>
 
                 <TextBlock Grid.Row="3" Foreground="White" Grid.Column="0" Text="Odredište" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                <TextBox Grid.Row="2" Grid.Column="1" Height="20" Text="{Binding Odrediste,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"></TextBox>
+                <TextBox x:ConnectionId='3' Name="Odrediste" Grid.Row="2" Grid.Column="1" Height="20" Text="{Binding Odrediste,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"></TextBox>
 
                 <DatePicker Grid.Row="1" Grid.Column="3" Date="{Binding DatumVoznje,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay,Converter={StaticResource DateTimeToDateTimeOffsetConverter}}" ></DatePicker>
                 <TextBlock Grid.Row="0" Foreground="White" Grid.Column="3" TextWrapping="Wrap" Text="Datum" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
-                <Button Command="{Binding DodajVoznjuCommand}" Grid.Row="2" Grid.Column="3" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button x:ConnectionId='4' Command="{Binding DodajVoznjuCommand}" Grid.Row="2" Grid.Column="3" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"                     >
                     <TextBlock Text="Dodaj" ></TextBlock>
                 </Button>
 

@@ -24,11 +24,13 @@ namespace ProjekatZatvor
     /// </summary>
     public sealed partial class OtpustiRadnika : Page, INotifyPropertyChanged
     {
+        Validacija val;
         private UltraMegaGigaViewModel UltraMegaGiga;
         public OtpustiRadnika()
         {
             this.InitializeComponent();
-        }
+            val = new Validacija();
+                }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -42,6 +44,7 @@ namespace ProjekatZatvor
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            
             UltraMegaGiga = (UltraMegaGigaViewModel)e.Parameter;
             this.DataContext = UltraMegaGiga;
             base.OnNavigatedTo(e);
@@ -49,12 +52,13 @@ namespace ProjekatZatvor
 
         private void textBox_TextChanged(object sender, TextChangedEventArgs e)
         {
+          
 
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-
+            val.OtpustiRadnikaValidacija(textBox.Text, textBox1.Text, textBox3.Text,"Upravitelj");
         }
     }
 }

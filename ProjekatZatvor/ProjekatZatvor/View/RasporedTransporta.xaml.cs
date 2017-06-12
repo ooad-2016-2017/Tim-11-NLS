@@ -21,12 +21,15 @@ namespace ProjekatZatvor
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
+    /// 
     public sealed partial class RasporedTransporta : Page
     {
         private UltraMegaGigaViewModel UltraMegaGiga;
+        Validacija val;
         public RasporedTransporta()
         {
             this.InitializeComponent();
+            val = new Validacija();
         }
         public void Back_Click(object sender, RoutedEventArgs e)
         {
@@ -40,6 +43,11 @@ namespace ProjekatZatvor
             UltraMegaGiga = (UltraMegaGigaViewModel)e.Parameter;
             this.DataContext = UltraMegaGiga;
             base.OnNavigatedTo(e);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            val.RasporedTransportaValidacija(ime.Items[ime.SelectedIndex].ToString(), zatvorenik.Items[zatvorenik.SelectedIndex].ToString(), Odrediste.Text);
         }
     }
 }

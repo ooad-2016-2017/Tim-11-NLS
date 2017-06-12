@@ -25,9 +25,11 @@ namespace ProjekatZatvor
     public sealed partial class NarudzbaForma : Page, INotifyPropertyChanged
     {
         private UltraMegaGigaViewModel UltraMegaGiga;
+        Validacija val;
         public NarudzbaForma()
         {
             this.InitializeComponent();
+            val = new Validacija();
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -43,6 +45,11 @@ namespace ProjekatZatvor
             UltraMegaGiga = (UltraMegaGigaViewModel)e.Parameter;
             this.DataContext = UltraMegaGiga;
             base.OnNavigatedTo(e);
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            val.NarudzbaFormaValidacija(comboBox.Text, textBox.Text);
         }
     }
 }
