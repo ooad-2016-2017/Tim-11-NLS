@@ -2363,3 +2363,4 @@ C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\obj\x86\Debug
 C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\obj\x86\Debug\resources.en.resfiles.intermediate
 C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\obj\x86\Debug\Microsoft.WindowsAzure.Mobile.Ext.pri.xml
 C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\obj\x86\Debug\ProjekatZatvor.csprojResolveAssemblyReference.cache

@@ -352,7 +352,7 @@ namespace ProjekatZatvor.ViewModel
             else if (String.IsNullOrEmpty(pozicija)) dial = new MessageDialog("Unesite radnu poziciju", "Greska");
             else if (String.IsNullOrEmpty(strucnoZavanje)) dial = new MessageDialog("Unesite strucno zvanje", "Greska");
             else if (String.IsNullOrEmpty(nadleznaOsoba) ) dial = new MessageDialog("Unesite nadleznu osobu", "Greska");
-
+            else dial = new MessageDialog("Uspjesno ste zaposlili radnika", " ");
             await dial.ShowAsync();
            
         }

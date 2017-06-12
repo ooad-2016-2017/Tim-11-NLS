@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-12T09:58:04.836</Modified>
+      <Modified>2017-06-12T10:33:27.841</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\bin\x86\Debug\ProjekatZatvor.exe">
       <PackagePath>entrypoint\ProjekatZatvor.exe</PackagePath>
-      <Modified>2017-06-12T09:57:59.478</Modified>
+      <Modified>2017-06-12T10:33:26.417</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\.nuget\packages\EntityFramework.Core\7.0.0-beta6\lib\dotnet\EntityFramework.Core.dll">
       <PackagePath>EntityFramework.Core.dll</PackagePath>
@@ -744,11 +744,11 @@
     <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-12T09:58:03.229</Modified>
+      <Modified>2017-06-12T10:21:39.845</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Korisnik\Desktop\OVDJERADIS\ProjekatZatvor\ProjekatZatvor\bin\x86\Debug\Core\ProjekatZatvor.exe">
       <PackagePath>ProjekatZatvor.exe</PackagePath>
-      <Modified>2017-06-12T09:58:04.825</Modified>
+      <Modified>2017-06-12T10:33:27.824</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

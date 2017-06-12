@@ -819,8 +819,8 @@ public event PropertyChangedEventHandler PropertyChanged;
 
             foreach (Zatvorenik x in ListaZatvorenika)
             {
-                Debug.WriteLine(x.Ime + " " + x.Prezime + " " + x.Celija.BrojCelije.ToString());
-                if (x.Ime == ImeZatvorenikaIzvjestaj && x.Prezime == PrezimeZatvorenikaIzvjestaj && x.Celija.BrojCelije.ToString() == CelijaZatvorenikaIzvjestaj)
+              //  Debug.WriteLine(x.Ime + " " + x.Prezime + " " + x.Celija.BrojCelije.ToString());
+                if (x.Ime == ImeZatvorenikaIzvjestaj && x.Prezime == PrezimeZatvorenikaIzvjestaj )
                 {
                     Debug.WriteLine("radi");
                     x.ListaPrekrsaja.Add(new Izvjestaj(x, TekstPrekrsaja, Enumerative.TipIzvjestaja.Kazna));
@@ -905,14 +905,14 @@ public event PropertyChangedEventHandler PropertyChanged;
                 // {
                 //    OznaceniZahtjevUposlenik.Posiljalac.NaDopustu = true;
                 //    Debug.WriteLine(OznaceniZahtjevUposlenik.Posiljalac.Ime);
-                //     ListaImenaRadnikaNaDopustu.Add(OznaceniZahtjevUposlenik.Posiljalac.Ime);
-                //    ListaPrezimenaRadnikaNaDopustu.Add(OznaceniZahtjevUposlenik.Posiljalac.Prezime);
+                    ListaImenaRadnikaNaDopustu.Add(OznaceniZahtjevUposlenik.Posiljalac.Ime);
+                  ListaPrezimenaRadnikaNaDopustu.Add(OznaceniZahtjevUposlenik.Posiljalac.Prezime);
                 //}
 
                 using (var db = new dbContext())
                 {
-                    db.ZahtjeviRadnika.Remove(OznaceniZahtjevUposlenik);
-                    db.SaveChanges();
+                  //  db.ZahtjeviRadnika.Remove(OznaceniZahtjevUposlenik);
+                    //db.SaveChanges();
                 }
 
                 ListaZahtjevaUposlenika.Remove(OznaceniZahtjevUposlenik);
